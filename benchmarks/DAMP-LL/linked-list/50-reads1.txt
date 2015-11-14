@@ -1,0 +1,576 @@
+CAS Linked List
+benchdata: run-time 1.0050411336123943 no-kill-time 1.0050296988338232 transactions 3 prog cas threads 1 entries 3000
+CAS Linked List
+benchdata: run-time 1.0251489114016294 no-kill-time 1.025075737386942 transactions 5 prog cas threads 2 entries 3000
+CAS Linked List
+benchdata: run-time 1.0211162315681577 no-kill-time 1.0049670664593577 transactions 52 prog cas threads 3 entries 3000
+CAS Linked List
+benchdata: run-time 1.0249247681349516 no-kill-time 1.0247626742348075 transactions 64 prog cas threads 4 entries 3000
+CAS Linked List
+benchdata: run-time 1.008459492586553 no-kill-time 1.0075012473389506 transactions 102 prog cas threads 5 entries 3000
+CAS Linked List
+benchdata: run-time 1.0249497843906283 no-kill-time 1.0244276970624924 transactions 73 prog cas threads 6 entries 3000
+CAS Linked List
+benchdata: run-time 1.0048715295270085 no-kill-time 1.004420543089509 transactions 156 prog cas threads 7 entries 3000
+CAS Linked List
+benchdata: run-time 1.024476045742631 no-kill-time 1.0240953033789992 transactions 61 prog cas threads 8 entries 3000
+CAS Linked List
+benchdata: run-time 1.0056399088352919 no-kill-time 1.0052311681210995 transactions 42 prog cas threads 9 entries 3000
+CAS Linked List
+benchdata: run-time 1.0060460781678557 no-kill-time 1.0055229179561138 transactions 137 prog cas threads 10 entries 3000
+CAS Linked List
+benchdata: run-time 1.0040194476023316 no-kill-time 1.003343685530126 transactions 175 prog cas threads 11 entries 3000
+CAS Linked List
+benchdata: run-time 1.0241053337231278 no-kill-time 1.0235797567293048 transactions 154 prog cas threads 12 entries 3000
+CAS Linked List
+benchdata: run-time 1.024035569280386 no-kill-time 1.0232447870075703 transactions 135 prog cas threads 13 entries 3000
+CAS Linked List
+benchdata: run-time 1.0249723959714174 no-kill-time 1.023231526836753 transactions 238 prog cas threads 14 entries 3000
+CAS Linked List
+benchdata: run-time 1.0057698786258698 no-kill-time 1.0045859478414059 transactions 143 prog cas threads 15 entries 3000
+CAS Linked List
+benchdata: run-time 1.0075812432914972 no-kill-time 1.0060229562222958 transactions 184 prog cas threads 16 entries 3000
+CAS Linked List
+benchdata: run-time 1.0059566777199507 no-kill-time 1.004877584055066 transactions 244 prog cas threads 17 entries 3000
+CAS Linked List
+benchdata: run-time 1.002561455592513 no-kill-time 1.0016767773777246 transactions 111 prog cas threads 18 entries 3000
+CAS Linked List
+benchdata: run-time 1.003727308474481 no-kill-time 1.0024831108748913 transactions 156 prog cas threads 19 entries 3000
+CAS Linked List
+benchdata: run-time 1.0040569668635726 no-kill-time 1.002247404307127 transactions 180 prog cas threads 20 entries 3000
+CAS Linked List
+benchdata: run-time 1.016596063040197 no-kill-time 1.0146735347807407 transactions 194 prog cas threads 21 entries 3000
+CAS Linked List
+benchdata: run-time 1.006155977025628 no-kill-time 1.004479581490159 transactions 136 prog cas threads 22 entries 3000
+CAS Linked List
+benchdata: run-time 1.0030275713652372 no-kill-time 1.0016203643754125 transactions 169 prog cas threads 23 entries 3000
+CAS Linked List
+benchdata: run-time 1.0247278586030006 no-kill-time 1.0219697756692767 transactions 163 prog cas threads 24 entries 3000
+CAS Linked List
+benchdata: run-time 1.0212547341361642 no-kill-time 1.0197976864874363 transactions 178 prog cas threads 25 entries 3000
+CAS Linked List
+benchdata: run-time 1.024253647774458 no-kill-time 1.0213483283296227 transactions 184 prog cas threads 26 entries 3000
+CAS Linked List
+benchdata: run-time 1.0179881593212485 no-kill-time 1.0143569996580482 transactions 240 prog cas threads 27 entries 3000
+CAS Linked List
+benchdata: run-time 1.0047034015879035 no-kill-time 1.002656925469637 transactions 207 prog cas threads 28 entries 3000
+CAS Linked List
+benchdata: run-time 1.021013943478465 no-kill-time 1.0190886305645108 transactions 303 prog cas threads 29 entries 3000
+CAS Linked List
+benchdata: run-time 1.0060989502817392 no-kill-time 1.0045260032638907 transactions 215 prog cas threads 30 entries 3000
+CAS Linked List
+benchdata: run-time 1.0078476322814822 no-kill-time 1.005672313272953 transactions 253 prog cas threads 31 entries 3000
+CAS Linked List
+benchdata: run-time 1.0226624952629209 no-kill-time 1.0204758625477552 transactions 307 prog cas threads 32 entries 3000
+CAS Linked List
+benchdata: run-time 1.0063448064029217 no-kill-time 1.0025907028466463 transactions 265 prog cas threads 33 entries 3000
+CAS Linked List
+benchdata: run-time 1.008098267018795 no-kill-time 1.0059537012130022 transactions 182 prog cas threads 34 entries 3000
+CAS Linked List
+benchdata: run-time 1.011997644789517 no-kill-time 1.0096762450411916 transactions 298 prog cas threads 35 entries 3000
+CAS Linked List
+benchdata: run-time 1.0214620437473059 no-kill-time 1.0182030033320189 transactions 333 prog cas threads 36 entries 3000
+CAS Linked List
+benchdata: run-time 1.02203259896487 no-kill-time 1.0188406398519874 transactions 368 prog cas threads 37 entries 3000
+CAS Linked List
+benchdata: run-time 1.009992509149015 no-kill-time 1.0058091403916478 transactions 292 prog cas threads 38 entries 3000
+CAS Linked List
+benchdata: run-time 1.0248486548662186 no-kill-time 1.0214816126972437 transactions 303 prog cas threads 39 entries 3000
+CAS Linked List
+benchdata: run-time 1.0198737429454923 no-kill-time 1.0165089815855026 transactions 318 prog cas threads 40 entries 3000
+CAS Linked List
+benchdata: run-time 1.024989071302116 no-kill-time 1.0208083279430866 transactions 361 prog cas threads 41 entries 3000
+CAS Linked List
+benchdata: run-time 1.0118426159024239 no-kill-time 1.008975232951343 transactions 367 prog cas threads 42 entries 3000
+CAS Linked List
+benchdata: run-time 1.0430965702980757 no-kill-time 1.0384231144562364 transactions 356 prog cas threads 43 entries 3000
+CAS Linked List
+benchdata: run-time 1.0217258492484689 no-kill-time 1.0078048584982753 transactions 333 prog cas threads 44 entries 3000
+CAS Linked List
+benchdata: run-time 1.017104641534388 no-kill-time 1.0105071123689413 transactions 483 prog cas threads 45 entries 3000
+CAS Linked List
+benchdata: run-time 1.0220631919801235 no-kill-time 1.0169590236619115 transactions 454 prog cas threads 46 entries 3000
+CAS Linked List
+benchdata: run-time 1.0246772291138768 no-kill-time 1.0115294996649027 transactions 387 prog cas threads 47 entries 3000
+CAS Linked List
+benchdata: run-time 1.0457677589729428 no-kill-time 1.0266238311305642 transactions 535 prog cas threads 48 entries 3000
+MVar lock coupling
+benchdata: run-time 1.025194713845849 no-kill-time 1.0251870956271887 transactions 16165 prog mlc threads 1 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0049544190987945 no-kill-time 1.0048675695434213 transactions 13214 prog mlc threads 2 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0049876477569342 no-kill-time 1.004873400554061 transactions 15170 prog mlc threads 3 entries 3000
+MVar lock coupling
+benchdata: run-time 1.00517522636801 no-kill-time 1.0047626364976168 transactions 18259 prog mlc threads 4 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0018301364034414 no-kill-time 1.0016065742820501 transactions 20940 prog mlc threads 5 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0050165466964245 no-kill-time 1.0042687458917499 transactions 22645 prog mlc threads 6 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0048386873677373 no-kill-time 1.0042168544605374 transactions 24646 prog mlc threads 7 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0042120460420847 no-kill-time 1.0031070653349161 transactions 27240 prog mlc threads 8 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0020500933751464 no-kill-time 1.0015650345012546 transactions 30212 prog mlc threads 9 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0040427884086967 no-kill-time 1.003223198466003 transactions 29573 prog mlc threads 10 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0044792387634516 no-kill-time 1.0039628418162465 transactions 30382 prog mlc threads 11 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0041930247098207 no-kill-time 1.0032558115199208 transactions 32478 prog mlc threads 12 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0032510543242097 no-kill-time 1.0019332459196448 transactions 34536 prog mlc threads 13 entries 3000
+MVar lock coupling
+benchdata: run-time 1.001523919403553 no-kill-time 1.0005583399906754 transactions 32018 prog mlc threads 14 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0025056647136807 no-kill-time 1.0016598058864474 transactions 37580 prog mlc threads 15 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0037887813523412 no-kill-time 1.0025784242898226 transactions 36678 prog mlc threads 16 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0024673286825418 no-kill-time 1.0013636155053973 transactions 36650 prog mlc threads 17 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0037904111668468 no-kill-time 1.0026897434145212 transactions 36956 prog mlc threads 18 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0034179957583547 no-kill-time 1.0022524306550622 transactions 41172 prog mlc threads 19 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0036347266286612 no-kill-time 1.0024563912302256 transactions 39878 prog mlc threads 20 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0033796215429902 no-kill-time 1.00182762183249 transactions 38831 prog mlc threads 21 entries 3000
+MVar lock coupling
+benchdata: run-time 1.003094794228673 no-kill-time 1.0017113713547587 transactions 40265 prog mlc threads 22 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0043922094628215 no-kill-time 1.001773445867002 transactions 36661 prog mlc threads 23 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0033741425722837 no-kill-time 1.00163637381047 transactions 42314 prog mlc threads 24 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0055861743167043 no-kill-time 1.0033087581396103 transactions 41517 prog mlc threads 25 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0045105293393135 no-kill-time 1.00244767870754 transactions 41015 prog mlc threads 26 entries 3000
+MVar lock coupling
+benchdata: run-time 1.004203936085105 no-kill-time 1.0020611751824617 transactions 42646 prog mlc threads 27 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0040711862966418 no-kill-time 1.002418702468276 transactions 44783 prog mlc threads 28 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0046164207160473 no-kill-time 1.0017946362495422 transactions 42285 prog mlc threads 29 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0038330489769578 no-kill-time 1.0018701776862144 transactions 41907 prog mlc threads 30 entries 3000
+MVar lock coupling
+benchdata: run-time 1.00413491204381 no-kill-time 1.0020872056484222 transactions 41785 prog mlc threads 31 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0047471225261688 no-kill-time 1.0021816343069077 transactions 43604 prog mlc threads 32 entries 3000
+MVar lock coupling
+benchdata: run-time 1.005109361372888 no-kill-time 1.0025484459474683 transactions 42769 prog mlc threads 33 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0051221242174506 no-kill-time 1.0027842884883285 transactions 44296 prog mlc threads 34 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0050523215904832 no-kill-time 1.0024106986820698 transactions 43703 prog mlc threads 35 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0058913296088576 no-kill-time 1.0018569650128484 transactions 45260 prog mlc threads 36 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0072797248139977 no-kill-time 1.0019750939682126 transactions 43811 prog mlc threads 37 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0049099950119853 no-kill-time 1.0026149917393923 transactions 44113 prog mlc threads 38 entries 3000
+MVar lock coupling
+benchdata: run-time 1.005938665010035 no-kill-time 1.0031944289803505 transactions 43676 prog mlc threads 39 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0059904176741838 no-kill-time 1.0025745863094926 transactions 43543 prog mlc threads 40 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0073119569569826 no-kill-time 1.0028287889435887 transactions 43308 prog mlc threads 41 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0067974403500557 no-kill-time 1.00234798155725 transactions 42838 prog mlc threads 42 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0070720808580518 no-kill-time 1.0031073419377208 transactions 41339 prog mlc threads 43 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0085523007437587 no-kill-time 1.0043790517374873 transactions 42583 prog mlc threads 44 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0088383294641972 no-kill-time 1.0049785152077675 transactions 40434 prog mlc threads 45 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0064406590536237 no-kill-time 1.0021410547196865 transactions 41027 prog mlc threads 46 entries 3000
+MVar lock coupling
+benchdata: run-time 1.0073845610022545 no-kill-time 1.003127759322524 transactions 40367 prog mlc threads 47 entries 3000
+MVar lock coupling
+benchdata: run-time 1.006714872084558 no-kill-time 1.0021814685314894 transactions 40603 prog mlc threads 48 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.025079102255404 no-kill-time 1.0250685401260853 transactions 19257 prog straightforward-tl2 threads 1 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.02475690189749 no-kill-time 1.0246658949181437 transactions 27962 prog straightforward-tl2 threads 2 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0644427333027124 no-kill-time 1.0443341955542564 transactions 32052 prog straightforward-tl2 threads 3 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0446314131841063 no-kill-time 1.024480969645083 transactions 36316 prog straightforward-tl2 threads 4 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0446786284446716 no-kill-time 1.0244708117097616 transactions 37407 prog straightforward-tl2 threads 5 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0447095036506653 no-kill-time 1.0244260346516967 transactions 39450 prog straightforward-tl2 threads 6 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.044099723920226 no-kill-time 1.023877372033894 transactions 40789 prog straightforward-tl2 threads 7 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0444007404148579 no-kill-time 1.0240917634218931 transactions 43240 prog straightforward-tl2 threads 8 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0537088783457875 no-kill-time 1.023595274426043 transactions 43497 prog straightforward-tl2 threads 9 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0639362446963787 no-kill-time 1.043460332788527 transactions 45679 prog straightforward-tl2 threads 10 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1096196975558996 no-kill-time 1.0962118208408356 transactions 47227 prog straightforward-tl2 threads 11 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0433949455618858 no-kill-time 1.0428714929148555 transactions 46804 prog straightforward-tl2 threads 12 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1036302438005805 no-kill-time 1.0830498430877924 transactions 48647 prog straightforward-tl2 threads 13 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0633338503539562 no-kill-time 1.0626836214214563 transactions 48473 prog straightforward-tl2 threads 14 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0834087524563074 no-kill-time 1.0628048432990909 transactions 49827 prog straightforward-tl2 threads 15 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0630872026085854 no-kill-time 1.0425515212118626 transactions 50355 prog straightforward-tl2 threads 16 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0435298355296254 no-kill-time 1.022626368328929 transactions 49933 prog straightforward-tl2 threads 17 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.063425318337977 no-kill-time 1.0425952970981598 transactions 50732 prog straightforward-tl2 threads 18 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0783883109688759 no-kill-time 1.0420103883370757 transactions 51558 prog straightforward-tl2 threads 19 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0824549943208694 no-kill-time 1.0422035660594702 transactions 51917 prog straightforward-tl2 threads 20 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.048900973983109 no-kill-time 1.022262716665864 transactions 51141 prog straightforward-tl2 threads 21 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0660880394279957 no-kill-time 1.0418673353269696 transactions 51816 prog straightforward-tl2 threads 22 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0755774714052677 no-kill-time 1.0547031471505761 transactions 51217 prog straightforward-tl2 threads 23 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0756906028836966 no-kill-time 1.0547191640362144 transactions 52464 prog straightforward-tl2 threads 24 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.062195947393775 no-kill-time 1.0411192923784256 transactions 51847 prog straightforward-tl2 threads 25 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.062060329131782 no-kill-time 1.041154115460813 transactions 52822 prog straightforward-tl2 threads 26 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0621254984289408 no-kill-time 1.0410625338554382 transactions 51910 prog straightforward-tl2 threads 27 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0793349044397473 no-kill-time 1.0406762892380357 transactions 52639 prog straightforward-tl2 threads 28 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0615022145211697 no-kill-time 1.0405510989949107 transactions 52321 prog straightforward-tl2 threads 29 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0615458441898227 no-kill-time 1.0404794961214066 transactions 52359 prog straightforward-tl2 threads 30 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1002857526764274 no-kill-time 1.0600613709539175 transactions 50858 prog straightforward-tl2 threads 31 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.120101161301136 no-kill-time 1.0598422046750784 transactions 54466 prog straightforward-tl2 threads 32 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.088335863314569 no-kill-time 1.0572590148076415 transactions 53671 prog straightforward-tl2 threads 33 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0993140330538154 no-kill-time 1.038550271652639 transactions 54002 prog straightforward-tl2 threads 34 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.079316969960928 no-kill-time 1.0581319211050868 transactions 51049 prog straightforward-tl2 threads 35 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0790619952604175 no-kill-time 1.0578533867374063 transactions 53790 prog straightforward-tl2 threads 36 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1072355210781097 no-kill-time 1.0580565501004457 transactions 53790 prog straightforward-tl2 threads 37 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.074032316915691 no-kill-time 1.0377894658595324 transactions 53380 prog straightforward-tl2 threads 38 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0949036348611116 no-kill-time 1.0343127772212029 transactions 52044 prog straightforward-tl2 threads 39 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.0975409084931016 no-kill-time 1.0565878804773092 transactions 54096 prog straightforward-tl2 threads 40 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1180151551961899 no-kill-time 1.0570492409169674 transactions 54333 prog straightforward-tl2 threads 41 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.161058783531189 no-kill-time 1.1201943652704358 transactions 55218 prog straightforward-tl2 threads 42 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1474264655262232 no-kill-time 1.1124182706698775 transactions 56208 prog straightforward-tl2 threads 43 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1568592553958297 no-kill-time 1.0990635054185987 transactions 55978 prog straightforward-tl2 threads 44 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.1751480866223574 no-kill-time 1.133905442431569 transactions 56914 prog straightforward-tl2 threads 45 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.2194645255804062 no-kill-time 1.1384675586596131 transactions 58738 prog straightforward-tl2 threads 46 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.2114689201116562 no-kill-time 1.1778201535344124 transactions 57769 prog straightforward-tl2 threads 47 entries 3000
+Straight forward STM: TL2
+benchdata: run-time 1.167924765497446 no-kill-time 1.1277043782174587 transactions 56886 prog straightforward-tl2 threads 48 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0251840511336923 no-kill-time 1.0251723043620586 transactions 687 prog straightforward-fine threads 1 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.024928835220635 no-kill-time 1.0248140348121524 transactions 1090 prog straightforward-fine threads 2 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.024650407023728 no-kill-time 1.0244788993149996 transactions 1379 prog straightforward-fine threads 3 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0446208557114005 no-kill-time 1.024421263486147 transactions 1669 prog straightforward-fine threads 4 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.044760074466467 no-kill-time 1.024548294954002 transactions 1881 prog straightforward-fine threads 5 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0646440787240863 no-kill-time 1.044024390168488 transactions 2120 prog straightforward-fine threads 6 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0645135389640927 no-kill-time 1.043997193686664 transactions 2260 prog straightforward-fine threads 7 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0245263734832406 no-kill-time 1.0238836873322725 transactions 2387 prog straightforward-fine threads 8 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0444368813186884 no-kill-time 1.0236744247376919 transactions 2525 prog straightforward-fine threads 9 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0843258406966925 no-kill-time 1.0437169158831239 transactions 2714 prog straightforward-fine threads 10 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0641633430495858 no-kill-time 1.0433064308017492 transactions 2875 prog straightforward-fine threads 11 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0840729586780071 no-kill-time 1.063278142362833 transactions 2934 prog straightforward-fine threads 12 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0643471889197826 no-kill-time 1.0432269982993603 transactions 2925 prog straightforward-fine threads 13 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.064384556375444 no-kill-time 1.043182292021811 transactions 3044 prog straightforward-fine threads 14 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.064421552233398 no-kill-time 1.0429686503484845 transactions 3133 prog straightforward-fine threads 15 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0639838017523289 no-kill-time 1.0625876234844327 transactions 3117 prog straightforward-fine threads 16 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.064033322967589 no-kill-time 1.0226578516885638 transactions 3279 prog straightforward-fine threads 17 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0640345215797424 no-kill-time 1.0426754914224148 transactions 3416 prog straightforward-fine threads 18 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0444279657676816 no-kill-time 1.0226142117753625 transactions 3455 prog straightforward-fine threads 19 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0440430399030447 no-kill-time 1.0224036378785968 transactions 3320 prog straightforward-fine threads 20 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.063640858978033 no-kill-time 1.041878012008965 transactions 3535 prog straightforward-fine threads 21 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0640081940218806 no-kill-time 1.0420444030314684 transactions 3570 prog straightforward-fine threads 22 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0638155778869987 no-kill-time 1.041579980403185 transactions 3623 prog straightforward-fine threads 23 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0237066326662898 no-kill-time 1.0214764708653092 transactions 3612 prog straightforward-fine threads 24 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0640714867040515 no-kill-time 1.041431867517531 transactions 3604 prog straightforward-fine threads 25 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0633489666506648 no-kill-time 1.0412687845528126 transactions 3755 prog straightforward-fine threads 26 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0641034664586186 no-kill-time 1.0412638690322638 transactions 3985 prog straightforward-fine threads 27 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0630006659775972 no-kill-time 1.0408430499956012 transactions 3926 prog straightforward-fine threads 28 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0632982105016708 no-kill-time 1.040862307883799 transactions 3987 prog straightforward-fine threads 29 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0634628888219595 no-kill-time 1.0408615376800299 transactions 3986 prog straightforward-fine threads 30 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0627210615202785 no-kill-time 1.0398764470592141 transactions 3933 prog straightforward-fine threads 31 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.063146690838039 no-kill-time 1.0404436392709613 transactions 3954 prog straightforward-fine threads 32 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0631374409422278 no-kill-time 1.040137798525393 transactions 4006 prog straightforward-fine threads 33 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0624715462327003 no-kill-time 1.039294432848692 transactions 3973 prog straightforward-fine threads 34 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.039977722801268 no-kill-time 1.0358655015006661 transactions 4078 prog straightforward-fine threads 35 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.081661549396813 no-kill-time 1.057996747083962 transactions 4206 prog straightforward-fine threads 36 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0822198940441012 no-kill-time 1.0589433265849948 transactions 4176 prog straightforward-fine threads 37 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0421128813177347 no-kill-time 1.0383444540202618 transactions 4023 prog straightforward-fine threads 38 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0362140713259578 no-kill-time 1.0324712870642543 transactions 4097 prog straightforward-fine threads 39 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0354682439938188 no-kill-time 1.0314871976152062 transactions 4150 prog straightforward-fine threads 40 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0800452325493097 no-kill-time 1.055197523906827 transactions 4380 prog straightforward-fine threads 41 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.1413484830409288 no-kill-time 1.116427036933601 transactions 4399 prog straightforward-fine threads 42 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.161211721599102 no-kill-time 1.1362469522282481 transactions 4538 prog straightforward-fine threads 43 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.0817367164418101 no-kill-time 1.0761794801801443 transactions 4466 prog straightforward-fine threads 44 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.1052149767056108 no-kill-time 1.0799230635166168 transactions 4479 prog straightforward-fine threads 45 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.053765063174069 no-kill-time 1.028748070821166 transactions 4431 prog straightforward-fine threads 46 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.1356463795527816 no-kill-time 1.1101244175806642 transactions 4517 prog straightforward-fine threads 47 entries 3000
+Straight forward STM: FGSTM
+benchdata: run-time 1.1553768422454596 no-kill-time 1.1297859223559499 transactions 4560 prog straightforward-fine threads 48 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0050965249538422 no-kill-time 1.00508629437536 transactions 9384 prog dissected-tl2 threads 1 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0049664992839098 no-kill-time 1.0048698391765356 transactions 15425 prog dissected-tl2 threads 2 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.027864757925272 no-kill-time 1.0246826149523258 transactions 19021 prog dissected-tl2 threads 3 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0147232869639993 no-kill-time 1.004470333456993 transactions 23399 prog dissected-tl2 threads 4 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0086963679641485 no-kill-time 1.0046692099422216 transactions 26443 prog dissected-tl2 threads 5 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.007513763383031 no-kill-time 1.0043457634747028 transactions 30551 prog dissected-tl2 threads 6 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0058906730264425 no-kill-time 1.004098909907043 transactions 33118 prog dissected-tl2 threads 7 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0047463215887547 no-kill-time 1.0042842421680689 transactions 35260 prog dissected-tl2 threads 8 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0051098512485623 no-kill-time 1.0039461273699999 transactions 38565 prog dissected-tl2 threads 9 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0244419602677226 no-kill-time 1.023833516985178 transactions 41987 prog dissected-tl2 threads 10 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0242177592590451 no-kill-time 1.0236970502883196 transactions 43733 prog dissected-tl2 threads 11 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0246749771758914 no-kill-time 1.0234499126672745 transactions 46617 prog dissected-tl2 threads 12 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0238504875451326 no-kill-time 1.023221862502396 transactions 48669 prog dissected-tl2 threads 13 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0236373860388994 no-kill-time 1.0231195148080587 transactions 51399 prog dissected-tl2 threads 14 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0232826564460993 no-kill-time 1.022558149881661 transactions 52716 prog dissected-tl2 threads 15 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0236358167603612 no-kill-time 1.0224708328023553 transactions 54699 prog dissected-tl2 threads 16 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0037558674812317 no-kill-time 1.0023113125935197 transactions 54811 prog dissected-tl2 threads 17 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0246865609660745 no-kill-time 1.0223225140944123 transactions 57875 prog dissected-tl2 threads 18 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0233076699078083 no-kill-time 1.0221613217145205 transactions 58994 prog dissected-tl2 threads 19 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.004530280828476 no-kill-time 1.0022496012970805 transactions 59446 prog dissected-tl2 threads 20 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0045624859631062 no-kill-time 1.0023645805194974 transactions 61309 prog dissected-tl2 threads 21 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0237912125885487 no-kill-time 1.0215858612209558 transactions 63604 prog dissected-tl2 threads 22 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.024703336879611 no-kill-time 1.021714074537158 transactions 64396 prog dissected-tl2 threads 23 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0235700560733676 no-kill-time 1.0215374948456883 transactions 65561 prog dissected-tl2 threads 24 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0191464191302657 no-kill-time 1.0144015774130821 transactions 65656 prog dissected-tl2 threads 25 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0237182984128594 no-kill-time 1.0214445982128382 transactions 66509 prog dissected-tl2 threads 26 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0245111174881458 no-kill-time 1.0208659414201975 transactions 67042 prog dissected-tl2 threads 27 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0226443922147155 no-kill-time 1.0206932835280895 transactions 69575 prog dissected-tl2 threads 28 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0229007368907332 no-kill-time 1.0205891048535705 transactions 69899 prog dissected-tl2 threads 29 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0230262111872435 no-kill-time 1.0206640185788274 transactions 70187 prog dissected-tl2 threads 30 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0434332387521863 no-kill-time 1.0403218735009432 transactions 73938 prog dissected-tl2 threads 31 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0427044425159693 no-kill-time 1.040129316970706 transactions 73235 prog dissected-tl2 threads 32 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0417012367397547 no-kill-time 1.0376626392826438 transactions 74158 prog dissected-tl2 threads 33 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0216869162395597 no-kill-time 1.0188551545143127 transactions 73683 prog dissected-tl2 threads 34 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.018720356747508 no-kill-time 1.015850454568863 transactions 74092 prog dissected-tl2 threads 35 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0397922713309526 no-kill-time 1.03739820048213 transactions 75401 prog dissected-tl2 threads 36 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0406755469739437 no-kill-time 1.0362144084647298 transactions 76041 prog dissected-tl2 threads 37 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0243567619472742 no-kill-time 1.019709168933332 transactions 75249 prog dissected-tl2 threads 38 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0203678980469704 no-kill-time 1.0172176035121083 transactions 75205 prog dissected-tl2 threads 39 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0236598225310445 no-kill-time 1.0205820044502616 transactions 76595 prog dissected-tl2 threads 40 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0256123803555965 no-kill-time 1.0208165971562266 transactions 75801 prog dissected-tl2 threads 41 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.042575498111546 no-kill-time 1.0393884824588895 transactions 78289 prog dissected-tl2 threads 42 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0360757112503052 no-kill-time 1.0324752423912287 transactions 77530 prog dissected-tl2 threads 43 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0393057744950056 no-kill-time 1.035783153027296 transactions 77967 prog dissected-tl2 threads 44 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.041132795624435 no-kill-time 1.0358818620443344 transactions 79538 prog dissected-tl2 threads 45 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0751515496522188 no-kill-time 1.0487363319844007 transactions 81412 prog dissected-tl2 threads 46 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0429267520084977 no-kill-time 1.0249865502119064 transactions 80754 prog dissected-tl2 threads 47 entries 3000
+Dissected STM: TL2
+benchdata: run-time 1.0765661457553506 no-kill-time 1.0601425291970372 transactions 81436 prog dissected-tl2 threads 48 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0050961012020707 no-kill-time 1.0050873784348369 transactions 6342 prog dissected-fine threads 1 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0048583056777716 no-kill-time 1.0047711916267872 transactions 10840 prog dissected-fine threads 2 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0244565838947892 no-kill-time 1.004347045905888 transactions 13741 prog dissected-fine threads 3 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0059095937758684 no-kill-time 1.0044417344033718 transactions 17192 prog dissected-fine threads 4 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0065326020121574 no-kill-time 1.004439807496965 transactions 19487 prog dissected-fine threads 5 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0259286845102906 no-kill-time 1.023926904425025 transactions 22647 prog dissected-fine threads 6 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.045502838678658 no-kill-time 1.0438170852139592 transactions 25087 prog dissected-fine threads 7 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.005860486999154 no-kill-time 1.003907515667379 transactions 26791 prog dissected-fine threads 8 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.004223239608109 no-kill-time 1.0037750788033009 transactions 28510 prog dissected-fine threads 9 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0241364473477006 no-kill-time 1.0234703179448843 transactions 30719 prog dissected-fine threads 10 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.043812089599669 no-kill-time 1.0433853873983026 transactions 32761 prog dissected-fine threads 11 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0249279644340277 no-kill-time 1.023097861558199 transactions 34658 prog dissected-fine threads 12 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0240504844114184 no-kill-time 1.0230854079127312 transactions 35523 prog dissected-fine threads 13 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0248003778979182 no-kill-time 1.022983504459262 transactions 37149 prog dissected-fine threads 14 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0245334412902594 no-kill-time 1.0226651262491941 transactions 38596 prog dissected-fine threads 15 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0262658596038818 no-kill-time 1.0228802477940917 transactions 39977 prog dissected-fine threads 16 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0041475165635347 no-kill-time 1.002423420548439 transactions 40322 prog dissected-fine threads 17 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.025633110664785 no-kill-time 1.0222954982891679 transactions 41931 prog dissected-fine threads 18 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.023423569276929 no-kill-time 1.0221183625981212 transactions 42352 prog dissected-fine threads 19 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.024936973117292 no-kill-time 1.0223073856905103 transactions 43922 prog dissected-fine threads 20 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.023290284909308 no-kill-time 1.0219180146232247 transactions 44473 prog dissected-fine threads 21 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0239016599953175 no-kill-time 1.0218349434435368 transactions 45266 prog dissected-fine threads 22 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0236788941547275 no-kill-time 1.0214600237086415 transactions 45978 prog dissected-fine threads 23 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0235284455120564 no-kill-time 1.0214878227561712 transactions 47070 prog dissected-fine threads 24 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0233691846951842 no-kill-time 1.0211543245241046 transactions 47381 prog dissected-fine threads 25 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0233953418210149 no-kill-time 1.0209516705945134 transactions 48103 prog dissected-fine threads 26 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.036174574866891 no-kill-time 1.0343583757057786 transactions 48659 prog dissected-fine threads 27 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0222667437046766 no-kill-time 1.0204357653856277 transactions 48592 prog dissected-fine threads 28 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.027821160852909 no-kill-time 1.0182301625609398 transactions 48972 prog dissected-fine threads 29 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0219167824834585 no-kill-time 1.0202589416876435 transactions 48956 prog dissected-fine threads 30 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.044710272923112 no-kill-time 1.0404470106586814 transactions 50249 prog dissected-fine threads 31 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0411252407357097 no-kill-time 1.0397047018632293 transactions 50350 prog dissected-fine threads 32 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0435708118602633 no-kill-time 1.0378674836829305 transactions 50561 prog dissected-fine threads 33 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0209649354219437 no-kill-time 1.0184799516573548 transactions 50238 prog dissected-fine threads 34 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0198785113170743 no-kill-time 1.017829542979598 transactions 50122 prog dissected-fine threads 35 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0395039869472384 no-kill-time 1.0377345560118556 transactions 52455 prog dissected-fine threads 36 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0416471678763628 no-kill-time 1.0378222223371267 transactions 52427 prog dissected-fine threads 37 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0458554085344076 no-kill-time 1.0372220510616899 transactions 51563 prog dissected-fine threads 38 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.019496656022966 no-kill-time 1.0168572748079896 transactions 50233 prog dissected-fine threads 39 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0385535126551986 no-kill-time 1.0363071914762259 transactions 51911 prog dissected-fine threads 40 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0395691376179457 no-kill-time 1.036745872348547 transactions 52206 prog dissected-fine threads 41 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0425933171063662 no-kill-time 1.0383798647671938 transactions 53060 prog dissected-fine threads 42 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.038326676003635 no-kill-time 1.0353761594742537 transactions 52809 prog dissected-fine threads 43 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0379980504512787 no-kill-time 1.0357378125190735 transactions 52349 prog dissected-fine threads 44 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.045484204776585 no-kill-time 1.0387403387576342 transactions 52182 prog dissected-fine threads 45 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0687172450125217 no-kill-time 1.0483064474537969 transactions 53777 prog dissected-fine threads 46 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.0944658238440752 no-kill-time 1.0659659607335925 transactions 53883 prog dissected-fine threads 47 entries 3000
+Dissected STM: FGSTM
+benchdata: run-time 1.069636020809412 no-kill-time 1.029636756516993 transactions 53279 prog dissected-fine threads 48 entries 3000

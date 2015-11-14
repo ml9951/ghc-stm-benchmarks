@@ -1,0 +1,64 @@
+name:           rbtree-throughput
+version:        0.1.0.0
+license-file:   LICENSE
+author:         Ryan Yates
+maintainer:     ryates@cs.rochester.edu
+build-type:     Simple
+cabal-version:  >=1.10
+
+flag pastmtl2
+    description: Build against TL2.
+    default:     False
+
+flag cas
+  description:  CAS linked list
+  default:  False
+
+flag mlc
+  description: MVar lock coupling linked list
+  default:  False
+
+flag stm
+  description:  Straightforward STM linked list
+  default:  False
+
+flag dissected
+  description:  Dissected transactions 
+  default False
+
+executable rbtree-throughput
+  main-is:      Main.hs
+  GHC-Options:  -rtsopts -threaded -O2 -fno-omit-yields
+  build-depends:    base >= 4.7 && <4.9,
+                    stm,
+                    optparse-applicative,
+                    vector >= 0.10 && < 0.11,
+                    throughput,
+                    pcg-random
+
+  if flag(pastmtl2)
+    cpp-options:  -DPASTMTL2
+    build-depends:  pastm
+
+  if flag(cas)
+    cpp-options:  -DCASLL
+
+  if flag(mlc)
+    cpp-options:  -DMLCLL
+
+  if flag(stm)
+    if !flag(pastmtl2)
+      cpp-options:  -DSTRAIGHTSTM
+      build-depends:  stm
+    else
+      cpp-options:  -DSTRAIGHTSTM
+
+  if flag(dissected)
+    if !flag(pastmtl2)
+      cpp-options:  -DDISSECTEDSTM
+      build-depends:  stm
+    else
+      cpp-options:  -DDISSECTEDSTM           
+
+
+  default-language: Haskell2010

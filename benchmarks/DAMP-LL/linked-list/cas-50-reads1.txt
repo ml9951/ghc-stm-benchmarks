@@ -1,0 +1,96 @@
+CAS Linked List
+benchdata: run-time 1.024936581030488 no-kill-time 1.024927836842835 transactions 25526 prog cas threads 1 entries 3000
+CAS Linked List
+benchdata: run-time 1.044968569651246 no-kill-time 1.04489840939641 transactions 39144 prog cas threads 2 entries 3000
+CAS Linked List
+benchdata: run-time 1.0447628293186426 no-kill-time 1.0246680546551943 transactions 43660 prog cas threads 3 entries 3000
+CAS Linked List
+benchdata: run-time 1.0445992518216372 no-kill-time 1.0244429120793939 transactions 50671 prog cas threads 4 entries 3000
+CAS Linked List
+benchdata: run-time 1.0447748061269522 no-kill-time 1.024574989452958 transactions 53120 prog cas threads 5 entries 3000
+CAS Linked List
+benchdata: run-time 1.066946690902114 no-kill-time 1.044198801741004 transactions 59367 prog cas threads 6 entries 3000
+CAS Linked List
+benchdata: run-time 1.0644088964909315 no-kill-time 1.024213201366365 transactions 63211 prog cas threads 7 entries 3000
+CAS Linked List
+benchdata: run-time 1.044407027773559 no-kill-time 1.024119419977069 transactions 67455 prog cas threads 8 entries 3000
+CAS Linked List
+benchdata: run-time 1.064389718696475 no-kill-time 1.0439646309241652 transactions 70326 prog cas threads 9 entries 3000
+CAS Linked List
+benchdata: run-time 1.1039762645959854 no-kill-time 1.0835145190358162 transactions 75114 prog cas threads 10 entries 3000
+CAS Linked List
+benchdata: run-time 1.0436918875202537 no-kill-time 1.0233015352860093 transactions 71340 prog cas threads 11 entries 3000
+CAS Linked List
+benchdata: run-time 1.0634920140728354 no-kill-time 1.0430107153952122 transactions 77175 prog cas threads 12 entries 3000
+CAS Linked List
+benchdata: run-time 1.063592640683055 no-kill-time 1.0430969893932343 transactions 79349 prog cas threads 13 entries 3000
+CAS Linked List
+benchdata: run-time 1.0635406859219074 no-kill-time 1.0428115222603083 transactions 82329 prog cas threads 14 entries 3000
+CAS Linked List
+benchdata: run-time 1.1233475049957633 no-kill-time 1.1027169693261385 transactions 87152 prog cas threads 15 entries 3000
+CAS Linked List
+benchdata: run-time 1.1026549767702818 no-kill-time 1.0820051711052656 transactions 90754 prog cas threads 16 entries 3000
+CAS Linked List
+benchdata: run-time 1.063184279948473 no-kill-time 1.0423938054591417 transactions 90887 prog cas threads 17 entries 3000
+CAS Linked List
+benchdata: run-time 1.0429179836064577 no-kill-time 1.0222263131290674 transactions 92972 prog cas threads 18 entries 3000
+CAS Linked List
+benchdata: run-time 1.0276512587442994 no-kill-time 1.0220636120066047 transactions 94083 prog cas threads 19 entries 3000
+CAS Linked List
+benchdata: run-time 1.0630158120766282 no-kill-time 1.04214199911803 transactions 97723 prog cas threads 20 entries 3000
+CAS Linked List
+benchdata: run-time 1.0630388921126723 no-kill-time 1.0421039024367929 transactions 100881 prog cas threads 21 entries 3000
+CAS Linked List
+benchdata: run-time 1.0626880582422018 no-kill-time 1.0417308937758207 transactions 101798 prog cas threads 22 entries 3000
+CAS Linked List
+benchdata: run-time 1.0625215247273445 no-kill-time 1.041500180028379 transactions 104264 prog cas threads 23 entries 3000
+CAS Linked List
+benchdata: run-time 1.0627445792779326 no-kill-time 1.0417019128799438 transactions 105427 prog cas threads 24 entries 3000
+CAS Linked List
+benchdata: run-time 1.0756381414830685 no-kill-time 1.0544946799054742 transactions 108406 prog cas threads 25 entries 3000
+CAS Linked List
+benchdata: run-time 1.0622802218422294 no-kill-time 1.0410872399806976 transactions 108049 prog cas threads 26 entries 3000
+CAS Linked List
+benchdata: run-time 1.0612642103806138 no-kill-time 1.0399603797122836 transactions 110344 prog cas threads 27 entries 3000
+CAS Linked List
+benchdata: run-time 1.0814490178599954 no-kill-time 1.0603696927428246 transactions 115993 prog cas threads 28 entries 3000
+CAS Linked List
+benchdata: run-time 1.0812352346256375 no-kill-time 1.060133202932775 transactions 115524 prog cas threads 29 entries 3000
+CAS Linked List
+benchdata: run-time 1.0814154827967286 no-kill-time 1.0602794457226992 transactions 119552 prog cas threads 30 entries 3000
+CAS Linked List
+benchdata: run-time 1.0808237455785275 no-kill-time 1.0596828637644649 transactions 119106 prog cas threads 31 entries 3000
+CAS Linked List
+benchdata: run-time 1.0605065124109387 no-kill-time 1.0392368268221617 transactions 118030 prog cas threads 32 entries 3000
+CAS Linked List
+benchdata: run-time 1.0592496655881405 no-kill-time 1.0378099968656898 transactions 117489 prog cas threads 33 entries 3000
+CAS Linked List
+benchdata: run-time 1.0801386423408985 no-kill-time 1.0587756829336286 transactions 123100 prog cas threads 34 entries 3000
+CAS Linked List
+benchdata: run-time 1.0794791784137487 no-kill-time 1.058037430047989 transactions 119869 prog cas threads 35 entries 3000
+CAS Linked List
+benchdata: run-time 1.0387699287384748 no-kill-time 1.0173692209646106 transactions 119095 prog cas threads 36 entries 3000
+CAS Linked List
+benchdata: run-time 1.0395688619464636 no-kill-time 1.0179778151214123 transactions 118955 prog cas threads 37 entries 3000
+CAS Linked List
+benchdata: run-time 1.059422585181892 no-kill-time 1.0378184402361512 transactions 122037 prog cas threads 38 entries 3000
+CAS Linked List
+benchdata: run-time 1.0816873144358397 no-kill-time 1.0600471077486873 transactions 125213 prog cas threads 39 entries 3000
+CAS Linked List
+benchdata: run-time 1.075290996581316 no-kill-time 1.0501224733889103 transactions 121674 prog cas threads 40 entries 3000
+CAS Linked List
+benchdata: run-time 1.058560679666698 no-kill-time 1.0366323171183467 transactions 122902 prog cas threads 41 entries 3000
+CAS Linked List
+benchdata: run-time 1.101401537656784 no-kill-time 1.079570877365768 transactions 131964 prog cas threads 42 entries 3000
+CAS Linked List
+benchdata: run-time 1.1144609898328781 no-kill-time 1.09240157995373 transactions 129902 prog cas threads 43 entries 3000
+CAS Linked List
+benchdata: run-time 1.116690007969737 no-kill-time 1.0921525973826647 transactions 130873 prog cas threads 44 entries 3000
+CAS Linked List
+benchdata: run-time 1.141569271683693 no-kill-time 1.1194209661334753 transactions 134157 prog cas threads 45 entries 3000
+CAS Linked List
+benchdata: run-time 1.1318928776308894 no-kill-time 1.109903261065483 transactions 140615 prog cas threads 46 entries 3000
+CAS Linked List
+benchdata: run-time 1.119298480451107 no-kill-time 1.0970595944672823 transactions 134745 prog cas threads 47 entries 3000
+CAS Linked List
+benchdata: run-time 1.151904902420938 no-kill-time 1.130058029666543 transactions 146113 prog cas threads 48 entries 3000
