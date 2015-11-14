@@ -1,0 +1,3494 @@
+
+==================== Tidy Core ====================
+2015-11-09 18:21:43.813462 UTC
+
+Result size of Tidy Core
+  = {terms: 2,448, types: 3,036, coercions: 515}
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+SkipList.newSL6 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+SkipList.newSL6 = unpackCString# "new"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+SkipList.newSL7 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+SkipList.newSL7 = I# 495#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+SkipList.newSL8 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 110 0}]
+SkipList.newSL8 =
+  unpackCString# "./Data/Vector/Generic/Mutable.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_ravL :: [Char]
+[GblId, Str=DmdType]
+lvl_ravL = unpackCString# "read"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_ravM :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType m]
+lvl1_ravM = I# 591#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl2_ravN :: [Char]
+[GblId, Str=DmdType]
+lvl2_ravN = unpackCString# "write"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl3_ravO :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType m]
+lvl3_ravO = I# 597#
+
+-- RHS size: {terms: 10, types: 4, coercions: 0}
+lvl5_ravU :: Int# -> Int# -> IO Word64
+[GblId, Arity=2, Str=DmdType <L,U><L,U>b]
+lvl5_ravU =
+  \ (ww_s9hD :: Int#) (ww1_s9hI :: Int#) ->
+    Data.Vector.Internal.Check.checkError
+      @ (IO Word64)
+      SkipList.newSL8
+      lvl1_ravM
+      Data.Vector.Internal.Check.Bounds
+      lvl_ravL
+      (Data.Vector.Internal.Check.checkIndex_msg# ww1_s9hI ww_s9hD)
+
+-- RHS size: {terms: 4, types: 5, coercions: 0}
+SkipList._getNodes1 :: forall k_a4ax v_a4ay. Nodes k_a4ax v_a4ay
+[GblId, Str=DmdType b]
+SkipList._getNodes1 =
+  \ (@ k_a4ax) (@ v_a4ay) ->
+    recSelError @ (Nodes k_a4ax v_a4ay) "_getNodes"#
+
+-- RHS size: {terms: 9, types: 16, coercions: 0}
+_getNodes
+  :: forall k_a2IA v_a2IB. Node k_a2IA v_a2IB -> Nodes k_a2IA v_a2IB
+[GblId[[RecSel]],
+ Arity=1,
+ Str=DmdType <S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4ax)
+                 (@ v_a4ay)
+                 (ds_d65E [Occ=Once!] :: Node k_a4ax v_a4ay) ->
+                 case ds_d65E of _ [Occ=Dead] {
+                   Nil -> SkipList._getNodes1 @ k_a4ax @ v_a4ay;
+                   Node _ [Occ=Dead] _ [Occ=Dead] ds3_d65H [Occ=Once] -> ds3_d65H
+                 }}]
+_getNodes =
+  \ (@ k_a4ax) (@ v_a4ay) (ds_d65E :: Node k_a4ax v_a4ay) ->
+    case ds_d65E of _ [Occ=Dead] {
+      Nil -> SkipList._getNodes1 @ k_a4ax @ v_a4ay;
+      Node ds1_d65F ds2_d65G ds3_d65H -> ds3_d65H
+    }
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+SkipList._getVal1 :: forall v_a4aw. TVar v_a4aw
+[GblId, Str=DmdType b]
+SkipList._getVal1 =
+  \ (@ v_a4aw) -> recSelError @ (TVar v_a4aw) "_getVal"#
+
+-- RHS size: {terms: 9, types: 15, coercions: 0}
+_getVal :: forall k_a2IA v_a2IB. Node k_a2IA v_a2IB -> TVar v_a2IB
+[GblId[[RecSel]],
+ Arity=1,
+ Str=DmdType <S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4av)
+                 (@ v_a4aw)
+                 (ds_d65y [Occ=Once!] :: Node k_a4av v_a4aw) ->
+                 case ds_d65y of _ [Occ=Dead] {
+                   Nil -> SkipList._getVal1 @ v_a4aw;
+                   Node _ [Occ=Dead] ds2_d65A [Occ=Once] _ [Occ=Dead] -> ds2_d65A
+                 }}]
+_getVal =
+  \ (@ k_a4av) (@ v_a4aw) (ds_d65y :: Node k_a4av v_a4aw) ->
+    case ds_d65y of _ [Occ=Dead] {
+      Nil -> SkipList._getVal1 @ v_a4aw;
+      Node ds1_d65z ds2_d65A ds3_d65B -> ds2_d65A
+    }
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+SkipList._getKey1 :: forall k_a4at. k_a4at
+[GblId, Str=DmdType b]
+SkipList._getKey1 = \ (@ k_a4at) -> recSelError @ k_a4at "_getKey"#
+
+-- RHS size: {terms: 9, types: 15, coercions: 0}
+_getKey :: forall k_a2IA v_a2IB. Node k_a2IA v_a2IB -> k_a2IA
+[GblId[[RecSel]],
+ Arity=1,
+ Str=DmdType <S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4at)
+                 (@ v_a4au)
+                 (ds_d65s [Occ=Once!] :: Node k_a4at v_a4au) ->
+                 case ds_d65s of _ [Occ=Dead] {
+                   Nil -> SkipList._getKey1 @ k_a4at;
+                   Node ds1_d65t [Occ=Once] _ [Occ=Dead] _ [Occ=Dead] -> ds1_d65t
+                 }}]
+_getKey =
+  \ (@ k_a4at) (@ v_a4au) (ds_d65s :: Node k_a4at v_a4au) ->
+    case ds_d65s of _ [Occ=Dead] {
+      Nil -> SkipList._getKey1 @ k_a4at;
+      Node ds1_d65t ds2_d65u ds3_d65v -> ds1_d65t
+    }
+
+-- RHS size: {terms: 7, types: 15, coercions: 0}
+_getStates
+  :: forall k_a2BG v_a2BH.
+     PTSTASLPQ k_a2BG v_a2BH -> U.IOVector Word64
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLS),1*U(A,A,1*U(U,U,U))>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4b9)
+                 (@ v_a4ba)
+                 (ds_d65o [Occ=Once!] :: PTSTASLPQ k_a4b9 v_a4ba) ->
+                 case ds_d65o
+                 of _ [Occ=Dead]
+                 { PQ _ [Occ=Dead] _ [Occ=Dead] ds3_d65r [Occ=Once] ->
+                 ds3_d65r
+                 }}]
+_getStates =
+  \ (@ k_a4b9) (@ v_a4ba) (ds_d65o :: PTSTASLPQ k_a4b9 v_a4ba) ->
+    case ds_d65o of _ [Occ=Dead] { PQ ds1_d65p ds2_d65q ds3_d65r ->
+    ds3_d65r
+    }
+
+-- RHS size: {terms: 7, types: 15, coercions: 0}
+_getHeight
+  :: forall k_a2BG v_a2BH. PTSTASLPQ k_a2BG v_a2BH -> TVar Int
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LSL),1*U(A,1*U(U),A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4b7)
+                 (@ v_a4b8)
+                 (ds_d65k [Occ=Once!] :: PTSTASLPQ k_a4b7 v_a4b8) ->
+                 case ds_d65k
+                 of _ [Occ=Dead]
+                 { PQ _ [Occ=Dead] ds2_d65m [Occ=Once] _ [Occ=Dead] ->
+                 ds2_d65m
+                 }}]
+_getHeight =
+  \ (@ k_a4b7) (@ v_a4b8) (ds_d65k :: PTSTASLPQ k_a4b7 v_a4b8) ->
+    case ds_d65k of _ [Occ=Dead] { PQ ds1_d65l ds2_d65m ds3_d65n ->
+    ds2_d65m
+    }
+
+-- RHS size: {terms: 7, types: 15, coercions: 0}
+_getHeadNodes
+  :: forall k_a2BG v_a2BH.
+     PTSTASLPQ k_a2BG v_a2BH -> Nodes k_a2BG v_a2BH
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(SLL),1*U(1*U(U,U,U,U),A,A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4b5)
+                 (@ v_a4b6)
+                 (ds_d65g [Occ=Once!] :: PTSTASLPQ k_a4b5 v_a4b6) ->
+                 case ds_d65g
+                 of _ [Occ=Dead]
+                 { PQ ds1_d65h [Occ=Once] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds1_d65h
+                 }}]
+_getHeadNodes =
+  \ (@ k_a4b5) (@ v_a4b6) (ds_d65g :: PTSTASLPQ k_a4b5 v_a4b6) ->
+    case ds_d65g of _ [Occ=Dead] { PQ ds1_d65h ds2_d65i ds3_d65j ->
+    ds1_d65h
+    }
+
+-- RHS size: {terms: 30, types: 42, coercions: 3}
+SkipList.$fMArrayTArrayeSTM1
+  :: forall e_a5OB i_a5Rs.
+     Ix i_a5Rs =>
+     TArray i_a5Rs e_a5OB
+     -> Int -> e_a5OB -> State# RealWorld -> (# State# RealWorld, () #)
+[GblId,
+ Arity=5,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U(A,A,A,U)><S,1*U(U)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=5,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ e_a5OB)
+                 (@ i_a5Rs)
+                 _ [Occ=Dead]
+                 (ds_d65X [Occ=Once] :: TArray i_a5Rs e_a5OB)
+                 (i1_a49n [Occ=Once!] :: Int)
+                 (e1_a49o [Occ=Once] :: e_a5OB)
+                 (eta_a6SK [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case ds_d65X
+                      `cast` (SkipList.NTCo:TArray[0] <i_a5Rs>_N <e_a5OB>_R
+                              :: TArray i_a5Rs e_a5OB ~R# Array i_a5Rs (TVar e_a5OB))
+                 of _ [Occ=Dead]
+                 { Array _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                         arr#_a6pL [Occ=Once] ->
+                 case i1_a49n of _ [Occ=Dead] { I# i#_a6pP [Occ=Once] ->
+                 case indexArray# @ (TVar e_a5OB) arr#_a6pL i#_a6pP
+                 of _ [Occ=Dead] { (# ipv_a6pT [Occ=Once!] #) ->
+                 case ipv_a6pT of _ [Occ=Dead] { TVar tv_a6SN [Occ=Once] ->
+                 case norec_writeTVar# @ RealWorld @ e_a5OB tv_a6SN e1_a49o eta_a6SK
+                 of s'_a6SP [OS=OneShot] { __DEFAULT ->
+                 (# s'_a6SP, () #)
+                 }
+                 }
+                 }
+                 }
+                 }}]
+SkipList.$fMArrayTArrayeSTM1 =
+  \ (@ e_a5OB)
+    (@ i_a5Rs)
+    _ [Occ=Dead]
+    (ds_d65X :: TArray i_a5Rs e_a5OB)
+    (i1_a49n :: Int)
+    (e1_a49o :: e_a5OB)
+    (eta_a6SK [OS=OneShot] :: State# RealWorld) ->
+    case ds_d65X
+         `cast` (SkipList.NTCo:TArray[0] <i_a5Rs>_N <e_a5OB>_R
+                 :: TArray i_a5Rs e_a5OB ~R# Array i_a5Rs (TVar e_a5OB))
+    of _ [Occ=Dead] { Array ds2_a6pI ds3_a6pJ dt_a6pK arr#_a6pL ->
+    case i1_a49n of _ [Occ=Dead] { I# i#_a6pP ->
+    case indexArray# @ (TVar e_a5OB) arr#_a6pL i#_a6pP
+    of _ [Occ=Dead] { (# ipv_a6pT #) ->
+    case ipv_a6pT of _ [Occ=Dead] { TVar tv_a6SN ->
+    case norec_writeTVar# @ RealWorld @ e_a5OB tv_a6SN e1_a49o eta_a6SK
+    of s'_a6SP [OS=OneShot] { __DEFAULT ->
+    (# s'_a6SP, () #)
+    }
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 16}
+SkipList.$fMArrayTArrayeSTM_$cunsafeWrite
+  :: forall e_a5OB i_a5Rr.
+     Ix i_a5Rr =>
+     TArray i_a5Rr e_a5OB -> Int -> e_a5OB -> STM ()
+[GblId,
+ Arity=5,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U(A,A,A,U)><S,1*U(U)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM1
+               `cast` (forall e_a5OB i_a5Rs.
+                       <Ix i_a5Rs>_R
+                       -> <TArray i_a5Rs e_a5OB>_R
+                       -> <Int>_R
+                       -> <e_a5OB>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <()>_R)
+                       :: (forall e_a5OB i_a5Rs.
+                           Ix i_a5Rs =>
+                           TArray i_a5Rs e_a5OB
+                           -> Int -> e_a5OB -> State# RealWorld -> (# State# RealWorld, () #))
+                          ~R# (forall e_a5OB i_a5Rs.
+                               Ix i_a5Rs =>
+                               TArray i_a5Rs e_a5OB -> Int -> e_a5OB -> STM ()))}]
+SkipList.$fMArrayTArrayeSTM_$cunsafeWrite =
+  SkipList.$fMArrayTArrayeSTM1
+  `cast` (forall e_a5OB i_a5Rs.
+          <Ix i_a5Rs>_R
+          -> <TArray i_a5Rs e_a5OB>_R
+          -> <Int>_R
+          -> <e_a5OB>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <()>_R)
+          :: (forall e_a5OB i_a5Rs.
+              Ix i_a5Rs =>
+              TArray i_a5Rs e_a5OB
+              -> Int -> e_a5OB -> State# RealWorld -> (# State# RealWorld, () #))
+             ~R# (forall e_a5OB i_a5Rs.
+                  Ix i_a5Rs =>
+                  TArray i_a5Rs e_a5OB -> Int -> e_a5OB -> STM ()))
+
+-- RHS size: {terms: 23, types: 36, coercions: 3}
+SkipList.$fMArrayTArrayeSTM2
+  :: forall e_X5Tn i_a5R8.
+     Ix i_a5R8 =>
+     TArray i_a5R8 e_X5Tn
+     -> Int -> State# RealWorld -> (# State# RealWorld, e_X5Tn #)
+[GblId,
+ Arity=4,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U(A,A,A,U)><S,1*U(U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ e_X5Tn)
+                 (@ i_a5R8)
+                 _ [Occ=Dead]
+                 (ds_d65W [Occ=Once] :: TArray i_a5R8 e_X5Tn)
+                 (i1_a49l [Occ=Once!] :: Int)
+                 (eta_a6SY [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case ds_d65W
+                      `cast` (SkipList.NTCo:TArray[0] <i_a5R8>_N <e_X5Tn>_R
+                              :: TArray i_a5R8 e_X5Tn ~R# Array i_a5R8 (TVar e_X5Tn))
+                 of _ [Occ=Dead]
+                 { Array _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                         arr#_a6pL [Occ=Once] ->
+                 case i1_a49l of _ [Occ=Dead] { I# i#_a6pP [Occ=Once] ->
+                 case indexArray# @ (TVar e_X5Tn) arr#_a6pL i#_a6pP
+                 of _ [Occ=Dead] { (# ipv_a6pT [Occ=Once!] #) ->
+                 case ipv_a6pT of _ [Occ=Dead] { TVar tv_a6T1 [Occ=Once] ->
+                 norec_readTVar# @ RealWorld @ e_X5Tn tv_a6T1 eta_a6SY
+                 }
+                 }
+                 }
+                 }}]
+SkipList.$fMArrayTArrayeSTM2 =
+  \ (@ e_X5Tn)
+    (@ i_a5R8)
+    _ [Occ=Dead]
+    (ds_d65W :: TArray i_a5R8 e_X5Tn)
+    (i1_a49l :: Int)
+    (eta_a6SY [OS=OneShot] :: State# RealWorld) ->
+    case ds_d65W
+         `cast` (SkipList.NTCo:TArray[0] <i_a5R8>_N <e_X5Tn>_R
+                 :: TArray i_a5R8 e_X5Tn ~R# Array i_a5R8 (TVar e_X5Tn))
+    of _ [Occ=Dead] { Array ds2_a6pI ds3_a6pJ dt_a6pK arr#_a6pL ->
+    case i1_a49l of _ [Occ=Dead] { I# i#_a6pP ->
+    case indexArray# @ (TVar e_X5Tn) arr#_a6pL i#_a6pP
+    of _ [Occ=Dead] { (# ipv_a6pT #) ->
+    case ipv_a6pT of _ [Occ=Dead] { TVar tv_a6T1 ->
+    norec_readTVar# @ RealWorld @ e_X5Tn tv_a6T1 eta_a6SY
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 14}
+SkipList.$fMArrayTArrayeSTM_$cunsafeRead
+  :: forall e_a5OB i_a5R7.
+     Ix i_a5R7 =>
+     TArray i_a5R7 e_a5OB -> Int -> STM e_a5OB
+[GblId,
+ Arity=4,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U(A,A,A,U)><S,1*U(U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM2
+               `cast` (forall e_X5Tn i_a5R8.
+                       <Ix i_a5R8>_R
+                       -> <TArray i_a5R8 e_X5Tn>_R
+                       -> <Int>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <e_X5Tn>_R)
+                       :: (forall e_X5Tn i_a5R8.
+                           Ix i_a5R8 =>
+                           TArray i_a5R8 e_X5Tn
+                           -> Int -> State# RealWorld -> (# State# RealWorld, e_X5Tn #))
+                          ~R# (forall e_X5Tn i_a5R8.
+                               Ix i_a5R8 =>
+                               TArray i_a5R8 e_X5Tn -> Int -> STM e_X5Tn))}]
+SkipList.$fMArrayTArrayeSTM_$cunsafeRead =
+  SkipList.$fMArrayTArrayeSTM2
+  `cast` (forall e_X5Tn i_a5R8.
+          <Ix i_a5R8>_R
+          -> <TArray i_a5R8 e_X5Tn>_R
+          -> <Int>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <e_X5Tn>_R)
+          :: (forall e_X5Tn i_a5R8.
+              Ix i_a5R8 =>
+              TArray i_a5R8 e_X5Tn
+              -> Int -> State# RealWorld -> (# State# RealWorld, e_X5Tn #))
+             ~R# (forall e_X5Tn i_a5R8.
+                  Ix i_a5R8 =>
+                  TArray i_a5R8 e_X5Tn -> Int -> STM e_X5Tn))
+
+-- RHS size: {terms: 9, types: 15, coercions: 3}
+SkipList.$fMArrayTArrayeSTM10
+  :: forall e_a5OB i_a5P2.
+     Ix i_a5P2 =>
+     TArray i_a5P2 e_a5OB
+     -> State# RealWorld -> (# State# RealWorld, Int #)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><L,1*U(A,A,U,A)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ e_X5Tu)
+                 (@ i_a5P2)
+                 _ [Occ=Dead]
+                 (ds_d65V [Occ=Once] :: TArray i_a5P2 e_X5Tu)
+                 (eta_B1 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 (# eta_B1,
+                    GHC.Arr.numElements
+                      @ i_a5P2
+                      @ (TVar e_X5Tu)
+                      (ds_d65V
+                       `cast` (SkipList.NTCo:TArray[0] <i_a5P2>_N <e_X5Tu>_R
+                               :: TArray i_a5P2 e_X5Tu ~R# Array i_a5P2 (TVar e_X5Tu))) #)}]
+SkipList.$fMArrayTArrayeSTM10 =
+  \ (@ e_X5Tu)
+    (@ i_a5P2)
+    _ [Occ=Dead]
+    (ds_d65V :: TArray i_a5P2 e_X5Tu)
+    (eta_B1 [OS=OneShot] :: State# RealWorld) ->
+    (# eta_B1,
+       GHC.Arr.numElements
+         @ i_a5P2
+         @ (TVar e_X5Tu)
+         (ds_d65V
+          `cast` (SkipList.NTCo:TArray[0] <i_a5P2>_N <e_X5Tu>_R
+                  :: TArray i_a5P2 e_X5Tu ~R# Array i_a5P2 (TVar e_X5Tu))) #)
+
+-- RHS size: {terms: 1, types: 0, coercions: 12}
+SkipList.$fMArrayTArrayeSTM_$cgetNumElements
+  :: forall e_a5OB i_a5P1.
+     Ix i_a5P1 =>
+     TArray i_a5P1 e_a5OB -> STM Int
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><L,1*U(A,A,U,A)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM10
+               `cast` (forall e_X5Tv i_a5P2.
+                       <Ix i_a5P2>_R
+                       -> <TArray i_a5P2 e_X5Tv>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <Int>_R)
+                       :: (forall e_X5Tv i_a5P2.
+                           Ix i_a5P2 =>
+                           TArray i_a5P2 e_X5Tv
+                           -> State# RealWorld -> (# State# RealWorld, Int #))
+                          ~R# (forall e_X5Tv i_a5P2.
+                               Ix i_a5P2 =>
+                               TArray i_a5P2 e_X5Tv -> STM Int))}]
+SkipList.$fMArrayTArrayeSTM_$cgetNumElements =
+  SkipList.$fMArrayTArrayeSTM10
+  `cast` (forall e_X5Tv i_a5P2.
+          <Ix i_a5P2>_R
+          -> <TArray i_a5P2 e_X5Tv>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <Int>_R)
+          :: (forall e_X5Tv i_a5P2.
+              Ix i_a5P2 =>
+              TArray i_a5P2 e_X5Tv
+              -> State# RealWorld -> (# State# RealWorld, Int #))
+             ~R# (forall e_X5Tv i_a5P2.
+                  Ix i_a5P2 =>
+                  TArray i_a5P2 e_X5Tv -> STM Int))
+
+-- RHS size: {terms: 9, types: 17, coercions: 3}
+SkipList.$fMArrayTArrayeSTM11
+  :: forall e_X5Pm i_a5OJ.
+     Ix i_a5OJ =>
+     TArray i_a5OJ e_X5Pm
+     -> State# RealWorld -> (# State# RealWorld, (i_a5OJ, i_a5OJ) #)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><L,1*U(U,U,A,A)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ e_X5Pm)
+                 (@ i_a5OJ)
+                 _ [Occ=Dead]
+                 (ds_d65U [Occ=Once] :: TArray i_a5OJ e_X5Pm)
+                 (eta_B1 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 (# eta_B1,
+                    bounds
+                      @ i_a5OJ
+                      @ (TVar e_X5Pm)
+                      (ds_d65U
+                       `cast` (SkipList.NTCo:TArray[0] <i_a5OJ>_N <e_X5Pm>_R
+                               :: TArray i_a5OJ e_X5Pm ~R# Array i_a5OJ (TVar e_X5Pm))) #)}]
+SkipList.$fMArrayTArrayeSTM11 =
+  \ (@ e_X5Pm)
+    (@ i_a5OJ)
+    _ [Occ=Dead]
+    (ds_d65U :: TArray i_a5OJ e_X5Pm)
+    (eta_B1 [OS=OneShot] :: State# RealWorld) ->
+    (# eta_B1,
+       bounds
+         @ i_a5OJ
+         @ (TVar e_X5Pm)
+         (ds_d65U
+          `cast` (SkipList.NTCo:TArray[0] <i_a5OJ>_N <e_X5Pm>_R
+                  :: TArray i_a5OJ e_X5Pm ~R# Array i_a5OJ (TVar e_X5Pm))) #)
+
+-- RHS size: {terms: 1, types: 0, coercions: 14}
+SkipList.$fMArrayTArrayeSTM_$cgetBounds
+  :: forall e_a5OB i_a5OI.
+     Ix i_a5OI =>
+     TArray i_a5OI e_a5OB -> STM (i_a5OI, i_a5OI)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><L,1*U(U,U,A,A)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM11
+               `cast` (forall e_X5Pm i_a5OJ.
+                       <Ix i_a5OJ>_R
+                       -> <TArray i_a5OJ e_X5Pm>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <(i_a5OJ, i_a5OJ)>_R)
+                       :: (forall e_X5Pm i_a5OJ.
+                           Ix i_a5OJ =>
+                           TArray i_a5OJ e_X5Pm
+                           -> State# RealWorld -> (# State# RealWorld, (i_a5OJ, i_a5OJ) #))
+                          ~R# (forall e_X5Pm i_a5OJ.
+                               Ix i_a5OJ =>
+                               TArray i_a5OJ e_X5Pm -> STM (i_a5OJ, i_a5OJ)))}]
+SkipList.$fMArrayTArrayeSTM_$cgetBounds =
+  SkipList.$fMArrayTArrayeSTM11
+  `cast` (forall e_X5Pm i_a5OJ.
+          <Ix i_a5OJ>_R
+          -> <TArray i_a5OJ e_X5Pm>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <(i_a5OJ, i_a5OJ)>_R)
+          :: (forall e_X5Pm i_a5OJ.
+              Ix i_a5OJ =>
+              TArray i_a5OJ e_X5Pm
+              -> State# RealWorld -> (# State# RealWorld, (i_a5OJ, i_a5OJ) #))
+             ~R# (forall e_X5Pm i_a5OJ.
+                  Ix i_a5OJ =>
+                  TArray i_a5OJ e_X5Pm -> STM (i_a5OJ, i_a5OJ)))
+
+-- RHS size: {terms: 6, types: 8, coercions: 0}
+SkipList.$fEqTArray1
+  :: forall i_a5NI e_a5NJ.
+     Ix i_a5NI =>
+     Array i_a5NI (TVar e_a5NJ) -> Array i_a5NI (TVar e_a5NJ) -> Bool
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(U,A,A,A,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ i_a5NI)
+                 (@ e_a5NJ)
+                 ($dIx_a5NK :: Ix i_a5NI)
+                 (eta_B2 [Occ=Once!] :: Array i_a5NI (TVar e_a5NJ))
+                 (eta1_B1 [Occ=Once!] :: Array i_a5NI (TVar e_a5NJ)) ->
+                 let {
+                   $dOrd_a6qw :: Ord i_a5NI
+                   [LclId, Str=DmdType]
+                   $dOrd_a6qw = GHC.Arr.$p1Ix @ i_a5NI $dIx_a5NK } in
+                 let {
+                   $dEq1_a6qx :: Eq i_a5NI
+                   [LclId, Str=DmdType]
+                   $dEq1_a6qx =
+                     ghc-prim-0.4.0.0:GHC.Classes.$p1Ord @ i_a5NI $dOrd_a6qw } in
+                 case eta_B2
+                 of _ [Occ=Dead]
+                 { Array l1_a6qA [Occ=Once] u1_a6qB [Occ=Once] dt_a6qC [Occ=Once!]
+                         ds_a6qD [Occ=OnceL] ->
+                 case eta1_B1
+                 of _ [Occ=Dead]
+                 { Array l2_a6qH [Occ=Once] u2_a6qI [Occ=Once] dt1_a6qJ [Occ=Once!]
+                         ds1_a6qK [Occ=OnceL] ->
+                 case dt_a6qC of wild2_a6qM {
+                   __DEFAULT ->
+                     not
+                       (&&
+                          (== @ i_a5NI $dEq1_a6qx l1_a6qA l2_a6qH)
+                          (&&
+                             (== @ i_a5NI $dEq1_a6qx u1_a6qB u2_a6qI)
+                             (case GHC.Num.$fNumInt_$c- (I# wild2_a6qM) (I# 1#)
+                              of _ [Occ=Dead] { I# y_a6qU [Occ=Once] ->
+                              eftIntFB
+                                @ Bool
+                                (\ (ds2_a6qS [Occ=Once!] :: Int)
+                                   (ds3_a6qT [Occ=Once, OS=OneShot] :: Bool) ->
+                                   case ds2_a6qS of _ [Occ=Dead] { I# i#_a6qY ->
+                                   case indexArray# @ (TVar e_a5NJ) ds_a6qD i#_a6qY
+                                   of _ [Occ=Dead] { (# ipv_a6r2 [Occ=Once] #) ->
+                                   case indexArray# @ (TVar e_a5NJ) ds1_a6qK i#_a6qY
+                                   of _ [Occ=Dead] { (# ipv1_a6ra [Occ=Once] #) ->
+                                   &&
+                                     (GHC.Conc.Sync.$fEqTVar_$c== @ e_a5NJ ipv_a6r2 ipv1_a6ra)
+                                     ds3_a6qT
+                                   }
+                                   }
+                                   })
+                                True
+                                0#
+                                y_a6qU
+                              })));
+                   0# ->
+                     case dt1_a6qJ of _ [Occ=Dead] {
+                       __DEFAULT -> not False;
+                       0# -> not True
+                     }
+                 }
+                 }
+                 }}]
+SkipList.$fEqTArray1 =
+  \ (@ i_a5NI) (@ e_a5NJ) ($dIx_a5NK :: Ix i_a5NI) ->
+    GHC.Arr.$fEqArray_$c/=
+      @ i_a5NI
+      @ (TVar e_a5NJ)
+      $dIx_a5NK
+      (GHC.Conc.Sync.$fEqTVar @ e_a5NJ)
+
+-- RHS size: {terms: 1, types: 0, coercions: 16}
+SkipList.$fEqTArray_$c/=
+  :: forall i_a5NI e_a5NJ.
+     Ix i_a5NI =>
+     TArray i_a5NI e_a5NJ -> TArray i_a5NI e_a5NJ -> Bool
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(U,A,A,A,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fEqTArray1
+               `cast` (forall i_a5NI e_a5NJ.
+                       <Ix i_a5NI>_R
+                       -> Sym (SkipList.NTCo:TArray[0] <i_a5NI>_N <e_a5NJ>_R)
+                       -> Sym (SkipList.NTCo:TArray[0] <i_a5NI>_N <e_a5NJ>_R)
+                       -> <Bool>_R
+                       :: (forall i_a5NI e_a5NJ.
+                           Ix i_a5NI =>
+                           Array i_a5NI (TVar e_a5NJ) -> Array i_a5NI (TVar e_a5NJ) -> Bool)
+                          ~R# (forall i_a5NI e_a5NJ.
+                               Ix i_a5NI =>
+                               TArray i_a5NI e_a5NJ -> TArray i_a5NI e_a5NJ -> Bool))}]
+SkipList.$fEqTArray_$c/= =
+  SkipList.$fEqTArray1
+  `cast` (forall i_a5NI e_a5NJ.
+          <Ix i_a5NI>_R
+          -> Sym (SkipList.NTCo:TArray[0] <i_a5NI>_N <e_a5NJ>_R)
+          -> Sym (SkipList.NTCo:TArray[0] <i_a5NI>_N <e_a5NJ>_R)
+          -> <Bool>_R
+          :: (forall i_a5NI e_a5NJ.
+              Ix i_a5NI =>
+              Array i_a5NI (TVar e_a5NJ) -> Array i_a5NI (TVar e_a5NJ) -> Bool)
+             ~R# (forall i_a5NI e_a5NJ.
+                  Ix i_a5NI =>
+                  TArray i_a5NI e_a5NJ -> TArray i_a5NI e_a5NJ -> Bool))
+
+-- RHS size: {terms: 6, types: 8, coercions: 0}
+SkipList.$fEqTArray2
+  :: forall i_X5Ow e_X5Oy.
+     Ix i_X5Ow =>
+     Array i_X5Ow (TVar e_X5Oy) -> Array i_X5Ow (TVar e_X5Oy) -> Bool
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(U,A,A,A,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ i_X5Ow)
+                 (@ e_X5Oy)
+                 ($dIx_X5OA :: Ix i_X5Ow)
+                 (eta_B2 [Occ=Once!] :: Array i_X5Ow (TVar e_X5Oy))
+                 (eta1_B1 [Occ=Once!] :: Array i_X5Ow (TVar e_X5Oy)) ->
+                 let {
+                   $dOrd_a6qw :: Ord i_X5Ow
+                   [LclId, Str=DmdType]
+                   $dOrd_a6qw = GHC.Arr.$p1Ix @ i_X5Ow $dIx_X5OA } in
+                 let {
+                   $dEq1_a6qx :: Eq i_X5Ow
+                   [LclId, Str=DmdType]
+                   $dEq1_a6qx =
+                     ghc-prim-0.4.0.0:GHC.Classes.$p1Ord @ i_X5Ow $dOrd_a6qw } in
+                 case eta_B2
+                 of _ [Occ=Dead]
+                 { Array l1_a6qA [Occ=Once] u1_a6qB [Occ=Once] dt_a6qC [Occ=Once!]
+                         ds_a6qD [Occ=OnceL] ->
+                 case eta1_B1
+                 of _ [Occ=Dead]
+                 { Array l2_a6qH [Occ=Once] u2_a6qI [Occ=Once] dt1_a6qJ [Occ=Once!]
+                         ds1_a6qK [Occ=OnceL] ->
+                 case dt_a6qC of wild2_a6qM {
+                   __DEFAULT ->
+                     &&
+                       (== @ i_X5Ow $dEq1_a6qx l1_a6qA l2_a6qH)
+                       (&&
+                          (== @ i_X5Ow $dEq1_a6qx u1_a6qB u2_a6qI)
+                          (case GHC.Num.$fNumInt_$c- (I# wild2_a6qM) (I# 1#)
+                           of _ [Occ=Dead] { I# y_a6qU [Occ=Once] ->
+                           eftIntFB
+                             @ Bool
+                             (\ (ds2_a6qS [Occ=Once!] :: Int)
+                                (ds3_a6qT [Occ=Once, OS=OneShot] :: Bool) ->
+                                case ds2_a6qS of _ [Occ=Dead] { I# i#_a6qY ->
+                                case indexArray# @ (TVar e_X5Oy) ds_a6qD i#_a6qY
+                                of _ [Occ=Dead] { (# ipv_a6r2 [Occ=Once] #) ->
+                                case indexArray# @ (TVar e_X5Oy) ds1_a6qK i#_a6qY
+                                of _ [Occ=Dead] { (# ipv1_a6ra [Occ=Once] #) ->
+                                &&
+                                  (GHC.Conc.Sync.$fEqTVar_$c== @ e_X5Oy ipv_a6r2 ipv1_a6ra) ds3_a6qT
+                                }
+                                }
+                                })
+                             True
+                             0#
+                             y_a6qU
+                           }));
+                   0# ->
+                     case dt1_a6qJ of _ [Occ=Dead] {
+                       __DEFAULT -> False;
+                       0# -> True
+                     }
+                 }
+                 }
+                 }}]
+SkipList.$fEqTArray2 =
+  \ (@ i_X5Ow) (@ e_X5Oy) ($dIx_X5OA :: Ix i_X5Ow) ->
+    eqArray
+      @ i_X5Ow
+      @ (TVar e_X5Oy)
+      $dIx_X5OA
+      (GHC.Conc.Sync.$fEqTVar @ e_X5Oy)
+
+-- RHS size: {terms: 1, types: 0, coercions: 16}
+SkipList.$fEqTArray_$c==
+  :: forall i_a5NI e_a5NJ.
+     Ix i_a5NI =>
+     TArray i_a5NI e_a5NJ -> TArray i_a5NI e_a5NJ -> Bool
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(U,A,A,A,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fEqTArray2
+               `cast` (forall i_X5Ow e_X5Oy.
+                       <Ix i_X5Ow>_R
+                       -> Sym (SkipList.NTCo:TArray[0] <i_X5Ow>_N <e_X5Oy>_R)
+                       -> Sym (SkipList.NTCo:TArray[0] <i_X5Ow>_N <e_X5Oy>_R)
+                       -> <Bool>_R
+                       :: (forall i_X5Ow e_X5Oy.
+                           Ix i_X5Ow =>
+                           Array i_X5Ow (TVar e_X5Oy) -> Array i_X5Ow (TVar e_X5Oy) -> Bool)
+                          ~R# (forall i_X5Ow e_X5Oy.
+                               Ix i_X5Ow =>
+                               TArray i_X5Ow e_X5Oy -> TArray i_X5Ow e_X5Oy -> Bool))}]
+SkipList.$fEqTArray_$c== =
+  SkipList.$fEqTArray2
+  `cast` (forall i_X5Ow e_X5Oy.
+          <Ix i_X5Ow>_R
+          -> Sym (SkipList.NTCo:TArray[0] <i_X5Ow>_N <e_X5Oy>_R)
+          -> Sym (SkipList.NTCo:TArray[0] <i_X5Ow>_N <e_X5Oy>_R)
+          -> <Bool>_R
+          :: (forall i_X5Ow e_X5Oy.
+              Ix i_X5Ow =>
+              Array i_X5Ow (TVar e_X5Oy) -> Array i_X5Ow (TVar e_X5Oy) -> Bool)
+             ~R# (forall i_X5Ow e_X5Oy.
+                  Ix i_X5Ow =>
+                  TArray i_X5Ow e_X5Oy -> TArray i_X5Ow e_X5Oy -> Bool))
+
+-- RHS size: {terms: 8, types: 11, coercions: 22}
+SkipList.$fEqTArray [InlPrag=[ALWAYS] CONLIKE]
+  :: forall i_a4Kq e_a4Kr. Ix i_a4Kq => Eq (TArray i_a4Kq e_a4Kr)
+[GblId[DFunId],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(U,A,A,A,A,A,A)>m,
+ Unf=DFun: \ (@ i_X5OB) (@ e_X5OD) ($dIx_X5OF :: Ix i_X5OB) ->
+       D:Eq TYPE TArray i_X5OB e_X5OD
+            SkipList.$fEqTArray_$c== @ i_X5OB @ e_X5OD $dIx_X5OF
+            SkipList.$fEqTArray_$c/= @ i_X5OB @ e_X5OD $dIx_X5OF]
+SkipList.$fEqTArray =
+  \ (@ i_X5OB) (@ e_X5OD) ($dIx_X5OF :: Ix i_X5OB) ->
+    D:Eq
+      @ (TArray i_X5OB e_X5OD)
+      ((SkipList.$fEqTArray2 @ i_X5OB @ e_X5OD $dIx_X5OF)
+       `cast` (Sym (SkipList.NTCo:TArray[0] <i_X5OB>_N <e_X5OD>_R)
+               -> Sym (SkipList.NTCo:TArray[0] <i_X5OB>_N <e_X5OD>_R) -> <Bool>_R
+               :: (Array i_X5OB (TVar e_X5OD)
+                   -> Array i_X5OB (TVar e_X5OD) -> Bool)
+                  ~R# (TArray i_X5OB e_X5OD -> TArray i_X5OB e_X5OD -> Bool)))
+      ((SkipList.$fEqTArray1 @ i_X5OB @ e_X5OD $dIx_X5OF)
+       `cast` (Sym (SkipList.NTCo:TArray[0] <i_X5OB>_N <e_X5OD>_R)
+               -> Sym (SkipList.NTCo:TArray[0] <i_X5OB>_N <e_X5OD>_R) -> <Bool>_R
+               :: (Array i_X5OB (TVar e_X5OD)
+                   -> Array i_X5OB (TVar e_X5OD) -> Bool)
+                  ~R# (TArray i_X5OB e_X5OD -> TArray i_X5OB e_X5OD -> Bool)))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl7_raw1 :: [Char]
+[GblId, Str=DmdType]
+lvl7_raw1 = unpackCString# "error"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl8_raw2 :: [Char]
+[GblId, Str=DmdType]
+lvl8_raw2 = unpackCString# "array-0.5.1.0"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl9_raw3 :: [Char]
+[GblId, Str=DmdType]
+lvl9_raw3 = unpackCString# "Data.Array.Base"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl10_raw4 :: [Char]
+[GblId, Str=DmdType]
+lvl10_raw4 = unpackCString# "libraries/array/Data/Array/Base.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl11_raw5 :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl11_raw5 = I# 79#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl12_raw6 :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl12_raw6 = I# 40#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl13_raw7 :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl13_raw7 = I# 45#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl14_raw8 :: SrcLoc
+[GblId, Str=DmdType]
+lvl14_raw8 =
+  SrcLoc
+    lvl8_raw2
+    lvl9_raw3
+    lvl10_raw4
+    lvl11_raw5
+    lvl12_raw6
+    lvl11_raw5
+    lvl13_raw7
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+lvl15_raw9 :: ([Char], SrcLoc)
+[GblId, Str=DmdType]
+lvl15_raw9 = (lvl7_raw1, lvl14_raw8)
+
+-- RHS size: {terms: 3, types: 8, coercions: 0}
+lvl16_rawa :: [([Char], SrcLoc)]
+[GblId, Str=DmdType]
+lvl16_rawa =
+  : @ ([Char], SrcLoc) lvl15_raw9 ([] @ ([Char], SrcLoc))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl17_rawb :: CallStack
+[GblId, Str=DmdType]
+lvl17_rawb = CallStack lvl16_rawa
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl18_rawc :: [Char]
+[GblId, Str=DmdType]
+lvl18_rawc = unpackCString# "Negative range size"#
+
+-- RHS size: {terms: 3, types: 1, coercions: 4}
+SkipList.$fMArrayTArrayeSTM5 :: Int
+[GblId, Str=DmdType b]
+SkipList.$fMArrayTArrayeSTM5 =
+  error
+    @ Int
+    (lvl17_rawb
+     `cast` (Sym (NTCo:IP[0] <"callStack">_N <CallStack>_N)
+             :: CallStack ~R# (?callStack::CallStack)))
+    lvl18_rawc
+
+-- RHS size: {terms: 132, types: 176, coercions: 4}
+SkipList.$fMArrayTArrayeSTM4
+  :: forall e_X5Py i_a5Py.
+     Ix i_a5Py =>
+     (i_a5Py, i_a5Py)
+     -> e_X5Py
+     -> State# RealWorld
+     -> (# State# RealWorld, TArray i_a5Py e_X5Py #)
+[GblId,
+ Arity=4,
+ Str=DmdType <S(LLLLLC(S(S))L),U(A,A,A,A,A,C(U(U)),A)><L,U(U,U)><L,U><L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [30 20 0 0] 498 30}]
+SkipList.$fMArrayTArrayeSTM4 =
+  \ (@ e_X5Py)
+    (@ i_a5Py)
+    ($dIx_a5PA :: Ix i_a5Py)
+    (b_X4eJ :: (i_a5Py, i_a5Py))
+    (e1_X4eL :: e_X5Py)
+    (s_a6Th [OS=OneShot] :: State# RealWorld) ->
+    case rangeSize @ i_a5Py $dIx_a5PA b_X4eJ
+    of _ [Occ=Dead] { I# ww1_s9iU ->
+    letrec {
+      $wa8_s9iW [InlPrag=[0], Occ=LoopBreaker]
+        :: Int#
+           -> [TVar e_X5Py]
+           -> State# RealWorld
+           -> (# State# RealWorld, [TVar e_X5Py] #)
+      [LclId, Arity=3, Str=DmdType <S,1*U><L,U><L,U>]
+      $wa8_s9iW =
+        \ (ww2_X9lY :: Int#)
+          (w_s9iQ :: [TVar e_X5Py])
+          (w1_s9iR [OS=OneShot] :: State# RealWorld) ->
+          case ww2_X9lY of wild_X5j {
+            __DEFAULT ->
+              case newNOrecTVar# @ e_X5Py @ RealWorld e1_X4eL w1_s9iR
+              of _ [Occ=Dead] { (# ipv_a6U2, ipv1_a6U3 #) ->
+              $wa8_s9iW
+                (-# wild_X5j 1#)
+                (: @ (TVar e_X5Py) (TVar @ e_X5Py ipv1_a6U3) w_s9iQ)
+                ipv_a6U2
+              };
+            0# -> (# w1_s9iR, w_s9iQ #)
+          }; } in
+    case $wa8_s9iW ww1_s9iU ([] @ (TVar e_X5Py)) s_a6Th
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    (# ipv_a6Tk,
+       (runSTRep
+          @ (Array i_a5Py (TVar e_X5Py))
+          (\ (@ s1_a6rU) (s2_a6rV [OS=OneShot] :: State# s1_a6rU) ->
+             case b_X4eJ of _ [Occ=Dead] { (l_a6rZ, u_a6s0) ->
+             case tagToEnum# @ Bool (<# ww1_s9iU 0#) of _ [Occ=Dead] {
+               False ->
+                 case newArray#
+                        @ (TVar e_X5Py)
+                        @ s1_a6rU
+                        ww1_s9iU
+                        (arrEleBottom @ (TVar e_X5Py))
+                        s2_a6rV
+                 of _ [Occ=Dead] { (# ipv2_a6sc, ipv3_a6sd #) ->
+                 case l_a6rZ of dt_a6sf { __DEFAULT ->
+                 case u_a6s0 of dt1_a6sg { __DEFAULT ->
+                 case tagToEnum# @ Bool (<# ww1_s9iU 0#) of _ [Occ=Dead] {
+                   False ->
+                     letrec {
+                       $wa9_s9jf [InlPrag=[0], Occ=LoopBreaker]
+                         :: Int#
+                            -> [TVar e_X5Py] -> State# s1_a6rU -> (# State# s1_a6rU, () #)
+                       [LclId, Arity=3, Str=DmdType <L,U><L,1*U><L,U>]
+                       $wa9_s9jf =
+                         \ (ww2_s9jd :: Int#)
+                           (w_s9j9 :: [TVar e_X5Py])
+                           (w1_s9ja [OS=OneShot] :: State# s1_a6rU) ->
+                           case tagToEnum# @ Bool (==# ww2_s9jd ww1_s9iU) of _ [Occ=Dead] {
+                             False ->
+                               case w_s9j9 of _ [Occ=Dead] {
+                                 [] -> (# w1_s9ja, () #);
+                                 : y1_a6t1 ys_a6t2 ->
+                                   case writeArray#
+                                          @ s1_a6rU
+                                          @ (TVar e_X5Py)
+                                          ipv3_a6sd
+                                          ww2_s9jd
+                                          y1_a6t1
+                                          w1_s9ja
+                                   of s2#_a6td [OS=OneShot] { __DEFAULT ->
+                                   $wa9_s9jf (+# ww2_s9jd 1#) ys_a6t2 s2#_a6td
+                                   }
+                               };
+                             True -> (# w1_s9ja, () #)
+                           }; } in
+                     case $wa9_s9jf 0# ipv1_a6Tl ipv2_a6sc
+                     of _ [Occ=Dead] { (# ipv4_a6to, ipv5_a6tp #) ->
+                     case unsafeFreezeArray#
+                            @ s1_a6rU @ (TVar e_X5Py) ipv3_a6sd ipv4_a6to
+                     of _ [Occ=Dead] { (# ipv6_a6tC, ipv7_a6tD #) ->
+                     (# ipv6_a6tC,
+                        Array
+                          @ i_a5Py @ (TVar e_X5Py) dt_a6sf dt1_a6sg ww1_s9iU ipv7_a6tD #)
+                     }
+                     };
+                   True -> case SkipList.$fMArrayTArrayeSTM5 of wild3_00 { }
+                 }
+                 }
+                 }
+                 };
+               True -> case negRange of wild1_00 { }
+             }
+             }))
+       `cast` (Sym (SkipList.NTCo:TArray[0] <i_a5Py>_N <e_X5Py>_R)
+               :: Array i_a5Py (TVar e_X5Py) ~R# TArray i_a5Py e_X5Py) #)
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 16}
+SkipList.$fMArrayTArrayeSTM_$cnewArray
+  :: forall e_a5OB i_a53i.
+     Ix i_a53i =>
+     (i_a53i, i_a53i) -> e_a5OB -> STM (TArray i_a53i e_a5OB)
+[GblId,
+ Arity=4,
+ Str=DmdType <S(LLLLLC(S(S))L),U(A,A,A,A,A,C(U(U)),A)><L,U(U,U)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM4
+               `cast` (forall e_X5Py i_a5Py.
+                       <Ix i_a5Py>_R
+                       -> <(i_a5Py, i_a5Py)>_R
+                       -> <e_X5Py>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_a5Py e_X5Py>_R)
+                       :: (forall e_X5Py i_a5Py.
+                           Ix i_a5Py =>
+                           (i_a5Py, i_a5Py)
+                           -> e_X5Py
+                           -> State# RealWorld
+                           -> (# State# RealWorld, TArray i_a5Py e_X5Py #))
+                          ~R# (forall e_X5Py i_a5Py.
+                               Ix i_a5Py =>
+                               (i_a5Py, i_a5Py) -> e_X5Py -> STM (TArray i_a5Py e_X5Py)))}]
+SkipList.$fMArrayTArrayeSTM_$cnewArray =
+  SkipList.$fMArrayTArrayeSTM4
+  `cast` (forall e_X5Py i_a5Py.
+          <Ix i_a5Py>_R
+          -> <(i_a5Py, i_a5Py)>_R
+          -> <e_X5Py>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_a5Py e_X5Py>_R)
+          :: (forall e_X5Py i_a5Py.
+              Ix i_a5Py =>
+              (i_a5Py, i_a5Py)
+              -> e_X5Py
+              -> State# RealWorld
+              -> (# State# RealWorld, TArray i_a5Py e_X5Py #))
+             ~R# (forall e_X5Py i_a5Py.
+                  Ix i_a5Py =>
+                  (i_a5Py, i_a5Py) -> e_X5Py -> STM (TArray i_a5Py e_X5Py)))
+
+Rec {
+-- RHS size: {terms: 25, types: 31, coercions: 0}
+SkipList.$fMArrayTArrayeSTM9 [InlPrag=[0], Occ=LoopBreaker]
+  :: forall e_X5Pz.
+     Int#
+     -> [TVar e_X5Pz]
+     -> State# RealWorld
+     -> (# State# RealWorld, [TVar e_X5Pz] #)
+[GblId, Arity=3, Str=DmdType <S,1*U><L,U><L,U>]
+SkipList.$fMArrayTArrayeSTM9 =
+  \ (@ e_X5Pz)
+    (ww_s9k9 :: Int#)
+    (w_s9k5 :: [TVar e_X5Pz])
+    (w1_s9k6 [OS=OneShot] :: State# RealWorld) ->
+    case ww_s9k9 of wild_X5j {
+      __DEFAULT ->
+        case newNOrecTVar#
+               @ e_X5Pz @ RealWorld (arrEleBottom @ e_X5Pz) w1_s9k6
+        of _ [Occ=Dead] { (# ipv_a6U2, ipv1_a6U3 #) ->
+        SkipList.$fMArrayTArrayeSTM9
+          @ e_X5Pz
+          (-# wild_X5j 1#)
+          (: @ (TVar e_X5Pz) (TVar @ e_X5Pz ipv1_a6U3) w_s9k5)
+          ipv_a6U2
+        };
+      0# -> (# w1_s9k6, w_s9k5 #)
+    }
+end Rec }
+
+-- RHS size: {terms: 106, types: 136, coercions: 4}
+SkipList.$fMArrayTArrayeSTM8
+  :: forall e_X5Pz i_a5Qg.
+     Ix i_a5Qg =>
+     (i_a5Qg, i_a5Qg)
+     -> State# RealWorld -> (# State# RealWorld, TArray i_a5Qg e_X5Pz #)
+[GblId,
+ Arity=3,
+ Str=DmdType <S(LLLLLC(S(S))L),U(A,A,A,A,A,C(U(U)),A)><L,U(U,U)><L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [30 20 0] 384 30}]
+SkipList.$fMArrayTArrayeSTM8 =
+  \ (@ e_X5Pz)
+    (@ i_a5Qg)
+    ($dIx_a5Qi :: Ix i_a5Qg)
+    (b_X4fe :: (i_a5Qg, i_a5Qg))
+    (s_a6Th [OS=OneShot] :: State# RealWorld) ->
+    case rangeSize @ i_a5Qg $dIx_a5Qi b_X4fe
+    of _ [Occ=Dead] { I# ww1_s9k9 ->
+    case SkipList.$fMArrayTArrayeSTM9
+           @ e_X5Pz ww1_s9k9 ([] @ (TVar e_X5Pz)) s_a6Th
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    (# ipv_a6Tk,
+       (runSTRep
+          @ (Array i_a5Qg (TVar e_X5Pz))
+          (\ (@ s1_a6rU) (s2_a6rV [OS=OneShot] :: State# s1_a6rU) ->
+             case b_X4fe of _ [Occ=Dead] { (l_a6rZ, u_a6s0) ->
+             case tagToEnum# @ Bool (<# ww1_s9k9 0#) of _ [Occ=Dead] {
+               False ->
+                 case newArray#
+                        @ (TVar e_X5Pz)
+                        @ s1_a6rU
+                        ww1_s9k9
+                        (arrEleBottom @ (TVar e_X5Pz))
+                        s2_a6rV
+                 of _ [Occ=Dead] { (# ipv2_a6sc, ipv3_a6sd #) ->
+                 case l_a6rZ of dt_a6sf { __DEFAULT ->
+                 case u_a6s0 of dt1_a6sg { __DEFAULT ->
+                 case tagToEnum# @ Bool (<# ww1_s9k9 0#) of _ [Occ=Dead] {
+                   False ->
+                     letrec {
+                       $wa8_s9ku [InlPrag=[0], Occ=LoopBreaker]
+                         :: Int#
+                            -> [TVar e_X5Pz] -> State# s1_a6rU -> (# State# s1_a6rU, () #)
+                       [LclId, Arity=3, Str=DmdType <L,U><L,1*U><L,U>]
+                       $wa8_s9ku =
+                         \ (ww2_s9ks :: Int#)
+                           (w_s9ko :: [TVar e_X5Pz])
+                           (w1_s9kp [OS=OneShot] :: State# s1_a6rU) ->
+                           case tagToEnum# @ Bool (==# ww2_s9ks ww1_s9k9) of _ [Occ=Dead] {
+                             False ->
+                               case w_s9ko of _ [Occ=Dead] {
+                                 [] -> (# w1_s9kp, () #);
+                                 : y1_a6t1 ys_a6t2 ->
+                                   case writeArray#
+                                          @ s1_a6rU
+                                          @ (TVar e_X5Pz)
+                                          ipv3_a6sd
+                                          ww2_s9ks
+                                          y1_a6t1
+                                          w1_s9kp
+                                   of s2#_a6td [OS=OneShot] { __DEFAULT ->
+                                   $wa8_s9ku (+# ww2_s9ks 1#) ys_a6t2 s2#_a6td
+                                   }
+                               };
+                             True -> (# w1_s9kp, () #)
+                           }; } in
+                     case $wa8_s9ku 0# ipv1_a6Tl ipv2_a6sc
+                     of _ [Occ=Dead] { (# ipv4_a6to, ipv5_a6tp #) ->
+                     case unsafeFreezeArray#
+                            @ s1_a6rU @ (TVar e_X5Pz) ipv3_a6sd ipv4_a6to
+                     of _ [Occ=Dead] { (# ipv6_a6tC, ipv7_a6tD #) ->
+                     (# ipv6_a6tC,
+                        Array
+                          @ i_a5Qg @ (TVar e_X5Pz) dt_a6sf dt1_a6sg ww1_s9k9 ipv7_a6tD #)
+                     }
+                     };
+                   True -> case SkipList.$fMArrayTArrayeSTM5 of wild3_00 { }
+                 }
+                 }
+                 }
+                 };
+               True -> case negRange of wild1_00 { }
+             }
+             }))
+       `cast` (Sym (SkipList.NTCo:TArray[0] <i_a5Qg>_N <e_X5Pz>_R)
+               :: Array i_a5Qg (TVar e_X5Pz) ~R# TArray i_a5Qg e_X5Pz) #)
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 14}
+SkipList.$fMArrayTArrayeSTM_$cnewArray_
+  :: forall e_a5OB i_a5EW.
+     Ix i_a5EW =>
+     (i_a5EW, i_a5EW) -> STM (TArray i_a5EW e_a5OB)
+[GblId,
+ Arity=3,
+ Str=DmdType <S(LLLLLC(S(S))L),U(A,A,A,A,A,C(U(U)),A)><L,U(U,U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.$fMArrayTArrayeSTM8
+               `cast` (forall e_X5Pz i_a5Qg.
+                       <Ix i_a5Qg>_R
+                       -> <(i_a5Qg, i_a5Qg)>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_a5Qg e_X5Pz>_R)
+                       :: (forall e_X5Pz i_a5Qg.
+                           Ix i_a5Qg =>
+                           (i_a5Qg, i_a5Qg)
+                           -> State# RealWorld
+                           -> (# State# RealWorld, TArray i_a5Qg e_X5Pz #))
+                          ~R# (forall e_X5Pz i_a5Qg.
+                               Ix i_a5Qg =>
+                               (i_a5Qg, i_a5Qg) -> STM (TArray i_a5Qg e_X5Pz)))}]
+SkipList.$fMArrayTArrayeSTM_$cnewArray_ =
+  SkipList.$fMArrayTArrayeSTM8
+  `cast` (forall e_X5Pz i_a5Qg.
+          <Ix i_a5Qg>_R
+          -> <(i_a5Qg, i_a5Qg)>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_a5Qg e_X5Pz>_R)
+          :: (forall e_X5Pz i_a5Qg.
+              Ix i_a5Qg =>
+              (i_a5Qg, i_a5Qg)
+              -> State# RealWorld
+              -> (# State# RealWorld, TArray i_a5Qg e_X5Pz #))
+             ~R# (forall e_X5Pz i_a5Qg.
+                  Ix i_a5Qg =>
+                  (i_a5Qg, i_a5Qg) -> STM (TArray i_a5Qg e_X5Pz)))
+
+Rec {
+-- RHS size: {terms: 12, types: 18, coercions: 0}
+SkipList.$fMArrayTArrayeSTM_$cunsafeNewArray_ [InlPrag=INLINE (sat-args=1)]
+  :: forall e_a5OB i_a5QY.
+     Ix i_a5QY =>
+     (i_a5QY, i_a5QY) -> STM (TArray i_a5QY e_a5OB)
+[GblId,
+ Arity=2,
+ Str=DmdType <L,U><S,1*U(U,U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=False,boring_ok=False)
+         Tmpl= (\ (@ e_X5Vz)
+                  (@ i_a66c)
+                  ($dIx_a66d [Occ=Once] :: Ix i_a66c)
+                  (ds_a66e [Occ=Once!] :: (i_a66c, i_a66c))
+                  (eta_B1 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                  case ds_a66e
+                  of _ [Occ=Dead] { (l_a66h [Occ=Once], u_a66i [Occ=Once]) ->
+                  ((SkipList.$fMArrayTArrayeSTM_$cnewArray
+                      @ e_X5Vz
+                      @ i_a66c
+                      $dIx_a66d
+                      (l_a66h, u_a66i)
+                      (arrEleBottom @ e_X5Vz))
+                   `cast` (Control.NoRec.STM.NTCo:STM[0] <TArray i_a66c e_X5Vz>_R
+                           :: STM (TArray i_a66c e_X5Vz)
+                              ~R# (State# RealWorld
+                                   -> (# State# RealWorld, TArray i_a66c e_X5Vz #))))
+                    eta_B1
+                  })
+               `cast` (forall e_X5Vz i_a66c.
+                       <Ix i_a66c>_R
+                       -> <(i_a66c, i_a66c)>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_a66c e_X5Vz>_R)
+                       :: (forall e_X5Vz i_a66c.
+                           Ix i_a66c =>
+                           (i_a66c, i_a66c)
+                           -> State# RealWorld
+                           -> (# State# RealWorld, TArray i_a66c e_X5Vz #))
+                          ~R# (forall e_X5Vz i_a66c.
+                               Ix i_a66c =>
+                               (i_a66c, i_a66c) -> STM (TArray i_a66c e_X5Vz)))}]
+SkipList.$fMArrayTArrayeSTM_$cunsafeNewArray_ =
+  \ (@ e_X5Vz)
+    (@ i_a5QY)
+    (eta_B1 :: Ix i_a5QY)
+    (ds_a66e :: (i_a5QY, i_a5QY)) ->
+    case ds_a66e of wild_a66f { (l_a66h, u_a66i) ->
+    newArray
+      @ TArray
+      @ e_X5Vz
+      @ STM
+      (SkipList.$fMArrayTArrayeSTM @ e_X5Vz)
+      @ i_a5QY
+      eta_B1
+      wild_a66f
+      (arrEleBottom @ e_X5Vz)
+    }
+
+-- RHS size: {terms: 10, types: 11, coercions: 80}
+SkipList.$fMArrayTArrayeSTM [InlPrag=[ALWAYS] CONLIKE,
+                             Occ=LoopBreaker!]
+  :: forall e_a4bA. MArray TArray e_a4bA STM
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ e_X5VB) ->
+       Data.Array.Base.D:MArray TYPE TArray
+                                TYPE e_X5VB
+                                TYPE STM
+                                Control.NoRec.STM.$fMonadSTM
+                                SkipList.$fMArrayTArrayeSTM_$cgetBounds @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cgetNumElements @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cnewArray @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cnewArray_ @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cunsafeNewArray_ @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cunsafeRead @ e_X5VB
+                                SkipList.$fMArrayTArrayeSTM_$cunsafeWrite @ e_X5VB]
+SkipList.$fMArrayTArrayeSTM =
+  \ (@ e_X5VB) ->
+    Data.Array.Base.D:MArray
+      @ TArray
+      @ e_X5VB
+      @ STM
+      Control.NoRec.STM.$fMonadSTM
+      ((SkipList.$fMArrayTArrayeSTM11 @ e_X5VB)
+       `cast` (forall i_a5OJ.
+               <Ix i_a5OJ>_R
+               -> <TArray i_a5OJ e_X5VB>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <(i_a5OJ, i_a5OJ)>_R)
+               :: (forall i_a5OJ.
+                   Ix i_a5OJ =>
+                   TArray i_a5OJ e_X5VB
+                   -> State# RealWorld -> (# State# RealWorld, (i_a5OJ, i_a5OJ) #))
+                  ~R# (forall i_a5OJ.
+                       Ix i_a5OJ =>
+                       TArray i_a5OJ e_X5VB -> STM (i_a5OJ, i_a5OJ))))
+      ((SkipList.$fMArrayTArrayeSTM10 @ e_X5VB)
+       `cast` (forall i_a5P2.
+               <Ix i_a5P2>_R
+               -> <TArray i_a5P2 e_X5VB>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <Int>_R)
+               :: (forall i_a5P2.
+                   Ix i_a5P2 =>
+                   TArray i_a5P2 e_X5VB
+                   -> State# RealWorld -> (# State# RealWorld, Int #))
+                  ~R# (forall i_a5P2. Ix i_a5P2 => TArray i_a5P2 e_X5VB -> STM Int)))
+      ((SkipList.$fMArrayTArrayeSTM4 @ e_X5VB)
+       `cast` (forall i_X5VA.
+               <Ix i_X5VA>_R
+               -> <(i_X5VA, i_X5VA)>_R
+               -> <e_X5VB>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_X5VA e_X5VB>_R)
+               :: (forall i_X5VA.
+                   Ix i_X5VA =>
+                   (i_X5VA, i_X5VA)
+                   -> e_X5VB
+                   -> State# RealWorld
+                   -> (# State# RealWorld, TArray i_X5VA e_X5VB #))
+                  ~R# (forall i_X5VA.
+                       Ix i_X5VA =>
+                       (i_X5VA, i_X5VA) -> e_X5VB -> STM (TArray i_X5VA e_X5VB))))
+      ((SkipList.$fMArrayTArrayeSTM8 @ e_X5VB)
+       `cast` (forall i_X5Wi.
+               <Ix i_X5Wi>_R
+               -> <(i_X5Wi, i_X5Wi)>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <TArray i_X5Wi e_X5VB>_R)
+               :: (forall i_X5Wi.
+                   Ix i_X5Wi =>
+                   (i_X5Wi, i_X5Wi)
+                   -> State# RealWorld
+                   -> (# State# RealWorld, TArray i_X5Wi e_X5VB #))
+                  ~R# (forall i_X5Wi.
+                       Ix i_X5Wi =>
+                       (i_X5Wi, i_X5Wi) -> STM (TArray i_X5Wi e_X5VB))))
+      (SkipList.$fMArrayTArrayeSTM_$cunsafeNewArray_ @ e_X5VB)
+      ((SkipList.$fMArrayTArrayeSTM2 @ e_X5VB)
+       `cast` (forall i_X5Xa.
+               <Ix i_X5Xa>_R
+               -> <TArray i_X5Xa e_X5VB>_R
+               -> <Int>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <e_X5VB>_R)
+               :: (forall i_X5Xa.
+                   Ix i_X5Xa =>
+                   TArray i_X5Xa e_X5VB
+                   -> Int -> State# RealWorld -> (# State# RealWorld, e_X5VB #))
+                  ~R# (forall i_X5Xa.
+                       Ix i_X5Xa =>
+                       TArray i_X5Xa e_X5VB -> Int -> STM e_X5VB)))
+      ((SkipList.$fMArrayTArrayeSTM1 @ e_X5VB)
+       `cast` (forall i_X5Xu.
+               <Ix i_X5Xu>_R
+               -> <TArray i_X5Xu e_X5VB>_R
+               -> <Int>_R
+               -> <e_X5VB>_R
+               -> Sym (Control.NoRec.STM.NTCo:STM[0] <()>_R)
+               :: (forall i_X5Xu.
+                   Ix i_X5Xu =>
+                   TArray i_X5Xu e_X5VB
+                   -> Int -> e_X5VB -> State# RealWorld -> (# State# RealWorld, () #))
+                  ~R# (forall i_X5Xu.
+                       Ix i_X5Xu =>
+                       TArray i_X5Xu e_X5VB -> Int -> e_X5VB -> STM ())))
+end Rec }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl19_rawd :: [Char]
+[GblId, Str=DmdType]
+lvl19_rawd = unpackCString# "Int"#
+
+-- RHS size: {terms: 11, types: 7, coercions: 0}
+lvl20_rawe :: Int# -> Int -> Int -> Int
+[GblId, Arity=3, Str=DmdType <L,U><L,U><L,U>b]
+lvl20_rawe =
+  \ (ww_s9kH :: Int#) (wild1_s9Kh :: Int) (wild2_s9Kk :: Int) ->
+    indexError
+      @ Int
+      @ Int
+      GHC.Show.$fShowInt
+      (wild1_s9Kh, wild2_s9Kk)
+      (I# ww_s9kH)
+      lvl19_rawd
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl21_rawf :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl21_rawf = I# 87#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl22_rawg :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl22_rawg = I# 31#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl23_rawh :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl23_rawh = I# 36#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl24_rawi :: SrcLoc
+[GblId, Str=DmdType]
+lvl24_rawi =
+  SrcLoc
+    lvl8_raw2
+    lvl9_raw3
+    lvl10_raw4
+    lvl21_rawf
+    lvl22_rawg
+    lvl21_rawf
+    lvl23_rawh
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+lvl25_rawj :: ([Char], SrcLoc)
+[GblId, Str=DmdType]
+lvl25_rawj = (lvl7_raw1, lvl24_rawi)
+
+-- RHS size: {terms: 3, types: 8, coercions: 0}
+lvl26_rawk :: [([Char], SrcLoc)]
+[GblId, Str=DmdType]
+lvl26_rawk =
+  : @ ([Char], SrcLoc) lvl25_rawj ([] @ ([Char], SrcLoc))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl27_rawl :: CallStack
+[GblId, Str=DmdType]
+lvl27_rawl = CallStack lvl26_rawk
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl28_rawm :: [Char]
+[GblId, Str=DmdType]
+lvl28_rawm = unpackCString# ")"#
+
+-- RHS size: {terms: 29, types: 23, coercions: 4}
+lvl29_rawn :: Int# -> Int# -> Int
+[GblId, Arity=2, Str=DmdType <L,U><L,U>b]
+lvl29_rawn =
+  \ (dt_a67B :: Int#) (y_a6c5 :: Int#) ->
+    error
+      @ Int
+      (lvl27_rawl
+       `cast` (Sym (NTCo:IP[0] <"callStack">_N <CallStack>_N)
+               :: CallStack ~R# (?callStack::CallStack)))
+      (unpackAppendCString#
+         "Error in array index; "#
+         (case GHC.Show.$wshowSignedInt 0# y_a6c5 ([] @ Char)
+          of _ [Occ=Dead] { (# ww5_a6ZH, ww6_a6ZI #) ->
+          ++
+            @ Char
+            (: @ Char ww5_a6ZH ww6_a6ZI)
+            (unpackAppendCString#
+               " not in range [0.."#
+               (case GHC.Show.$wshowSignedInt 0# dt_a67B ([] @ Char)
+                of _ [Occ=Dead] { (# ww2_X72U, ww3_X72W #) ->
+                ++ @ Char (: @ Char ww2_X72U ww3_X72W) lvl28_rawm
+                }))
+          }))
+
+-- RHS size: {terms: 290, types: 303, coercions: 29}
+SkipList.$wa3 [InlPrag=[0]]
+  :: forall k_a4L1 v_a4L2.
+     Ord k_a4L1 =>
+     Nodes k_a4L1 v_a4L2
+     -> TVar# RealWorld Int
+     -> k_a4L1
+     -> State# RealWorld
+     -> (# State# RealWorld, Maybe v_a4L2 #)
+[GblId,
+ Arity=5,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,1*U(U(U),U(U),U,U)><L,U><L,U><L,U>]
+SkipList.$wa3 =
+  \ (@ k_a4L1)
+    (@ v_a4L2)
+    (w_s9kK :: Ord k_a4L1)
+    (ww_s9kQ :: Nodes k_a4L1 v_a4L2)
+    (ww1_s9kU :: TVar# RealWorld Int)
+    (w1_s9kM :: k_a4L1)
+    (w2_s9kN [OS=OneShot] :: State# RealWorld) ->
+    case norec_readTVar# @ RealWorld @ Int ww1_s9kU w2_s9kN
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    case ipv1_a6Tl of _ [Occ=Dead] { I# ww3_s9kH ->
+    letrec {
+      $s$wa_sa67 [Occ=LoopBreaker]
+        :: forall a6_a51E.
+           Int#
+           -> Int#
+           -> Int#
+           -> Int#
+           -> Array# (TVar (Node k_a4L1 a6_a51E))
+           -> Array Int (TVar (Node k_a4L1 a6_a51E))
+              ~R# TArray Int (Node k_a4L1 a6_a51E)
+           -> State# RealWorld
+           -> (# State# RealWorld, Maybe a6_a51E #)
+      [LclId, Arity=7, Str=DmdType <S,U><L,U><L,U><L,U><L,U><L,U><L,U>]
+      $s$wa_sa67 =
+        \ (@ a6_a51E)
+          (sc_sa5Q :: Int#)
+          (sc1_sa5R :: Int#)
+          (sc2_sa5S :: Int#)
+          (sc3_sa5T :: Int#)
+          (sc4_sa5U :: Array# (TVar (Node k_a4L1 a6_a51E)))
+          (sg_sa5V
+             :: Array Int (TVar (Node k_a4L1 a6_a51E))
+                ~R# TArray Int (Node k_a4L1 a6_a51E))
+          (sc5_sa5W [OS=OneShot] :: State# RealWorld) ->
+          case sc_sa5Q of ds1_X64F {
+            __DEFAULT ->
+              case tagToEnum# @ Bool (<=# sc1_sa5R ds1_X64F) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X64F (I# sc1_sa5R) (I# sc2_sa5S) of wild1_00 {
+                  };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X64F sc2_sa5S) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X64F (I# sc1_sa5R) (I# sc2_sa5S) of wild1_00 {
+                      };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X64F sc1_sa5R } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn sc3_sa5T y_a6c5 of wild2_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 sc3_sa5T) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn sc3_sa5T y_a6c5 of wild3_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4L1 a6_a51E)) sc4_sa5U y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X6ZX ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4L1 a6_a51E) tv_X6ZX sc5_sa5W
+                              of _ [Occ=Dead] { (# ipv3_X6WK, ipv4_X6WM #) ->
+                              case ipv4_X6WM of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa67
+                                    @ a6_a51E
+                                    (-# ds1_X64F 1#)
+                                    sc1_sa5R
+                                    sc2_sa5S
+                                    sc3_sa5T
+                                    sc4_sa5U
+                                    @~ (Sym
+                                          (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4L1 a6_a51E>_R)
+                                        :: Array Int (TVar (Node k_a4L1 a6_a51E))
+                                           ~R# TArray Int (Node k_a4L1 a6_a51E))
+                                    ipv3_X6WK;
+                                Node k'_a48Q v1_a48R nodes'_a48S ->
+                                  case > @ k_a4L1 w_s9kK k'_a48Q w1_s9kM of _ [Occ=Dead] {
+                                    False ->
+                                      case < @ k_a4L1 w_s9kK k'_a48Q w1_s9kM of _ [Occ=Dead] {
+                                        False ->
+                                          case v1_a48R of _ [Occ=Dead] { TVar tv1_X6Wh ->
+                                          case norec_readTVar#
+                                                 @ RealWorld @ a6_a51E tv1_X6Wh ipv3_X6WK
+                                          of _ [Occ=Dead] { (# ipv5_X70J, ipv6_X70L #) ->
+                                          (# ipv5_X70J, Just @ a6_a51E ipv6_X70L #)
+                                          }
+                                          };
+                                        True -> $wa8_s9kJ @ a6_a51E ds1_X64F nodes'_a48S ipv3_X6WK
+                                      };
+                                    True ->
+                                      $s$wa_sa67
+                                        @ a6_a51E
+                                        (-# ds1_X64F 1#)
+                                        sc1_sa5R
+                                        sc2_sa5S
+                                        sc3_sa5T
+                                        sc4_sa5U
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4L1 a6_a51E>_R)
+                                            :: Array Int (TVar (Node k_a4L1 a6_a51E))
+                                               ~R# TArray Int (Node k_a4L1 a6_a51E))
+                                        ipv3_X6WK
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              };
+            0# -> (# sc5_sa5W, Nothing @ a6_a51E #)
+          };
+      $wa8_s9kJ [InlPrag=[0], Occ=LoopBreaker]
+        :: forall a6_a51E.
+           Int#
+           -> TArray Int (Node k_a4L1 a6_a51E)
+           -> State# RealWorld
+           -> (# State# RealWorld, Maybe a6_a51E #)
+      [LclId, Arity=3, Str=DmdType <S,U><L,1*U(U(U),U(U),U,U)><L,U>]
+      $wa8_s9kJ =
+        \ (@ a6_a51E)
+          (ww4_X9og :: Int#)
+          (w3_s9kD :: TArray Int (Node k_a4L1 a6_a51E))
+          (w4_s9kE [OS=OneShot] :: State# RealWorld) ->
+          case ww4_X9og of ds1_X64F {
+            __DEFAULT ->
+              case w3_s9kD
+                   `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4L1 a6_a51E>_R
+                           :: TArray Int (Node k_a4L1 a6_a51E)
+                              ~R# Array Int (TVar (Node k_a4L1 a6_a51E)))
+              of _ [Occ=Dead] { Array l_a67z u_a67A dt_a67B ds2_a67C ->
+              case l_a67z of wild1_s9Kh { I# m_s9Ki ->
+              case u_a67A of wild2_s9Kk { I# n_s9Kl ->
+              case tagToEnum# @ Bool (<=# m_s9Ki ds1_X64F) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X64F wild1_s9Kh wild2_s9Kk of wild5_00 { };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X64F n_s9Kl) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X64F wild1_s9Kh wild2_s9Kk of wild6_00 { };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X64F m_s9Ki } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn dt_a67B y_a6c5 of wild7_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 dt_a67B) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn dt_a67B y_a6c5 of wild8_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4L1 a6_a51E)) ds2_a67C y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X6ZX ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4L1 a6_a51E) tv_X6ZX w4_s9kE
+                              of _ [Occ=Dead] { (# ipv3_X6WK, ipv4_X6WM #) ->
+                              case ipv4_X6WM of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa67
+                                    @ a6_a51E
+                                    (-# ds1_X64F 1#)
+                                    m_s9Ki
+                                    n_s9Kl
+                                    dt_a67B
+                                    ds2_a67C
+                                    @~ (Sym
+                                          (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4L1 a6_a51E>_R)
+                                        :: Array Int (TVar (Node k_a4L1 a6_a51E))
+                                           ~R# TArray Int (Node k_a4L1 a6_a51E))
+                                    ipv3_X6WK;
+                                Node k'_a48Q v1_a48R nodes'_a48S ->
+                                  case > @ k_a4L1 w_s9kK k'_a48Q w1_s9kM of _ [Occ=Dead] {
+                                    False ->
+                                      case < @ k_a4L1 w_s9kK k'_a48Q w1_s9kM of _ [Occ=Dead] {
+                                        False ->
+                                          case v1_a48R of _ [Occ=Dead] { TVar tv1_X6Wh ->
+                                          case norec_readTVar#
+                                                 @ RealWorld @ a6_a51E tv1_X6Wh ipv3_X6WK
+                                          of _ [Occ=Dead] { (# ipv5_X70J, ipv6_X70L #) ->
+                                          (# ipv5_X70J, Just @ a6_a51E ipv6_X70L #)
+                                          }
+                                          };
+                                        True -> $wa8_s9kJ @ a6_a51E ds1_X64F nodes'_a48S ipv3_X6WK
+                                      };
+                                    True ->
+                                      $s$wa_sa67
+                                        @ a6_a51E
+                                        (-# ds1_X64F 1#)
+                                        m_s9Ki
+                                        n_s9Kl
+                                        dt_a67B
+                                        ds2_a67C
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4L1 a6_a51E>_R)
+                                            :: Array Int (TVar (Node k_a4L1 a6_a51E))
+                                               ~R# TArray Int (Node k_a4L1 a6_a51E))
+                                        ipv3_X6WK
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              }
+              }
+              }
+              };
+            0# -> (# w4_s9kE, Nothing @ a6_a51E #)
+          }; } in
+    $wa8_s9kJ @ v_a4L2 ww3_s9kH ww_s9kQ ipv_a6Tk
+    }
+    }
+
+-- RHS size: {terms: 18, types: 27, coercions: 0}
+SkipList.get1 [InlPrag=INLINE[0]]
+  :: forall k_a4L1 v_a4L2.
+     Ord k_a4L1 =>
+     PTSTASLPQ k_a4L1 v_a4L2
+     -> k_a4L1
+     -> State# RealWorld
+     -> (# State# RealWorld, Maybe v_a4L2 #)
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),A)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4L1)
+                 (@ v_a4L2)
+                 (w_s9kK [Occ=Once] :: Ord k_a4L1)
+                 (w1_s9kL [Occ=Once!] :: PTSTASLPQ k_a4L1 v_a4L2)
+                 (w2_s9kM [Occ=Once] :: k_a4L1)
+                 (w3_s9kN [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w1_s9kL
+                 of _ [Occ=Dead]
+                 { PQ ww1_s9kQ [Occ=Once] ww2_s9kR [Occ=Once!] _ [Occ=Dead] ->
+                 case ww2_s9kR of _ [Occ=Dead] { TVar ww5_s9kU [Occ=Once] ->
+                 SkipList.$wa3
+                   @ k_a4L1 @ v_a4L2 w_s9kK ww1_s9kQ ww5_s9kU w2_s9kM w3_s9kN
+                 }
+                 }}]
+SkipList.get1 =
+  \ (@ k_a4L1)
+    (@ v_a4L2)
+    (w_s9kK :: Ord k_a4L1)
+    (w1_s9kL :: PTSTASLPQ k_a4L1 v_a4L2)
+    (w2_s9kM :: k_a4L1)
+    (w3_s9kN [OS=OneShot] :: State# RealWorld) ->
+    case w1_s9kL of _ [Occ=Dead] { PQ ww1_s9kQ ww2_s9kR ww3_s9kW ->
+    case ww2_s9kR of _ [Occ=Dead] { TVar ww5_s9kU ->
+    SkipList.$wa3
+      @ k_a4L1 @ v_a4L2 w_s9kK ww1_s9kQ ww5_s9kU w2_s9kM w3_s9kN
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 15}
+get
+  :: forall k_a3Gg v_a3Gh.
+     Ord k_a3Gg =>
+     PTSTASLPQ k_a3Gg v_a3Gh -> k_a3Gg -> STM (Maybe v_a3Gh)
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),A)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.get1
+               `cast` (forall k_a4L1 v_a4L2.
+                       <Ord k_a4L1>_R
+                       -> <PTSTASLPQ k_a4L1 v_a4L2>_R
+                       -> <k_a4L1>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <Maybe v_a4L2>_R)
+                       :: (forall k_a4L1 v_a4L2.
+                           Ord k_a4L1 =>
+                           PTSTASLPQ k_a4L1 v_a4L2
+                           -> k_a4L1
+                           -> State# RealWorld
+                           -> (# State# RealWorld, Maybe v_a4L2 #))
+                          ~R# (forall k_a4L1 v_a4L2.
+                               Ord k_a4L1 =>
+                               PTSTASLPQ k_a4L1 v_a4L2 -> k_a4L1 -> STM (Maybe v_a4L2)))}]
+get =
+  SkipList.get1
+  `cast` (forall k_a4L1 v_a4L2.
+          <Ord k_a4L1>_R
+          -> <PTSTASLPQ k_a4L1 v_a4L2>_R
+          -> <k_a4L1>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <Maybe v_a4L2>_R)
+          :: (forall k_a4L1 v_a4L2.
+              Ord k_a4L1 =>
+              PTSTASLPQ k_a4L1 v_a4L2
+              -> k_a4L1
+              -> State# RealWorld
+              -> (# State# RealWorld, Maybe v_a4L2 #))
+             ~R# (forall k_a4L1 v_a4L2.
+                  Ord k_a4L1 =>
+                  PTSTASLPQ k_a4L1 v_a4L2 -> k_a4L1 -> STM (Maybe v_a4L2)))
+
+-- RHS size: {terms: 10, types: 7, coercions: 0}
+lvl30_rawo :: Int -> Int -> Int -> Int
+[GblId, Arity=3, Str=DmdType <L,U><L,U><L,U>b]
+lvl30_rawo =
+  \ (wild_X2k :: Int) (wild1_s9KD :: Int) (wild2_s9KG :: Int) ->
+    indexError
+      @ Int
+      @ Int
+      GHC.Show.$fShowInt
+      (wild1_s9KD, wild2_s9KG)
+      wild_X2k
+      lvl19_rawd
+
+Rec {
+-- RHS size: {terms: 180, types: 170, coercions: 11}
+$s$wpoly_a_rawp
+  :: forall k_a4KI v_a4KJ.
+     Int#
+     -> Int#
+     -> Int#
+     -> Int#
+     -> Array# (TVar (Node k_a4KI v_a4KJ))
+     -> Array Int (TVar (Node k_a4KI v_a4KJ))
+        ~R# TArray Int (Node k_a4KI v_a4KJ)
+     -> State# RealWorld
+     -> (# State# RealWorld, Bool #)
+[GblId, Arity=7, Str=DmdType <S,U><L,U><L,U><L,U><L,U><L,U><L,U>]
+$s$wpoly_a_rawp =
+  \ (@ k_a4KI)
+    (@ v_a4KJ)
+    (sc_sa5r :: Int#)
+    (sc1_sa5s :: Int#)
+    (sc2_sa5t :: Int#)
+    (sc3_sa5u :: Int#)
+    (sc4_sa5v :: Array# (TVar (Node k_a4KI v_a4KJ)))
+    (sg_sa5w
+       :: Array Int (TVar (Node k_a4KI v_a4KJ))
+          ~R# TArray Int (Node k_a4KI v_a4KJ))
+    (sc5_sa5x [OS=OneShot] :: State# RealWorld) ->
+    case sc_sa5r of ds_X64G {
+      __DEFAULT ->
+        case tagToEnum# @ Bool (<=# sc1_sa5s ds_X64G) of _ [Occ=Dead] {
+          False ->
+            case lvl30_rawo (I# ds_X64G) (I# sc1_sa5s) (I# sc2_sa5t)
+            of wild1_00 {
+            };
+          True ->
+            case tagToEnum# @ Bool (<=# ds_X64G sc2_sa5t) of _ [Occ=Dead] {
+              False ->
+                case lvl30_rawo (I# ds_X64G) (I# sc1_sa5s) (I# sc2_sa5t)
+                of wild1_00 {
+                };
+              True ->
+                let {
+                  y_a6c5 :: Int#
+                  [LclId, Str=DmdType]
+                  y_a6c5 = -# ds_X64G sc1_sa5s } in
+                case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                  False -> case lvl29_rawn sc3_sa5u y_a6c5 of wild2_00 { };
+                  True ->
+                    case tagToEnum# @ Bool (<# y_a6c5 sc3_sa5u) of _ [Occ=Dead] {
+                      False -> case lvl29_rawn sc3_sa5u y_a6c5 of wild3_00 { };
+                      True ->
+                        case indexArray# @ (TVar (Node k_a4KI v_a4KJ)) sc4_sa5v y_a6c5
+                        of _ [Occ=Dead] { (# ipv_a6pT #) ->
+                        case ipv_a6pT of _ [Occ=Dead] { TVar tv_a6T1 ->
+                        case norec_readTVar#
+                               @ RealWorld @ (Node k_a4KI v_a4KJ) tv_a6T1 sc5_sa5x
+                        of _ [Occ=Dead] { (# ipv1_X6WK, ipv2_X6WM #) ->
+                        case ipv2_X6WM of _ [Occ=Dead] {
+                          Nil -> case SkipList._getNodes1 of wild6_00 { };
+                          Node ds2_d65F ds3_d65G ds5_d65H ->
+                            case ds5_d65H
+                                 `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4KI v_a4KJ>_R
+                                         :: TArray Int (Node k_a4KI v_a4KJ)
+                                            ~R# Array Int (TVar (Node k_a4KI v_a4KJ)))
+                            of _ [Occ=Dead] { Array l_X6aY u_X6b1 dt_X6b4 ds6_X6b6 ->
+                            case l_X6aY of wild7_s9KZ { I# m_s9L0 ->
+                            case u_X6b1 of wild8_s9L2 { I# n_s9L3 ->
+                            case tagToEnum# @ Bool (<=# m_s9L0 ds_X64G) of _ [Occ=Dead] {
+                              False ->
+                                case lvl30_rawo (I# ds_X64G) wild7_s9KZ wild8_s9L2 of wild10_00 {
+                                };
+                              True ->
+                                case tagToEnum# @ Bool (<=# ds_X64G n_s9L3) of _ [Occ=Dead] {
+                                  False ->
+                                    case lvl30_rawo (I# ds_X64G) wild7_s9KZ wild8_s9L2
+                                    of wild11_00 {
+                                    };
+                                  True ->
+                                    let {
+                                      y1_X6fK :: Int#
+                                      [LclId, Str=DmdType]
+                                      y1_X6fK = -# ds_X64G m_s9L0 } in
+                                    case tagToEnum# @ Bool (<=# 0# y1_X6fK) of _ [Occ=Dead] {
+                                      False -> case lvl29_rawn dt_X6b4 y1_X6fK of wild12_00 { };
+                                      True ->
+                                        case tagToEnum# @ Bool (<# y1_X6fK dt_X6b4)
+                                        of _ [Occ=Dead] {
+                                          False -> case lvl29_rawn dt_X6b4 y1_X6fK of wild13_00 { };
+                                          True ->
+                                            case indexArray#
+                                                   @ (TVar (Node k_a4KI v_a4KJ)) ds6_X6b6 y1_X6fK
+                                            of _ [Occ=Dead] { (# ipv3_X6tH #) ->
+                                            case ipv3_X6tH of _ [Occ=Dead] { TVar tv1_X6WS ->
+                                            case norec_readTVar#
+                                                   @ RealWorld
+                                                   @ (Node k_a4KI v_a4KJ)
+                                                   tv1_X6WS
+                                                   ipv1_X6WK
+                                            of _ [Occ=Dead] { (# ipv4_X71j, ipv5_X71l #) ->
+                                            case norec_writeTVar#
+                                                   @ RealWorld
+                                                   @ (Node k_a4KI v_a4KJ)
+                                                   tv_a6T1
+                                                   ipv5_X71l
+                                                   ipv4_X71j
+                                            of s'_a6SP [OS=OneShot] { __DEFAULT ->
+                                            $s$wpoly_a_rawp
+                                              @ k_a4KI
+                                              @ v_a4KJ
+                                              (-# ds_X64G 1#)
+                                              sc1_sa5s
+                                              sc2_sa5t
+                                              sc3_sa5u
+                                              sc4_sa5v
+                                              @~ (Sym
+                                                    (SkipList.NTCo:TArray[0]
+                                                       <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                                  :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                                     ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                              s'_a6SP
+                                            }
+                                            }
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                            }
+                            }
+                        }
+                        }
+                        }
+                        }
+                    }
+                }
+            }
+        };
+      0# -> (# sc5_sa5x, True #)
+    }
+end Rec }
+
+-- RHS size: {terms: 278, types: 252, coercions: 41}
+SkipList.$wa2 [InlPrag=[0]]
+  :: forall k_a4KI v_a4KJ.
+     Ord k_a4KI =>
+     Nodes k_a4KI v_a4KJ
+     -> TVar# RealWorld Int
+     -> k_a4KI
+     -> State# RealWorld
+     -> (# State# RealWorld, Bool #)
+[GblId,
+ Arity=5,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,1*U(U(U),U(U),U,U)><L,U><L,U><L,U>]
+SkipList.$wa2 =
+  \ (@ k_a4KI)
+    (@ v_a4KJ)
+    (w_s9lt :: Ord k_a4KI)
+    (ww_s9lz :: Nodes k_a4KI v_a4KJ)
+    (ww1_s9lD :: TVar# RealWorld Int)
+    (w1_s9lv :: k_a4KI)
+    (w2_s9lw [OS=OneShot] :: State# RealWorld) ->
+    case norec_readTVar# @ RealWorld @ Int ww1_s9lD w2_s9lw
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    case ipv1_a6Tl of _ [Occ=Dead] { I# ww3_s9lq ->
+    letrec {
+      $s$wa_sa59 [Occ=LoopBreaker]
+        :: Int#
+           -> Int#
+           -> Int#
+           -> Int#
+           -> Array# (TVar (Node k_a4KI v_a4KJ))
+           -> Array Int (TVar (Node k_a4KI v_a4KJ))
+              ~R# TArray Int (Node k_a4KI v_a4KJ)
+           -> State# RealWorld
+           -> (# State# RealWorld, Bool #)
+      [LclId, Arity=7, Str=DmdType <S,U><L,U><L,U><L,U><L,U><L,U><L,U>]
+      $s$wa_sa59 =
+        \ (sc_sa4S :: Int#)
+          (sc1_sa4T :: Int#)
+          (sc2_sa4U :: Int#)
+          (sc3_sa4V :: Int#)
+          (sc4_sa4W :: Array# (TVar (Node k_a4KI v_a4KJ)))
+          (sg_sa4X
+             :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                ~R# TArray Int (Node k_a4KI v_a4KJ))
+          (sc5_sa4Y [OS=OneShot] :: State# RealWorld) ->
+          case sc_sa4S of ds1_X64A {
+            __DEFAULT ->
+              case tagToEnum# @ Bool (<=# sc1_sa4T ds1_X64A) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X64A (I# sc1_sa4T) (I# sc2_sa4U) of wild1_00 {
+                  };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X64A sc2_sa4U) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X64A (I# sc1_sa4T) (I# sc2_sa4U) of wild1_00 {
+                      };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X64A sc1_sa4T } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn sc3_sa4V y_a6c5 of wild2_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 sc3_sa4V) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn sc3_sa4V y_a6c5 of wild3_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4KI v_a4KJ)) sc4_sa4W y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X70v ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4KI v_a4KJ) tv_X70v sc5_sa4Y
+                              of _ [Occ=Dead] { (# ipv3_X70S, ipv4_X70U #) ->
+                              case ipv4_X70U of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa59
+                                    (-# ds1_X64A 1#)
+                                    sc1_sa4T
+                                    sc2_sa4U
+                                    sc3_sa4V
+                                    sc4_sa4W
+                                    @~ (Sym (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                        :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                           ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                    ipv3_X70S;
+                                Node k'_a495 ds3_d63T nodes'_a496 ->
+                                  case > @ k_a4KI w_s9lt k'_a495 w1_s9lv of _ [Occ=Dead] {
+                                    False ->
+                                      case < @ k_a4KI w_s9lt k'_a495 w1_s9lv of _ [Occ=Dead] {
+                                        False ->
+                                          $s$wpoly_a_rawp
+                                            @ k_a4KI
+                                            @ v_a4KJ
+                                            ds1_X64A
+                                            sc1_sa4T
+                                            sc2_sa4U
+                                            sc3_sa4V
+                                            sc4_sa4W
+                                            @~ (Sym
+                                                  (SkipList.NTCo:TArray[0]
+                                                     <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                                :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                                   ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                            ipv3_X70S;
+                                        True -> $wa8_s9ls ds1_X64A nodes'_a496 ipv3_X70S
+                                      };
+                                    True ->
+                                      $s$wa_sa59
+                                        (-# ds1_X64A 1#)
+                                        sc1_sa4T
+                                        sc2_sa4U
+                                        sc3_sa4V
+                                        sc4_sa4W
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                            :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                               ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                        ipv3_X70S
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              };
+            0# -> (# sc5_sa4Y, False #)
+          };
+      $wa8_s9ls [InlPrag=[0], Occ=LoopBreaker]
+        :: Int#
+           -> TArray Int (Node k_a4KI v_a4KJ)
+           -> State# RealWorld
+           -> (# State# RealWorld, Bool #)
+      [LclId, Arity=3, Str=DmdType <S,U><L,1*U(U(U),U(U),U,U)><L,U>]
+      $wa8_s9ls =
+        \ (ww4_X9p3 :: Int#)
+          (w3_s9lm :: TArray Int (Node k_a4KI v_a4KJ))
+          (w4_s9ln [OS=OneShot] :: State# RealWorld) ->
+          case ww4_X9p3 of ds1_X64A {
+            __DEFAULT ->
+              case w3_s9lm
+                   `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4KI v_a4KJ>_R
+                           :: TArray Int (Node k_a4KI v_a4KJ)
+                              ~R# Array Int (TVar (Node k_a4KI v_a4KJ)))
+              of _ [Occ=Dead] { Array l_a67z u_a67A dt_a67B ds2_a67C ->
+              case l_a67z of wild1_s9LB { I# m_s9LC ->
+              case u_a67A of wild2_s9LE { I# n_s9LF ->
+              case tagToEnum# @ Bool (<=# m_s9LC ds1_X64A) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X64A wild1_s9LB wild2_s9LE of wild5_00 { };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X64A n_s9LF) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X64A wild1_s9LB wild2_s9LE of wild6_00 { };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X64A m_s9LC } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn dt_a67B y_a6c5 of wild7_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 dt_a67B) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn dt_a67B y_a6c5 of wild8_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4KI v_a4KJ)) ds2_a67C y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X70v ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4KI v_a4KJ) tv_X70v w4_s9ln
+                              of _ [Occ=Dead] { (# ipv3_X70S, ipv4_X70U #) ->
+                              case ipv4_X70U of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa59
+                                    (-# ds1_X64A 1#)
+                                    m_s9LC
+                                    n_s9LF
+                                    dt_a67B
+                                    ds2_a67C
+                                    @~ (Sym (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                        :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                           ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                    ipv3_X70S;
+                                Node k'_a495 ds5_d63T nodes'_a496 ->
+                                  case > @ k_a4KI w_s9lt k'_a495 w1_s9lv of _ [Occ=Dead] {
+                                    False ->
+                                      case < @ k_a4KI w_s9lt k'_a495 w1_s9lv of _ [Occ=Dead] {
+                                        False ->
+                                          $s$wpoly_a_rawp
+                                            @ k_a4KI
+                                            @ v_a4KJ
+                                            ds1_X64A
+                                            m_s9LC
+                                            n_s9LF
+                                            dt_a67B
+                                            ds2_a67C
+                                            @~ (Sym
+                                                  (SkipList.NTCo:TArray[0]
+                                                     <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                                :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                                   ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                            ipv3_X70S;
+                                        True -> $wa8_s9ls ds1_X64A nodes'_a496 ipv3_X70S
+                                      };
+                                    True ->
+                                      $s$wa_sa59
+                                        (-# ds1_X64A 1#)
+                                        m_s9LC
+                                        n_s9LF
+                                        dt_a67B
+                                        ds2_a67C
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4KI v_a4KJ>_R)
+                                            :: Array Int (TVar (Node k_a4KI v_a4KJ))
+                                               ~R# TArray Int (Node k_a4KI v_a4KJ))
+                                        ipv3_X70S
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              }
+              }
+              }
+              };
+            0# -> (# w4_s9ln, False #)
+          }; } in
+    $wa8_s9ls ww3_s9lq ww_s9lz ipv_a6Tk
+    }
+    }
+
+-- RHS size: {terms: 18, types: 27, coercions: 0}
+SkipList.delete1 [InlPrag=INLINE[0]]
+  :: forall k_a4KI v_a4KJ.
+     Ord k_a4KI =>
+     PTSTASLPQ k_a4KI v_a4KJ
+     -> k_a4KI -> State# RealWorld -> (# State# RealWorld, Bool #)
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),A)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4KI)
+                 (@ v_a4KJ)
+                 (w_s9lt [Occ=Once] :: Ord k_a4KI)
+                 (w1_s9lu [Occ=Once!] :: PTSTASLPQ k_a4KI v_a4KJ)
+                 (w2_s9lv [Occ=Once] :: k_a4KI)
+                 (w3_s9lw [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w1_s9lu
+                 of _ [Occ=Dead]
+                 { PQ ww1_s9lz [Occ=Once] ww2_s9lA [Occ=Once!] _ [Occ=Dead] ->
+                 case ww2_s9lA of _ [Occ=Dead] { TVar ww5_s9lD [Occ=Once] ->
+                 SkipList.$wa2
+                   @ k_a4KI @ v_a4KJ w_s9lt ww1_s9lz ww5_s9lD w2_s9lv w3_s9lw
+                 }
+                 }}]
+SkipList.delete1 =
+  \ (@ k_a4KI)
+    (@ v_a4KJ)
+    (w_s9lt :: Ord k_a4KI)
+    (w1_s9lu :: PTSTASLPQ k_a4KI v_a4KJ)
+    (w2_s9lv :: k_a4KI)
+    (w3_s9lw [OS=OneShot] :: State# RealWorld) ->
+    case w1_s9lu of _ [Occ=Dead] { PQ ww1_s9lz ww2_s9lA ww3_s9lF ->
+    case ww2_s9lA of _ [Occ=Dead] { TVar ww5_s9lD ->
+    SkipList.$wa2
+      @ k_a4KI @ v_a4KJ w_s9lt ww1_s9lz ww5_s9lD w2_s9lv w3_s9lw
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 14}
+delete
+  :: forall k_a3Ge v_a3Gf.
+     Ord k_a3Ge =>
+     PTSTASLPQ k_a3Ge v_a3Gf -> k_a3Ge -> STM Bool
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),A)><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.delete1
+               `cast` (forall k_a4KI v_a4KJ.
+                       <Ord k_a4KI>_R
+                       -> <PTSTASLPQ k_a4KI v_a4KJ>_R
+                       -> <k_a4KI>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <Bool>_R)
+                       :: (forall k_a4KI v_a4KJ.
+                           Ord k_a4KI =>
+                           PTSTASLPQ k_a4KI v_a4KJ
+                           -> k_a4KI -> State# RealWorld -> (# State# RealWorld, Bool #))
+                          ~R# (forall k_a4KI v_a4KJ.
+                               Ord k_a4KI =>
+                               PTSTASLPQ k_a4KI v_a4KJ -> k_a4KI -> STM Bool))}]
+delete =
+  SkipList.delete1
+  `cast` (forall k_a4KI v_a4KJ.
+          <Ord k_a4KI>_R
+          -> <PTSTASLPQ k_a4KI v_a4KJ>_R
+          -> <k_a4KI>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <Bool>_R)
+          :: (forall k_a4KI v_a4KJ.
+              Ord k_a4KI =>
+              PTSTASLPQ k_a4KI v_a4KJ
+              -> k_a4KI -> State# RealWorld -> (# State# RealWorld, Bool #))
+             ~R# (forall k_a4KI v_a4KJ.
+                  Ord k_a4KI =>
+                  PTSTASLPQ k_a4KI v_a4KJ -> k_a4KI -> STM Bool))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+SkipList.newSL_height :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+SkipList.newSL_height = I# 16#
+
+-- RHS size: {terms: 10, types: 4, coercions: 0}
+SkipList.newSL5 :: Int# -> Int# -> IO ()
+[GblId, Arity=2, Str=DmdType <L,U><L,U>b]
+SkipList.newSL5 =
+  \ (x1_a6Fr :: Int#) (a6_s7D5 :: Int#) ->
+    Data.Vector.Internal.Check.checkError
+      @ (IO ())
+      SkipList.newSL8
+      lvl3_ravO
+      Data.Vector.Internal.Check.Bounds
+      lvl2_ravN
+      (Data.Vector.Internal.Check.checkIndex_msg# x1_a6Fr a6_s7D5)
+
+-- RHS size: {terms: 121, types: 104, coercions: 32}
+SkipList.newSL4
+  :: State# RealWorld
+     -> (# State# RealWorld, U.MVector RealWorld Word64 #)
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [0] 404 60}]
+SkipList.newSL4 =
+  \ (s_a6Qg [OS=OneShot] :: State# RealWorld) ->
+    case readInt32OffAddr#
+           @ RealWorld (__label "enabled_capabilities" (data)) 0# s_a6Qg
+    of _ [Occ=Dead] { (# ipv_a7b4, ipv1_a7b5 #) ->
+    let {
+      a6_s7D5 :: Int#
+      [LclId, Str=DmdType]
+      a6_s7D5 = *# ipv1_a7b5 8# } in
+    case tagToEnum# @ Bool (>=# a6_s7D5 0#) of _ [Occ=Dead] {
+      False ->
+        case Data.Vector.Internal.Check.checkError
+               @ (IO
+                    (U.MVector
+                       (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO) Word64))
+               SkipList.newSL8
+               SkipList.newSL7
+               Data.Vector.Internal.Check.Bounds
+               SkipList.newSL6
+               (Data.Vector.Internal.Check.checkLength_msg# a6_s7D5)
+        of wild_00 {
+        };
+      True ->
+        case newByteArray#
+               @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+               (*# a6_s7D5 8#)
+               (ipv_a7b4
+                `cast` ((State#
+                           (Sym
+                              primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                        :: State# RealWorld
+                           ~R# State#
+                                 (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+        of _ [Occ=Dead] { (# ipv2_a6ON, ipv3_a6OO #) ->
+        let {
+          y_a7Cb :: Int#
+          [LclId, Str=DmdType]
+          y_a7Cb = -# ipv1_a7b5 1# } in
+        case tagToEnum# @ Bool (># 0# y_a7Cb) of _ [Occ=Dead] {
+          False ->
+            letrec {
+              a7_s8DV [Occ=LoopBreaker]
+                :: Int# -> State# RealWorld -> (# State# RealWorld, () #)
+              [LclId, Arity=2, Str=DmdType <L,U><L,U>]
+              a7_s8DV =
+                \ (x_a7Cf :: Int#) (eta_B1 [OS=OneShot] :: State# RealWorld) ->
+                  case catch#
+                         @ Word64
+                         @ SomeException
+                         System.Random.PCG.Class.sysRandom10
+                         System.Random.PCG.Class.sysRandom2
+                         eta_B1
+                  of _ [Occ=Dead] { (# ipv4_X6X7, ipv5_X6X9 #) ->
+                  let {
+                    x1_a6Fr :: Int#
+                    [LclId, Str=DmdType]
+                    x1_a6Fr = *# x_a7Cf 8# } in
+                  case tagToEnum# @ Bool (>=# x1_a6Fr 0#) of _ [Occ=Dead] {
+                    False -> case SkipList.newSL5 x1_a6Fr a6_s7D5 of wild3_00 { };
+                    True ->
+                      case tagToEnum# @ Bool (<# x1_a6Fr a6_s7D5) of _ [Occ=Dead] {
+                        False -> case SkipList.newSL5 x1_a6Fr a6_s7D5 of wild3_00 { };
+                        True ->
+                          case ipv5_X6X9 of _ [Occ=Dead] { W64# x#_a6RT ->
+                          case writeWord64Array#
+                                 @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                 ipv3_a6OO
+                                 x1_a6Fr
+                                 x#_a6RT
+                                 (ipv4_X6X7
+                                  `cast` ((State#
+                                             (Sym
+                                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                          :: State# RealWorld
+                                             ~R# State#
+                                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                      IO)))
+                          of s'#_a6RV [OS=OneShot] { __DEFAULT ->
+                          case tagToEnum# @ Bool (==# x_a7Cf y_a7Cb) of _ [Occ=Dead] {
+                            False ->
+                              a7_s8DV
+                                (+# x_a7Cf 1#)
+                                (s'#_a6RV
+                                 `cast` ((State#
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                         :: State#
+                                              (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                 IO)
+                                            ~R# State# RealWorld));
+                            True ->
+                              (# s'#_a6RV
+                                 `cast` ((State#
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                         :: State#
+                                              (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                 IO)
+                                            ~R# State# RealWorld),
+                                 () #)
+                          }
+                          }
+                          }
+                      }
+                  }
+                  }; } in
+            case a7_s8DV
+                   0#
+                   (ipv2_a6ON
+                    `cast` ((State#
+                               primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                            :: State# (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                               ~R# State# RealWorld))
+            of _ [Occ=Dead] { (# ipv4_a6KN, ipv5_a6KO #) ->
+            (# ipv4_a6KN,
+               (Data.Vector.Primitive.Mutable.MVector
+                  @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                  @ Word64
+                  0#
+                  a6_s7D5
+                  ipv3_a6OO)
+               `cast` (Sym
+                         (Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                            <primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO>_N)
+                       ; Sym
+                           (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                              (Sym
+                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))
+                       :: Data.Vector.Primitive.Mutable.MVector
+                            (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO) Word64
+                          ~R# U.MVector RealWorld Word64) #)
+            };
+          True ->
+            (# ipv2_a6ON
+               `cast` ((State#
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                       :: State# (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                          ~R# State# RealWorld),
+               (Data.Vector.Primitive.Mutable.MVector
+                  @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                  @ Word64
+                  0#
+                  a6_s7D5
+                  ipv3_a6OO)
+               `cast` (Sym
+                         (Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                            <primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO>_N)
+                       ; Sym
+                           (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                              (Sym
+                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))
+                       :: Data.Vector.Primitive.Mutable.MVector
+                            (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO) Word64
+                          ~R# U.MVector RealWorld Word64) #)
+        }
+        }
+    }
+    }
+
+-- RHS size: {terms: 2, types: 3, coercions: 5}
+SkipList.newSL3 :: U.MVector RealWorld Word64
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 20 0}]
+SkipList.newSL3 =
+  unsafeDupablePerformIO
+    @ (U.MVector RealWorld Word64)
+    (SkipList.newSL4
+     `cast` (Sym (NTCo:IO[0] <U.MVector RealWorld Word64>_R)
+             :: (State# RealWorld
+                 -> (# State# RealWorld, U.MVector RealWorld Word64 #))
+                ~R# IO (U.MVector RealWorld Word64)))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+SkipList.newSL10 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+SkipList.newSL10 = I# 1#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+SkipList.newSL9 :: (Int, Int)
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+SkipList.newSL9 = (SkipList.newSL10, SkipList.newSL_height)
+
+-- RHS size: {terms: 22, types: 46, coercions: 0}
+SkipList.newSL2
+  :: forall k_a4LL v_a4LM.
+     State# RealWorld -> (# State# RealWorld, PTSTASLPQ k_a4LL v_a4LM #)
+[GblId,
+ Arity=1,
+ Str=DmdType <L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [0] 83 30}]
+SkipList.newSL2 =
+  \ (@ k_a4LL)
+    (@ v_a4LM)
+    (s_X6ZM [OS=OneShot] :: State# RealWorld) ->
+    case SkipList.$fMArrayTArrayeSTM4
+           @ (Node k_a4LL v_a4LM)
+           @ Int
+           GHC.Arr.$fIxInt
+           SkipList.newSL9
+           (SkipList.Nil @ k_a4LL @ v_a4LM)
+           s_X6ZM
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    case newNOrecTVar# @ Int @ RealWorld SkipList.newSL_height ipv_a6Tk
+    of _ [Occ=Dead] { (# ipv2_a6U2, ipv3_a6U3 #) ->
+    (# ipv2_a6U2,
+       SkipList.PQ
+         @ k_a4LL
+         @ v_a4LM
+         ipv1_a6Tl
+         (TVar @ Int ipv3_a6U3)
+         SkipList.newSL3 #)
+    }
+    }
+
+-- RHS size: {terms: 4, types: 6, coercions: 0}
+SkipList.newSL1
+  :: forall k_a4LL v_a4LM.
+     Ord k_a4LL =>
+     State# RealWorld -> (# State# RealWorld, PTSTASLPQ k_a4LL v_a4LM #)
+[GblId,
+ Arity=2,
+ Str=DmdType <L,A>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ k_a4LL)
+                 (@ v_a4LM)
+                 _ [Occ=Dead]
+                 (eta_B1 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 SkipList.newSL2 @ k_a4LL @ v_a4LM eta_B1}]
+SkipList.newSL1 =
+  \ (@ k_a4LL) (@ v_a4LM) _ [Occ=Dead] ->
+    SkipList.newSL2 @ k_a4LL @ v_a4LM
+
+-- RHS size: {terms: 1, types: 0, coercions: 10}
+newSL
+  :: forall k_a3Gk v_a3Gl.
+     Ord k_a3Gk =>
+     STM (PTSTASLPQ k_a3Gk v_a3Gl)
+[GblId,
+ Arity=2,
+ Str=DmdType <L,A>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.newSL1
+               `cast` (forall k_a4LL v_a4LM.
+                       <Ord k_a4LL>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <PTSTASLPQ k_a4LL v_a4LM>_R)
+                       :: (forall k_a4LL v_a4LM.
+                           Ord k_a4LL =>
+                           State# RealWorld
+                           -> (# State# RealWorld, PTSTASLPQ k_a4LL v_a4LM #))
+                          ~R# (forall k_a4LL v_a4LM.
+                               Ord k_a4LL =>
+                               STM (PTSTASLPQ k_a4LL v_a4LM)))}]
+newSL =
+  SkipList.newSL1
+  `cast` (forall k_a4LL v_a4LM.
+          <Ord k_a4LL>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <PTSTASLPQ k_a4LL v_a4LM>_R)
+          :: (forall k_a4LL v_a4LM.
+              Ord k_a4LL =>
+              State# RealWorld
+              -> (# State# RealWorld, PTSTASLPQ k_a4LL v_a4LM #))
+             ~R# (forall k_a4LL v_a4LM.
+                  Ord k_a4LL =>
+                  STM (PTSTASLPQ k_a4LL v_a4LM)))
+
+-- RHS size: {terms: 6, types: 1, coercions: 0}
+logHalf_r2BC :: Float
+[GblId, Str=DmdType]
+logHalf_r2BC =
+  case logFloat# 0.5# of wild1_a7Dw { __DEFAULT -> F# wild1_a7Dw }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl31_rawq :: [Char]
+[GblId, Str=DmdType]
+lvl31_rawq = unpackCString# "main"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl32_rawr :: [Char]
+[GblId, Str=DmdType]
+lvl32_rawr = unpackCString# "SkipList"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl33_raws :: [Char]
+[GblId, Str=DmdType]
+lvl33_raws = unpackCString# "./SkipList.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl34_rawt :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl34_rawt = I# 170#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl35_rawu :: SrcLoc
+[GblId, Str=DmdType]
+lvl35_rawu =
+  SrcLoc
+    lvl31_rawq
+    lvl32_rawr
+    lvl33_raws
+    lvl34_rawt
+    lvl22_rawg
+    lvl34_rawt
+    lvl23_rawh
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+lvl36_rawv :: ([Char], SrcLoc)
+[GblId, Str=DmdType]
+lvl36_rawv = (lvl7_raw1, lvl35_rawu)
+
+-- RHS size: {terms: 3, types: 8, coercions: 0}
+lvl37_raww :: [([Char], SrcLoc)]
+[GblId, Str=DmdType]
+lvl37_raww =
+  : @ ([Char], SrcLoc) lvl36_rawv ([] @ ([Char], SrcLoc))
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl38_rawx :: CallStack
+[GblId, Str=DmdType]
+lvl38_rawx = CallStack lvl37_raww
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl39_rawy :: [Char]
+[GblId, Str=DmdType]
+lvl39_rawy =
+  unpackCString#
+    "PTSTASLPQ: main layout must be not lower than new one"#
+
+-- RHS size: {terms: 3, types: 2, coercions: 4}
+lvl40_rawz :: STM ()
+[GblId, Str=DmdType b]
+lvl40_rawz =
+  error
+    @ (STM ())
+    (lvl38_rawx
+     `cast` (Sym (NTCo:IP[0] <"callStack">_N <CallStack>_N)
+             :: CallStack ~R# (?callStack::CallStack)))
+    lvl39_rawy
+
+-- RHS size: {terms: 769, types: 783, coercions: 90}
+SkipList.$wa4 [InlPrag=[0]]
+  :: forall k_a4Lj v_a4Lk.
+     Ord k_a4Lj =>
+     Nodes k_a4Lj v_a4Lk
+     -> TVar# RealWorld Int
+     -> U.IOVector Word64
+     -> k_a4Lj
+     -> v_a4Lk
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=7,
+ Str=DmdType <L,U(A,A,A,A,C(C1(U)),A,A,A)><L,1*U(U(U),U(U),U,U)><L,U><L,1*U(U,U,U)><L,U><L,U><L,U>]
+SkipList.$wa4 =
+  \ (@ k_a4Lj)
+    (@ v_a4Lk)
+    (w_s9mf :: Ord k_a4Lj)
+    (ww_s9mm :: Nodes k_a4Lj v_a4Lk)
+    (ww1_s9mq :: TVar# RealWorld Int)
+    (ww2_s9ms :: U.IOVector Word64)
+    (w1_s9mh :: k_a4Lj)
+    (w2_s9mi :: v_a4Lk)
+    (w3_s9mj [OS=OneShot] :: State# RealWorld) ->
+    case norec_readTVar# @ RealWorld @ Int ww1_s9mq w3_s9mj
+    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+    case ipv1_a6Tl of ww3_s9lU { I# ww4_s9lV ->
+    letrec {
+      $s$wa_sa4o [Occ=LoopBreaker]
+        :: Int#
+           -> Int#
+           -> Int#
+           -> Array# (TVar (Node k_a4Lj v_a4Lk))
+           -> Array Int (TVar (Node k_a4Lj v_a4Lk))
+              ~R# TArray Int (Node k_a4Lj v_a4Lk)
+           -> Int#
+           -> [TArray Int (Node k_a4Lj v_a4Lk)]
+           -> State# RealWorld
+           -> (# State# RealWorld, [TArray Int (Node k_a4Lj v_a4Lk)] #)
+      [LclId,
+       Arity=8,
+       Str=DmdType <L,U><L,U><L,U><L,U><L,U><S,U><L,U><L,U>]
+      $s$wa_sa4o =
+        \ (sc_sa44 :: Int#)
+          (sc1_sa45 :: Int#)
+          (sc2_sa46 :: Int#)
+          (sc3_sa47 :: Array# (TVar (Node k_a4Lj v_a4Lk)))
+          (sg_sa48
+             :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                ~R# TArray Int (Node k_a4Lj v_a4Lk))
+          (sc4_sa49 :: Int#)
+          (sc5_sa4a :: [TArray Int (Node k_a4Lj v_a4Lk)])
+          (sc6_sa4b [OS=OneShot] :: State# RealWorld) ->
+          case sc4_sa49 of ds1_X65m {
+            __DEFAULT ->
+              case tagToEnum# @ Bool (<=# sc_sa44 ds1_X65m) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X65m (I# sc_sa44) (I# sc1_sa45) of wild1_00 {
+                  };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X65m sc1_sa45) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X65m (I# sc_sa44) (I# sc1_sa45) of wild1_00 {
+                      };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X65m sc_sa44 } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn sc2_sa46 y_a6c5 of wild2_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 sc2_sa46) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn sc2_sa46 y_a6c5 of wild3_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4Lj v_a4Lk)) sc3_sa47 y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X715 ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4Lj v_a4Lk) tv_X715 sc6_sa4b
+                              of _ [Occ=Dead] { (# ipv3_X71s, ipv4_X71u #) ->
+                              case ipv4_X71u of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa4o
+                                    sc_sa44
+                                    sc1_sa45
+                                    sc2_sa46
+                                    sc3_sa47
+                                    @~ (Sym (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                        :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                           ~R# TArray Int (Node k_a4Lj v_a4Lk))
+                                    (-# ds1_X65m 1#)
+                                    (: @ (TArray Int (Node k_a4Lj v_a4Lk))
+                                       ((Array
+                                           @ Int
+                                           @ (TVar (Node k_a4Lj v_a4Lk))
+                                           (I# sc_sa44)
+                                           (I# sc1_sa45)
+                                           sc2_sa46
+                                           sc3_sa47)
+                                        `cast` (Sym
+                                                  (SkipList.NTCo:TArray[0]
+                                                     <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                                :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                                   ~R# TArray Int (Node k_a4Lj v_a4Lk)))
+                                       sc5_sa4a)
+                                    ipv3_X71s;
+                                Node k'_a47W ds3_d64v nodes'_a47X ->
+                                  case > @ k_a4Lj w_s9mf k'_a47W w1_s9mh of _ [Occ=Dead] {
+                                    False -> $wa8_s9lX nodes'_a47X ds1_X65m sc5_sa4a ipv3_X71s;
+                                    True ->
+                                      $s$wa_sa4o
+                                        sc_sa44
+                                        sc1_sa45
+                                        sc2_sa46
+                                        sc3_sa47
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                            :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                               ~R# TArray Int (Node k_a4Lj v_a4Lk))
+                                        (-# ds1_X65m 1#)
+                                        (: @ (TArray Int (Node k_a4Lj v_a4Lk))
+                                           ((Array
+                                               @ Int
+                                               @ (TVar (Node k_a4Lj v_a4Lk))
+                                               (I# sc_sa44)
+                                               (I# sc1_sa45)
+                                               sc2_sa46
+                                               sc3_sa47)
+                                            `cast` (Sym
+                                                      (SkipList.NTCo:TArray[0]
+                                                         <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                                    :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                                       ~R# TArray Int (Node k_a4Lj v_a4Lk)))
+                                           sc5_sa4a)
+                                        ipv3_X71s
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              };
+            0# -> (# sc6_sa4b, sc5_sa4a #)
+          };
+      $wa8_s9lX [InlPrag=[0], Occ=LoopBreaker]
+        :: TArray Int (Node k_a4Lj v_a4Lk)
+           -> Int#
+           -> [TArray Int (Node k_a4Lj v_a4Lk)]
+           -> State# RealWorld
+           -> (# State# RealWorld, [TArray Int (Node k_a4Lj v_a4Lk)] #)
+      [LclId, Arity=4, Str=DmdType <L,1*U(U(U),U(U),U,U)><S,U><L,U><L,U>]
+      $wa8_s9lX =
+        \ (w4_s9lP :: TArray Int (Node k_a4Lj v_a4Lk))
+          (ww5_X9pY :: Int#)
+          (w5_s9lR :: [TArray Int (Node k_a4Lj v_a4Lk)])
+          (w6_s9lS [OS=OneShot] :: State# RealWorld) ->
+          case ww5_X9pY of ds1_X65m {
+            __DEFAULT ->
+              case w4_s9lP
+                   `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4Lj v_a4Lk>_R
+                           :: TArray Int (Node k_a4Lj v_a4Lk)
+                              ~R# Array Int (TVar (Node k_a4Lj v_a4Lk)))
+              of wild_a67s { Array l_a67z u_a67A dt_a67B ds2_a67C ->
+              case l_a67z of wild1_s9Mp { I# m_s9Mq ->
+              case u_a67A of wild2_s9Ms { I# n_s9Mt ->
+              case tagToEnum# @ Bool (<=# m_s9Mq ds1_X65m) of _ [Occ=Dead] {
+                False ->
+                  case lvl20_rawe ds1_X65m wild1_s9Mp wild2_s9Ms of wild5_00 { };
+                True ->
+                  case tagToEnum# @ Bool (<=# ds1_X65m n_s9Mt) of _ [Occ=Dead] {
+                    False ->
+                      case lvl20_rawe ds1_X65m wild1_s9Mp wild2_s9Ms of wild6_00 { };
+                    True ->
+                      let {
+                        y_a6c5 :: Int#
+                        [LclId, Str=DmdType]
+                        y_a6c5 = -# ds1_X65m m_s9Mq } in
+                      case tagToEnum# @ Bool (<=# 0# y_a6c5) of _ [Occ=Dead] {
+                        False -> case lvl29_rawn dt_a67B y_a6c5 of wild7_00 { };
+                        True ->
+                          case tagToEnum# @ Bool (<# y_a6c5 dt_a67B) of _ [Occ=Dead] {
+                            False -> case lvl29_rawn dt_a67B y_a6c5 of wild8_00 { };
+                            True ->
+                              case indexArray# @ (TVar (Node k_a4Lj v_a4Lk)) ds2_a67C y_a6c5
+                              of _ [Occ=Dead] { (# ipv2_a6pT #) ->
+                              case ipv2_a6pT of _ [Occ=Dead] { TVar tv_X715 ->
+                              case norec_readTVar#
+                                     @ RealWorld @ (Node k_a4Lj v_a4Lk) tv_X715 w6_s9lS
+                              of _ [Occ=Dead] { (# ipv3_X71s, ipv4_X71u #) ->
+                              case ipv4_X71u of _ [Occ=Dead] {
+                                Nil ->
+                                  $s$wa_sa4o
+                                    m_s9Mq
+                                    n_s9Mt
+                                    dt_a67B
+                                    ds2_a67C
+                                    @~ (Sym (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                        :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                           ~R# TArray Int (Node k_a4Lj v_a4Lk))
+                                    (-# ds1_X65m 1#)
+                                    (: @ (TArray Int (Node k_a4Lj v_a4Lk))
+                                       (wild_a67s
+                                        `cast` (Sym
+                                                  (SkipList.NTCo:TArray[0]
+                                                     <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                                :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                                   ~R# TArray Int (Node k_a4Lj v_a4Lk)))
+                                       w5_s9lR)
+                                    ipv3_X71s;
+                                Node k'_a47W ds5_d64v nodes'_a47X ->
+                                  case > @ k_a4Lj w_s9mf k'_a47W w1_s9mh of _ [Occ=Dead] {
+                                    False -> $wa8_s9lX nodes'_a47X ds1_X65m w5_s9lR ipv3_X71s;
+                                    True ->
+                                      $s$wa_sa4o
+                                        m_s9Mq
+                                        n_s9Mt
+                                        dt_a67B
+                                        ds2_a67C
+                                        @~ (Sym
+                                              (SkipList.NTCo:TArray[0]
+                                                 <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                            :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                               ~R# TArray Int (Node k_a4Lj v_a4Lk))
+                                        (-# ds1_X65m 1#)
+                                        (: @ (TArray Int (Node k_a4Lj v_a4Lk))
+                                           (wild_a67s
+                                            `cast` (Sym
+                                                      (SkipList.NTCo:TArray[0]
+                                                         <Int>_N <Node k_a4Lj v_a4Lk>_R)
+                                                    :: Array Int (TVar (Node k_a4Lj v_a4Lk))
+                                                       ~R# TArray Int (Node k_a4Lj v_a4Lk)))
+                                           w5_s9lR)
+                                        ipv3_X71s
+                                  }
+                              }
+                              }
+                              }
+                              }
+                          }
+                      }
+                  }
+              }
+              }
+              }
+              };
+            0# -> (# w6_s9lS, w5_s9lR #)
+          }; } in
+    case $wa8_s9lX
+           ww_s9mm ww4_s9lV ([] @ (TArray Int (Node k_a4Lj v_a4Lk))) ipv_a6Tk
+    of _ [Occ=Dead] { (# ipv2_X70v, ipv3_X70x #) ->
+    case myThreadId# ipv2_X70v
+    of _ [Occ=Dead] { (# ipv4_a7DB, ipv5_a7DC #) ->
+    case threadStatus# ipv5_a7DC ipv4_a7DB
+    of _ [Occ=Dead]
+    { (# ipv6_a7DM, ipv7_a7DN, ipv8_a7DO, ipv9_a7DP #) ->
+    let {
+      nodesHeight_s6DJ [Dmd=<L,U(U)>] :: Int
+      [LclId, Str=DmdType]
+      nodesHeight_s6DJ =
+        case unsafeDupablePerformIO
+               @ Word32
+               ((\ (s_X6Xz [OS=OneShot] :: State# RealWorld) ->
+                   let {
+                     a6_s7Gd :: Int#
+                     [LclId, Str=DmdType]
+                     a6_s7Gd = *# ipv8_a7DO 8# } in
+                   case tagToEnum# @ Bool (>=# a6_s7Gd 0#) of _ [Occ=Dead] {
+                     False ->
+                       case ww2_s9ms
+                            `cast` (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                                      (Sym
+                                         primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])
+                                    ; Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                                        <primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO>_N
+                                    :: U.MVector RealWorld Word64
+                                       ~R# Data.Vector.Primitive.Mutable.MVector
+                                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                IO)
+                                             Word64)
+                       of _ [Occ=Dead]
+                       { Data.Vector.Primitive.Mutable.MVector dt_a6QJ dt1_a6QK
+                                                               dt2_a6QL ->
+                       case lvl5_ravU dt1_a6QK a6_s7Gd of wild1_00 { }
+                       };
+                     True ->
+                       case ww2_s9ms
+                            `cast` (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                                      (Sym
+                                         primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])
+                                    ; Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                                        <primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO>_N
+                                    :: U.MVector RealWorld Word64
+                                       ~R# Data.Vector.Primitive.Mutable.MVector
+                                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                IO)
+                                             Word64)
+                       of _ [Occ=Dead]
+                       { Data.Vector.Primitive.Mutable.MVector dt_a6QJ dt1_a6QK
+                                                               dt2_a6QL ->
+                       case tagToEnum# @ Bool (<# a6_s7Gd dt1_a6QK) of _ [Occ=Dead] {
+                         False -> case lvl5_ravU dt1_a6QK a6_s7Gd of wild1_00 { };
+                         True ->
+                           case readWord64Array#
+                                  @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                  dt2_a6QL
+                                  (+# dt_a6QJ a6_s7Gd)
+                                  (s_X6Xz
+                                   `cast` ((State#
+                                              (Sym
+                                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                           :: State# RealWorld
+                                              ~R# State#
+                                                    (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                       IO)))
+                           of _ [Occ=Dead] { (# ipv10_a6Rc, ipv11_a6Rd #) ->
+                           case writeWord64Array#
+                                  @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                  dt2_a6QL
+                                  (+# dt_a6QJ a6_s7Gd)
+                                  (timesWord# ipv11_a6Rd 6364136223846793005##)
+                                  ipv10_a6Rc
+                           of s'#_a6RV [OS=OneShot] { __DEFAULT ->
+                           (# s'#_a6RV
+                              `cast` ((State#
+                                         primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                      :: State#
+                                           (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                         ~R# State# RealWorld),
+                              W32#
+                                (narrow32Word#
+                                   (uncheckedShiftRL#
+                                      (xor# (uncheckedShiftRL# ipv11_a6Rd 22#) ipv11_a6Rd)
+                                      (+# (word2Int# (uncheckedShiftRL# ipv11_a6Rd 61#)) 22#))) #)
+                           }
+                           }
+                       }
+                       }
+                   })
+                `cast` (Sym (NTCo:IO[0] <Word32>_R)
+                        :: (State# RealWorld -> (# State# RealWorld, Word32 #))
+                           ~R# IO Word32))
+        of _ [Occ=Dead] { W32# x#_a6x1 ->
+        case logHalf_r2BC of _ [Occ=Dead] { F# y_X7NB ->
+        case divideFloat# (word2Float# x#_a6x1) (word2Float# 4294967295##)
+        of wild2_a7Gc { __DEFAULT ->
+        case logFloat# wild2_a7Gc of wild4_a7Dw { __DEFAULT ->
+        case divideFloat# wild4_a7Dw y_X7NB of wild5_X7NG { __DEFAULT ->
+        let {
+          y1_a6yc :: Int#
+          [LclId, Str=DmdType]
+          y1_a6yc = +# (float2Int# wild5_X7NG) 1# } in
+        case tagToEnum# @ Bool (<=# ww4_s9lV y1_a6yc) of _ [Occ=Dead] {
+          False -> I# y1_a6yc;
+          True -> ww3_s9lU
+        }
+        }
+        }
+        }
+        }
+        } } in
+    case SkipList.$fMArrayTArrayeSTM8
+           @ (Node k_a4Lj v_a4Lk)
+           @ Int
+           GHC.Arr.$fIxInt
+           (SkipList.newSL10, nodesHeight_s6DJ)
+           ipv6_a7DM
+    of _ [Occ=Dead] { (# ipv10_X70H, ipv11_X70J #) ->
+    case newNOrecTVar# @ v_a4Lk @ RealWorld w2_s9mi ipv10_X70H
+    of _ [Occ=Dead] { (# ipv12_a6U2, ipv13_a6U3 #) ->
+    let {
+      vv_a481 :: TVar v_a4Lk
+      [LclId, Str=DmdType m]
+      vv_a481 = TVar @ v_a4Lk ipv13_a6U3 } in
+    let {
+      newNode_s6DW :: Node k_a4Lj v_a4Lk
+      [LclId, Str=DmdType]
+      newNode_s6DW =
+        SkipList.Node @ k_a4Lj @ v_a4Lk w1_s9mh vv_a481 ipv11_X70J } in
+    case nodesHeight_s6DJ of _ [Occ=Dead] { I# y_a6zP ->
+    case tagToEnum# @ Bool (># 1# y_a6zP) of _ [Occ=Dead] {
+      False ->
+        case ipv3_X70x of _ [Occ=Dead] {
+          [] -> case lvl40_rawz of wild3_00 { };
+          : p_a486 ps_a487 ->
+            case p_a486
+                 `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4Lj v_a4Lk>_R
+                         :: TArray Int (Node k_a4Lj v_a4Lk)
+                            ~R# Array Int (TVar (Node k_a4Lj v_a4Lk)))
+            of _ [Occ=Dead] { Array l_a67z u_a67A dt_a67B ds6_a67C ->
+            case l_a67z of wild4_s9N1 { I# m_s9N2 ->
+            case u_a67A of wild5_s9N4 { I# n_s9N5 ->
+            case tagToEnum# @ Bool (<=# m_s9N2 1#) of _ [Occ=Dead] {
+              False ->
+                case lvl30_rawo (I# 1#) wild4_s9N1 wild5_s9N4 of wild7_00 { };
+              True ->
+                case tagToEnum# @ Bool (<=# 1# n_s9N5) of _ [Occ=Dead] {
+                  False ->
+                    case lvl30_rawo (I# 1#) wild4_s9N1 wild5_s9N4 of wild8_00 { };
+                  True ->
+                    let {
+                      y1_a6c5 :: Int#
+                      [LclId, Str=DmdType]
+                      y1_a6c5 = -# 1# m_s9N2 } in
+                    case tagToEnum# @ Bool (<=# 0# y1_a6c5) of _ [Occ=Dead] {
+                      False -> case lvl29_rawn dt_a67B y1_a6c5 of wild9_00 { };
+                      True ->
+                        case tagToEnum# @ Bool (<# y1_a6c5 dt_a67B) of _ [Occ=Dead] {
+                          False -> case lvl29_rawn dt_a67B y1_a6c5 of wild10_00 { };
+                          True ->
+                            case indexArray# @ (TVar (Node k_a4Lj v_a4Lk)) ds6_a67C y1_a6c5
+                            of _ [Occ=Dead] { (# ipv14_a6pT #) ->
+                            case ipv14_a6pT of _ [Occ=Dead] { TVar tv_X71J ->
+                            case norec_readTVar#
+                                   @ RealWorld @ (Node k_a4Lj v_a4Lk) tv_X71J ipv12_a6U2
+                            of _ [Occ=Dead] { (# ipv15_X71L, ipv16_X71N #) ->
+                            case norec_writeTVar#
+                                   @ RealWorld
+                                   @ (Node k_a4Lj v_a4Lk)
+                                   tv_X71J
+                                   newNode_s6DW
+                                   ipv15_X71L
+                            of s'_a6SP [OS=OneShot] { __DEFAULT ->
+                            case ipv11_X70J
+                                 `cast` (SkipList.NTCo:TArray[0] <Int>_N <Node k_a4Lj v_a4Lk>_R
+                                         :: TArray Int (Node k_a4Lj v_a4Lk)
+                                            ~R# Array Int (TVar (Node k_a4Lj v_a4Lk)))
+                            of _ [Occ=Dead] { Array l1_X6c2 u1_X6c5 dt1_X6c8 ds9_X6ca ->
+                            case l1_X6c2 of wild12_s9ND { I# m1_s9NE ->
+                            case u1_X6c5 of wild13_s9NG { I# n1_s9NH ->
+                            case tagToEnum# @ Bool (<=# m1_s9NE 1#) of _ [Occ=Dead] {
+                              False ->
+                                case lvl30_rawo (I# 1#) wild12_s9ND wild13_s9NG of wild15_00 { };
+                              True ->
+                                case tagToEnum# @ Bool (<=# 1# n1_s9NH) of _ [Occ=Dead] {
+                                  False ->
+                                    case lvl30_rawo (I# 1#) wild12_s9ND wild13_s9NG of wild16_00 {
+                                    };
+                                  True ->
+                                    let {
+                                      y2_X6qd :: Int#
+                                      [LclId, Str=DmdType]
+                                      y2_X6qd = -# 1# m1_s9NE } in
+                                    case tagToEnum# @ Bool (<=# 0# y2_X6qd) of _ [Occ=Dead] {
+                                      False -> case lvl29_rawn dt1_X6c8 y2_X6qd of wild17_00 { };
+                                      True ->
+                                        case tagToEnum# @ Bool (<# y2_X6qd dt1_X6c8)
+                                        of _ [Occ=Dead] {
+                                          False ->
+                                            case lvl29_rawn dt1_X6c8 y2_X6qd of wild18_00 { };
+                                          True ->
+                                            case indexArray#
+                                                   @ (TVar (Node k_a4Lj v_a4Lk)) ds9_X6ca y2_X6qd
+                                            of _ [Occ=Dead] { (# ipv17_X6v2 #) ->
+                                            case ipv17_X6v2 of _ [Occ=Dead] { TVar tv1_X6XZ ->
+                                            case norec_writeTVar#
+                                                   @ RealWorld
+                                                   @ (Node k_a4Lj v_a4Lk)
+                                                   tv1_X6XZ
+                                                   ipv16_X71N
+                                                   s'_a6SP
+                                            of s'1_X6Y4 [OS=OneShot] { __DEFAULT ->
+                                            letrec {
+                                              $wa9_s9me [InlPrag=[0], Occ=LoopBreaker]
+                                                :: Int#
+                                                   -> [TArray Int (Node k_a4Lj v_a4Lk)]
+                                                   -> State# RealWorld
+                                                   -> (# State# RealWorld, () #)
+                                              [LclId, Arity=3, Str=DmdType <L,U><L,1*U><L,U>]
+                                              $wa9_s9me =
+                                                \ (ww5_X9sj :: Int#)
+                                                  (w4_s9m8 :: [TArray Int (Node k_a4Lj v_a4Lk)])
+                                                  (w5_X9si [OS=OneShot] :: State# RealWorld) ->
+                                                  case tagToEnum# @ Bool (># ww5_X9sj y_a6zP)
+                                                  of _ [Occ=Dead] {
+                                                    False ->
+                                                      case w4_s9m8 of _ [Occ=Dead] {
+                                                        [] -> case lvl40_rawz of wild21_00 { };
+                                                        : p1_X4ek ps1_X4em ->
+                                                          case p1_X4ek
+                                                               `cast` (SkipList.NTCo:TArray[0]
+                                                                         <Int>_N
+                                                                         <Node k_a4Lj v_a4Lk>_R
+                                                                       :: TArray
+                                                                            Int (Node k_a4Lj v_a4Lk)
+                                                                          ~R# Array
+                                                                                Int
+                                                                                (TVar
+                                                                                   (Node
+                                                                                      k_a4Lj
+                                                                                      v_a4Lk)))
+                                                          of _ [Occ=Dead]
+                                                          { Array l2_X6dS u2_X6dV dt2_X6dY
+                                                                  ds11_X6e0 ->
+                                                          case l2_X6dS
+                                                          of wild22_X9Ts { I# m2_X9Tu ->
+                                                          case u2_X6dV
+                                                          of wild23_X9Tz { I# n2_X9TB ->
+                                                          case tagToEnum#
+                                                                 @ Bool (<=# m2_X9Tu ww5_X9sj)
+                                                          of _ [Occ=Dead] {
+                                                            False ->
+                                                              case lvl30_rawo
+                                                                     (I# ww5_X9sj)
+                                                                     wild22_X9Ts
+                                                                     wild23_X9Tz
+                                                              of wild25_00 {
+                                                              };
+                                                            True ->
+                                                              case tagToEnum#
+                                                                     @ Bool (<=# ww5_X9sj n2_X9TB)
+                                                              of _ [Occ=Dead] {
+                                                                False ->
+                                                                  case lvl30_rawo
+                                                                         (I# ww5_X9sj)
+                                                                         wild22_X9Ts
+                                                                         wild23_X9Tz
+                                                                  of wild26_00 {
+                                                                  };
+                                                                True ->
+                                                                  let {
+                                                                    y3_X6iL :: Int#
+                                                                    [LclId, Str=DmdType]
+                                                                    y3_X6iL =
+                                                                      -# ww5_X9sj m2_X9Tu } in
+                                                                  case tagToEnum#
+                                                                         @ Bool (<=# 0# y3_X6iL)
+                                                                  of _ [Occ=Dead] {
+                                                                    False ->
+                                                                      case lvl29_rawn
+                                                                             dt2_X6dY y3_X6iL
+                                                                      of wild27_00 {
+                                                                      };
+                                                                    True ->
+                                                                      case tagToEnum#
+                                                                             @ Bool
+                                                                             (<# y3_X6iL dt2_X6dY)
+                                                                      of _ [Occ=Dead] {
+                                                                        False ->
+                                                                          case lvl29_rawn
+                                                                                 dt2_X6dY y3_X6iL
+                                                                          of wild28_00 {
+                                                                          };
+                                                                        True ->
+                                                                          case indexArray#
+                                                                                 @ (TVar
+                                                                                      (Node
+                                                                                         k_a4Lj
+                                                                                         v_a4Lk))
+                                                                                 ds11_X6e0
+                                                                                 y3_X6iL
+                                                                          of _ [Occ=Dead]
+                                                                          { (# ipv18_X6wH #) ->
+                                                                          case ipv18_X6wH
+                                                                          of _ [Occ=Dead]
+                                                                          { TVar tv2_X78A ->
+                                                                          case norec_readTVar#
+                                                                                 @ RealWorld
+                                                                                 @ (Node
+                                                                                      k_a4Lj v_a4Lk)
+                                                                                 tv2_X78A
+                                                                                 w5_X9si
+                                                                          of _ [Occ=Dead]
+                                                                          { (# ipv19_X78G,
+                                                                               ipv20_X78J #) ->
+                                                                          case norec_writeTVar#
+                                                                                 @ RealWorld
+                                                                                 @ (Node
+                                                                                      k_a4Lj v_a4Lk)
+                                                                                 tv2_X78A
+                                                                                 newNode_s6DW
+                                                                                 ipv19_X78G
+                                                                          of s'2_X6ZP [OS=OneShot]
+                                                                          { __DEFAULT ->
+                                                                          case tagToEnum#
+                                                                                 @ Bool
+                                                                                 (<=#
+                                                                                    m1_s9NE
+                                                                                    ww5_X9sj)
+                                                                          of _ [Occ=Dead] {
+                                                                            False ->
+                                                                              case lvl30_rawo
+                                                                                     (I# ww5_X9sj)
+                                                                                     wild12_s9ND
+                                                                                     wild13_s9NG
+                                                                              of wild30_00 {
+                                                                              };
+                                                                            True ->
+                                                                              case tagToEnum#
+                                                                                     @ Bool
+                                                                                     (<=#
+                                                                                        ww5_X9sj
+                                                                                        n1_s9NH)
+                                                                              of _ [Occ=Dead] {
+                                                                                False ->
+                                                                                  case lvl30_rawo
+                                                                                         (I#
+                                                                                            ww5_X9sj)
+                                                                                         wild12_s9ND
+                                                                                         wild13_s9NG
+                                                                                  of wild31_00 {
+                                                                                  };
+                                                                                True ->
+                                                                                  let {
+                                                                                    y4_X6xq :: Int#
+                                                                                    [LclId,
+                                                                                     Str=DmdType]
+                                                                                    y4_X6xq =
+                                                                                      -#
+                                                                                        ww5_X9sj
+                                                                                        m1_s9NE } in
+                                                                                  case tagToEnum#
+                                                                                         @ Bool
+                                                                                         (<=#
+                                                                                            0#
+                                                                                            y4_X6xq)
+                                                                                  of _ [Occ=Dead] {
+                                                                                    False ->
+                                                                                      case lvl29_rawn
+                                                                                             dt1_X6c8
+                                                                                             y4_X6xq
+                                                                                      of wild32_00 {
+                                                                                      };
+                                                                                    True ->
+                                                                                      case tagToEnum#
+                                                                                             @ Bool
+                                                                                             (<#
+                                                                                                y4_X6xq
+                                                                                                dt1_X6c8)
+                                                                                      of _ [Occ=Dead] {
+                                                                                        False ->
+                                                                                          case lvl29_rawn
+                                                                                                 dt1_X6c8
+                                                                                                 y4_X6xq
+                                                                                          of wild33_00 {
+                                                                                          };
+                                                                                        True ->
+                                                                                          case indexArray#
+                                                                                                 @ (TVar
+                                                                                                      (Node
+                                                                                                         k_a4Lj
+                                                                                                         v_a4Lk))
+                                                                                                 ds9_X6ca
+                                                                                                 y4_X6xq
+                                                                                          of _ [Occ=Dead]
+                                                                                          { (# ipv21_X6Cn #) ->
+                                                                                          case ipv21_X6Cn
+                                                                                          of _ [Occ=Dead]
+                                                                                          { TVar tv3_X75n ->
+                                                                                          case norec_writeTVar#
+                                                                                                 @ RealWorld
+                                                                                                 @ (Node
+                                                                                                      k_a4Lj
+                                                                                                      v_a4Lk)
+                                                                                                 tv3_X75n
+                                                                                                 ipv20_X78J
+                                                                                                 s'2_X6ZP
+                                                                                          of s'3_X75v [OS=OneShot]
+                                                                                          { __DEFAULT ->
+                                                                                          $wa9_s9me
+                                                                                            (+#
+                                                                                               ww5_X9sj
+                                                                                               1#)
+                                                                                            ps1_X4em
+                                                                                            s'3_X75v
+                                                                                          }
+                                                                                          }
+                                                                                          }
+                                                                                      }
+                                                                                  }
+                                                                              }
+                                                                          }
+                                                                          }
+                                                                          }
+                                                                          }
+                                                                          }
+                                                                      }
+                                                                  }
+                                                              }
+                                                          }
+                                                          }
+                                                          }
+                                                          }
+                                                      };
+                                                    True -> (# w5_X9si, () #)
+                                                  }; } in
+                                            $wa9_s9me 2# ps_a487 s'1_X6Y4
+                                            }
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                            }
+                            }
+                            }
+                            }
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            }
+            }
+            }
+        };
+      True -> (# ipv12_a6U2, () #)
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 21, types: 28, coercions: 0}
+SkipList.insert1 [InlPrag=INLINE[0]]
+  :: forall k_a4Lj v_a4Lk.
+     Ord k_a4Lj =>
+     PTSTASLPQ k_a4Lj v_a4Lk
+     -> k_a4Lj
+     -> v_a4Lk
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=5,
+ Str=DmdType <L,U(A,A,A,A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),1*U(U,U,U))><L,U><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=5,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ k_a4Lj)
+                 (@ v_a4Lk)
+                 (w_s9mf [Occ=Once] :: Ord k_a4Lj)
+                 (w1_s9mg [Occ=Once!] :: PTSTASLPQ k_a4Lj v_a4Lk)
+                 (w2_s9mh [Occ=Once] :: k_a4Lj)
+                 (w3_s9mi [Occ=Once] :: v_a4Lk)
+                 (w4_s9mj [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w1_s9mg
+                 of _ [Occ=Dead]
+                 { PQ ww1_s9mm [Occ=Once] ww2_s9mn [Occ=Once!]
+                      ww3_s9ms [Occ=Once] ->
+                 case ww2_s9mn of _ [Occ=Dead] { TVar ww5_s9mq [Occ=Once] ->
+                 SkipList.$wa4
+                   @ k_a4Lj
+                   @ v_a4Lk
+                   w_s9mf
+                   ww1_s9mm
+                   ww5_s9mq
+                   ww3_s9ms
+                   w2_s9mh
+                   w3_s9mi
+                   w4_s9mj
+                 }
+                 }}]
+SkipList.insert1 =
+  \ (@ k_a4Lj)
+    (@ v_a4Lk)
+    (w_s9mf :: Ord k_a4Lj)
+    (w1_s9mg :: PTSTASLPQ k_a4Lj v_a4Lk)
+    (w2_s9mh :: k_a4Lj)
+    (w3_s9mi :: v_a4Lk)
+    (w4_s9mj [OS=OneShot] :: State# RealWorld) ->
+    case w1_s9mg of _ [Occ=Dead] { PQ ww1_s9mm ww2_s9mn ww3_s9ms ->
+    case ww2_s9mn of _ [Occ=Dead] { TVar ww5_s9mq ->
+    SkipList.$wa4
+      @ k_a4Lj
+      @ v_a4Lk
+      w_s9mf
+      ww1_s9mm
+      ww5_s9mq
+      ww3_s9ms
+      w2_s9mh
+      w3_s9mi
+      w4_s9mj
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 16}
+insert
+  :: forall k_a3Gi v_a3Gj.
+     Ord k_a3Gi =>
+     PTSTASLPQ k_a3Gi v_a3Gj -> k_a3Gi -> v_a3Gj -> STM ()
+[GblId,
+ Arity=5,
+ Str=DmdType <L,U(A,A,A,A,C(C1(U)),A,A,A)><S(LSL),1*U(1*U(U(U),U(U),U,U),1*U(U),1*U(U,U,U))><L,U><L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= SkipList.insert1
+               `cast` (forall k_a4Lj v_a4Lk.
+                       <Ord k_a4Lj>_R
+                       -> <PTSTASLPQ k_a4Lj v_a4Lk>_R
+                       -> <k_a4Lj>_R
+                       -> <v_a4Lk>_R
+                       -> Sym (Control.NoRec.STM.NTCo:STM[0] <()>_R)
+                       :: (forall k_a4Lj v_a4Lk.
+                           Ord k_a4Lj =>
+                           PTSTASLPQ k_a4Lj v_a4Lk
+                           -> k_a4Lj
+                           -> v_a4Lk
+                           -> State# RealWorld
+                           -> (# State# RealWorld, () #))
+                          ~R# (forall k_a4Lj v_a4Lk.
+                               Ord k_a4Lj =>
+                               PTSTASLPQ k_a4Lj v_a4Lk -> k_a4Lj -> v_a4Lk -> STM ()))}]
+insert =
+  SkipList.insert1
+  `cast` (forall k_a4Lj v_a4Lk.
+          <Ord k_a4Lj>_R
+          -> <PTSTASLPQ k_a4Lj v_a4Lk>_R
+          -> <k_a4Lj>_R
+          -> <v_a4Lk>_R
+          -> Sym (Control.NoRec.STM.NTCo:STM[0] <()>_R)
+          :: (forall k_a4Lj v_a4Lk.
+              Ord k_a4Lj =>
+              PTSTASLPQ k_a4Lj v_a4Lk
+              -> k_a4Lj
+              -> v_a4Lk
+              -> State# RealWorld
+              -> (# State# RealWorld, () #))
+             ~R# (forall k_a4Lj v_a4Lk.
+                  Ord k_a4Lj =>
+                  PTSTASLPQ k_a4Lj v_a4Lk -> k_a4Lj -> v_a4Lk -> STM ()))
+
+

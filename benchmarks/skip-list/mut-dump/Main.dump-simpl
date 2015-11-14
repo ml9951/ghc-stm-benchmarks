@@ -1,0 +1,3808 @@
+
+==================== Tidy Core ====================
+2015-11-09 18:21:51.563063 UTC
+
+Result size of Tidy Core
+  = {terms: 1,986, types: 2,039, coercions: 359}
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts46 :: Maybe Bool
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts46 = Just @ Bool False
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts45 :: Parser Bool
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts45 =
+  Options.Applicative.Types.NilP @ Bool Main.rbTreeOpts46
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts55 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Main.rbTreeOpts55 = unpackCString# "withoutTM"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n6 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n6 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts55
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts51 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 70 0}]
+Main.rbTreeOpts51 = unpackCString# "No transactions"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl4
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl4 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts51
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n7 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n7 = Options.Applicative.Types.OptShort 'w'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts54 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts54 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n6
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts53 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts53 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n7
+    Main.rbTreeOpts54
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts52 :: Options.Applicative.Types.OptReader Bool
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts52 =
+  Options.Applicative.Types.FlagReader @ Bool Main.rbTreeOpts53 True
+
+-- RHS size: {terms: 5, types: 2, coercions: 0}
+Main.rbTreeOpts50 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts50 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl4
+    ([] @ Char)
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts49 :: Options.Applicative.Types.Option Bool
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts49 =
+  Options.Applicative.Types.Option
+    @ Bool Main.rbTreeOpts52 Main.rbTreeOpts50
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts48 :: Parser Bool
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts48 =
+  Options.Applicative.Types.OptP @ Bool Main.rbTreeOpts49
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts47 :: Parser Bool
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts47 =
+  Options.Applicative.Types.AltP
+    @ Bool
+    Main.rbTreeOpts48
+    (Options.Applicative.Types.$fAlternativeParser_$cempty @ Bool)
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts66 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+Main.rbTreeOpts66 = unpackCString# "initOnly"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n8 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n8 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts66
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts62 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 70 0}]
+Main.rbTreeOpts62 = unpackCString# "Initialize only"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl5
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl5 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts62
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n9 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n9 = Options.Applicative.Types.OptShort 'i'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts65 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts65 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n8
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts64 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts64 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n9
+    Main.rbTreeOpts65
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts63 :: Options.Applicative.Types.OptReader Bool
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts63 =
+  Options.Applicative.Types.FlagReader @ Bool Main.rbTreeOpts64 True
+
+-- RHS size: {terms: 5, types: 2, coercions: 0}
+Main.rbTreeOpts61 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts61 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl5
+    ([] @ Char)
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts60 :: Options.Applicative.Types.Option Bool
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts60 =
+  Options.Applicative.Types.Option
+    @ Bool Main.rbTreeOpts63 Main.rbTreeOpts61
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts59 :: Parser Bool
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts59 =
+  Options.Applicative.Types.OptP @ Bool Main.rbTreeOpts60
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts58 :: Parser Bool
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts58 =
+  Options.Applicative.Types.AltP
+    @ Bool
+    Main.rbTreeOpts59
+    (Options.Applicative.Types.$fAlternativeParser_$cempty @ Bool)
+
+-- RHS size: {terms: 56, types: 63, coercions: 23}
+Main.$wa2 [InlPrag=[0]]
+  :: Word#
+     -> Word#
+     -> MutableByteArray# RealWorld
+     -> State# RealWorld
+     -> (# State# RealWorld, ((Word, Word), RGen) #)
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U><L,U><L,U><L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [0 0 0 0] 138 30}]
+Main.$wa2 =
+  \ (ww_sjlx :: Word#)
+    (ww1_sjlB :: Word#)
+    (ww2_sjlF :: MutableByteArray# RealWorld)
+    (w_sjlu [OS=OneShot] :: State# RealWorld) ->
+    case readWord64Array#
+           @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+           (ww2_sjlF
+            `cast` ((MutableByteArray#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: MutableByteArray# RealWorld
+                       ~R# MutableByteArray#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+           0#
+           (w_sjlu
+            `cast` ((State#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: State# RealWorld
+                       ~R# State#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+    of _ [Occ=Dead] { (# ipv_a6Rc, ipv1_a6Rd #) ->
+    case System.Random.PCG.Fast.Pure.$wbounded
+           (narrow32Word# ww_sjlx) ipv1_a6Rd
+    of _ [Occ=Dead] { (# ww5_agmG, ww6_agmH #) ->
+    case writeWord64Array#
+           @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+           (ww2_sjlF
+            `cast` ((MutableByteArray#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: MutableByteArray# RealWorld
+                       ~R# MutableByteArray#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+           0#
+           ww5_agmG
+           ipv_a6Rc
+    of s'#_agkH [OS=OneShot] { __DEFAULT ->
+    case readWord64Array#
+           @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+           (ww2_sjlF
+            `cast` ((MutableByteArray#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: MutableByteArray# RealWorld
+                       ~R# MutableByteArray#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+           0#
+           s'#_agkH
+    of _ [Occ=Dead] { (# ipv2_X6Yk, ipv3_X6Ym #) ->
+    case System.Random.PCG.Fast.Pure.$wbounded
+           (narrow32Word# (minusWord# ww1_sjlB 2##)) ipv3_X6Ym
+    of _ [Occ=Dead] { (# ww7_XgpU, ww8_XgpW #) ->
+    case writeWord64Array#
+           @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+           (ww2_sjlF
+            `cast` ((MutableByteArray#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: MutableByteArray# RealWorld
+                       ~R# MutableByteArray#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+           0#
+           ww7_XgpU
+           ipv2_X6Yk
+    of s'#1_Xgs1 [OS=OneShot] { __DEFAULT ->
+    (# s'#1_Xgs1
+       `cast` ((State#
+                  primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+               :: State# (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                  ~R# State# RealWorld),
+       ((W# ww6_agmH, W# (plusWord# ww8_XgpW 1##)),
+        (primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+           @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+           (ww2_sjlF
+            `cast` ((MutableByteArray#
+                       (Sym
+                          primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                    :: MutableByteArray# RealWorld
+                       ~R# MutableByteArray#
+                             (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO))))
+        `cast` (Sym
+                  System.Random.PCG.Fast.Pure.NTCo:Gen[0] primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]
+                :: primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                     (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                   ~R# Gen RealWorld)) #)
+    }
+    }
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 18, types: 13, coercions: 2}
+Main.samples1 [InlPrag=INLINE[0]]
+  :: Word
+     -> Word
+     -> RGen
+     -> State# RealWorld
+     -> (# State# RealWorld, ((Word, Word), RGen) #)
+[GblId,
+ Arity=4,
+ Str=DmdType <S,1*U(U)><S,1*U(U)><S,1*U(U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (w_sjlr [Occ=Once!] :: Word)
+                 (w1_sjls [Occ=Once!] :: Word)
+                 (w2_sjlt [Occ=Once] :: RGen)
+                 (w3_sjlu [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w_sjlr of _ [Occ=Dead] { W# ww1_sjlx [Occ=Once] ->
+                 case w1_sjls of _ [Occ=Dead] { W# ww3_sjlB [Occ=Once] ->
+                 case w2_sjlt
+                      `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                              :: Gen RealWorld
+                                 ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                       RealWorld)
+                 of _ [Occ=Dead]
+                 { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww5_sjlF [Occ=Once] ->
+                 Main.$wa2 ww1_sjlx ww3_sjlB ww5_sjlF w3_sjlu
+                 }
+                 }
+                 }}]
+Main.samples1 =
+  \ (w_sjlr :: Word)
+    (w1_sjls :: Word)
+    (w2_sjlt :: RGen)
+    (w3_sjlu [OS=OneShot] :: State# RealWorld) ->
+    case w_sjlr of _ [Occ=Dead] { W# ww1_sjlx ->
+    case w1_sjls of _ [Occ=Dead] { W# ww3_sjlB ->
+    case w2_sjlt
+         `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                 :: Gen RealWorld
+                    ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                          RealWorld)
+    of _ [Occ=Dead]
+    { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww5_sjlF ->
+    Main.$wa2 ww1_sjlx ww3_sjlB ww5_sjlF w3_sjlu
+    }
+    }
+    }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.runRSTMSingle'2 :: Word
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.runRSTMSingle'2 = W# 1##
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_rjUX :: Word64
+[GblId, Caf=NoCafRefs, Str=DmdType m]
+lvl_rjUX = W64# 0##
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_rjUY :: [Char]
+[GblId, Str=DmdType]
+lvl1_rjUY = unpackCString# "}"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl2_rjUZ :: [Char]
+[GblId, Str=DmdType]
+lvl2_rjUZ = unpackCString# "_throughput = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl3_rjV0 :: [Char]
+[GblId, Str=DmdType]
+lvl3_rjV0 = unpackCString# ", "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl4_rjV1 :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType m]
+lvl4_rjV1 = I# 0#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl5_rjV2 :: [Char]
+[GblId, Str=DmdType]
+lvl5_rjV2 = unpackCString# "_mix = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl6_rjV3 :: [Char]
+[GblId, Str=DmdType]
+lvl6_rjV3 = unpackCString# "_atomicGroups = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl7_rjV4 :: [Char]
+[GblId, Str=DmdType]
+lvl7_rjV4 = unpackCString# "_withoutTM = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl8_rjV5 :: [Char]
+[GblId, Str=DmdType]
+lvl8_rjV5 = unpackCString# "_initOnly = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl9_rjV6 :: [Char]
+[GblId, Str=DmdType]
+lvl9_rjV6 = unpackCString# "_threads = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl10_rjV7 :: [Char]
+[GblId, Str=DmdType]
+lvl10_rjV7 = unpackCString# "_entries = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl11_rjV8 :: [Char]
+[GblId, Str=DmdType]
+lvl11_rjV8 = unpackCString# "RBTreeOpts {"#
+
+-- RHS size: {terms: 42, types: 72, coercions: 6}
+Main.runRSTMSingle'1
+  :: CountIO
+     -> RGen
+     -> BenchTree
+     -> Word
+     -> Double
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=6,
+ Str=DmdType <B,A><B,A><B,U(U(U(U),U(U),U,U),U(U),A)><B,A><B,A><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=6,unsat_ok=True,boring_ok=False)
+         Tmpl= \ _ [Occ=Dead]
+                 _ [Occ=Dead]
+                 (t_adTw [Occ=Once!] :: BenchTree)
+                 _ [Occ=Dead]
+                 _ [Occ=Dead]
+                 (eta_B1 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 letrec {
+                   a7_sgww [Occ=LoopBreaker]
+                     :: forall b_aemM.
+                        State# RealWorld -> (# State# RealWorld, b_aemM #)
+                   [LclId, Arity=1, Str=DmdType]
+                   a7_sgww =
+                     \ (@ b_aemM) (s_X6Rc [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                       case norec_atomically#
+                              @ ()
+                              (\ (eta1_X6Bo [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                                 case t_adTw
+                                 of _ [Occ=Dead]
+                                 { SkipList.PQ ww1_s9kQ [Occ=Once] ww2_s9kR [Occ=Once!]
+                                               _ [Occ=Dead] ->
+                                 case ww2_s9kR of _ [Occ=Dead] { TVar ww5_s9kU [Occ=Once] ->
+                                 case SkipList.$wa3
+                                        @ Word
+                                        @ ()
+                                        ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                                        ww1_s9kQ
+                                        ww5_s9kU
+                                        Main.runRSTMSingle'2
+                                        eta1_X6Bo
+                                 of _ [Occ=Dead] { (# ipv_a6Tk [Occ=Once], _ [Occ=Dead] #) ->
+                                 (# ipv_a6Tk, () #)
+                                 }
+                                 }
+                                 })
+                              s_X6Rc
+                       of _ [Occ=Dead] { (# ipv_a6KN [Occ=Once], _ [Occ=Dead] #) ->
+                       a7_sgww @ b_aemM ipv_a6KN
+                       }; } in
+                 let {
+                   go_sgjM [InlPrag=NOINLINE, Occ=Once] :: forall b_aekd. IO b_aekd
+                   [LclId, Arity=1, Str=DmdType]
+                   go_sgjM =
+                     a7_sgww
+                     `cast` (forall b_aemM. Sym (NTCo:IO[0] <b_aemM>_R)
+                             :: (forall b_aemM.
+                                 State# RealWorld -> (# State# RealWorld, b_aemM #))
+                                ~R# (forall b_aemM. IO b_aemM)) } in
+                 ((go_sgjM @ ())
+                  `cast` (NTCo:IO[0] <()>_R
+                          :: IO () ~R# (State# RealWorld -> (# State# RealWorld, () #))))
+                   eta_B1}]
+Main.runRSTMSingle'1 =
+  \ _ [Occ=Dead]
+    _ [Occ=Dead]
+    (t_adTw :: BenchTree)
+    _ [Occ=Dead]
+    _ [Occ=Dead]
+    (eta_B1 [OS=OneShot] :: State# RealWorld) ->
+    letrec {
+      a7_sgww [Occ=LoopBreaker]
+        :: forall b_aemM.
+           State# RealWorld -> (# State# RealWorld, b_aemM #)
+      [LclId, Arity=1, Str=DmdType <B,U>b]
+      a7_sgww =
+        \ (@ b_aemM) (s_X6Rc [OS=OneShot] :: State# RealWorld) ->
+          case norec_atomically#
+                 @ ()
+                 (\ (eta1_X6Bo [OS=OneShot] :: State# RealWorld) ->
+                    case t_adTw
+                    of _ [Occ=Dead] { SkipList.PQ ww1_s9kQ ww2_s9kR ww3_s9kW ->
+                    case ww2_s9kR of _ [Occ=Dead] { TVar ww5_s9kU ->
+                    case SkipList.$wa3
+                           @ Word
+                           @ ()
+                           ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                           ww1_s9kQ
+                           ww5_s9kU
+                           Main.runRSTMSingle'2
+                           eta1_X6Bo
+                    of _ [Occ=Dead] { (# ipv_a6Tk, ipv1_a6Tl #) ->
+                    (# ipv_a6Tk, () #)
+                    }
+                    }
+                    })
+                 s_X6Rc
+          of _ [Occ=Dead] { (# ipv_a6KN, ipv1_a6KO #) ->
+          a7_sgww @ b_aemM ipv_a6KN
+          }; } in
+    let {
+      a8_sjE1
+        :: forall b_aemM.
+           State# RealWorld -> (# State# RealWorld, b_aemM #)
+      [LclId,
+       Arity=1,
+       Str=DmdType <B,U>b {adTw-><B,U(U(U(U),U(U),U,U),U(U),A)>}]
+      a8_sjE1 =
+        \ (@ b_aemM) (eta1_X1l [OS=OneShot] :: State# RealWorld) ->
+          a7_sgww @ b_aemM eta1_X1l } in
+    let {
+      go_sgjM [InlPrag=NOINLINE] :: forall b_aekd. IO b_aekd
+      [LclId,
+       Arity=1,
+       Str=DmdType <B,U>b {adTw-><B,U(U(U(U),U(U),U,U),U(U),A)>}]
+      go_sgjM =
+        a8_sjE1
+        `cast` (forall b_aemM. Sym (NTCo:IO[0] <b_aemM>_R)
+                :: (forall b_aemM.
+                    State# RealWorld -> (# State# RealWorld, b_aemM #))
+                   ~R# (forall b_aemM. IO b_aemM)) } in
+    ((go_sgjM @ ())
+     `cast` (NTCo:IO[0] <()>_R
+             :: IO () ~R# (State# RealWorld -> (# State# RealWorld, () #))))
+      eta_B1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts4 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts4 = I# 1000#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts14 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Main.rbTreeOpts14 = unpackCString# "throughput"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts14
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts8 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 120 0}]
+Main.rbTreeOpts8 =
+  unpackCString# "Throughput runtime in milliseconds"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl2
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl2 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts8
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n1 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n1 = Options.Applicative.Types.OptShort 's'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts13 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts13 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts12 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts12 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n1
+    Main.rbTreeOpts13
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts11
+  :: String
+     -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+          ParseError Int
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+Main.rbTreeOpts11 =
+  Options.Applicative.Builder.auto1 @ Int GHC.Read.$fReadInt
+
+-- RHS size: {terms: 3, types: 1, coercions: 19}
+Main.rbTreeOpts10 :: Options.Applicative.Types.CReader Int
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts10 =
+  Options.Applicative.Types.CReader
+    @ Int
+    (Options.Applicative.Types.$fMonoidCompleter4
+     `cast` ((<String>_R -> Sym (NTCo:IO[0] <[String]>_R))
+             ; Sym Options.Applicative.Types.NTCo:Completer[0]
+             :: (String -> State# RealWorld -> (# State# RealWorld, [String] #))
+                ~R# Completer))
+    (Main.rbTreeOpts11
+     `cast` (Sym
+               (transformers-0.4.3.0:Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                  <String>_R
+                  <transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                     ParseError>_R
+                  <Int>_N)
+             ; Sym Options.Applicative.Types.NTCo:ReadM[0] <Int>_N
+             :: (String
+                 -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                      ParseError Int)
+                ~R# ReadM Int))
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.rbTreeOpts9 :: Options.Applicative.Types.OptReader Int
+[GblId,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 40}]
+Main.rbTreeOpts9 =
+  Options.Applicative.Types.OptReader
+    @ Int
+    Main.rbTreeOpts12
+    Main.rbTreeOpts10
+    Options.Applicative.Builder.abortOption3
+
+-- RHS size: {terms: 5, types: 1, coercions: 0}
+Main.rbTreeOpts7 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts7 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl2
+    Options.Applicative.Builder.abortOption_var
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts6 :: Options.Applicative.Types.Option Int
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts6 =
+  Options.Applicative.Types.Option
+    @ Int Main.rbTreeOpts9 Main.rbTreeOpts7
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts3 :: Maybe Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts3 = Just @ Int Main.rbTreeOpts4
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts5 :: Parser Int
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts5 =
+  Options.Applicative.Types.OptP @ Int Main.rbTreeOpts6
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts2 :: Parser Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts2 =
+  Options.Applicative.Types.NilP @ Int Main.rbTreeOpts3
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts1 :: Parser Int
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts1 =
+  Options.Applicative.Types.AltP
+    @ Int Main.rbTreeOpts5 Main.rbTreeOpts2
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts19 :: Double
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts19 = D# 90.0##
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts29 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts29 = unpackCString# "mix"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n2 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n2 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts29
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts23 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 70 0}]
+Main.rbTreeOpts23 = unpackCString# "Read mix percent"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl1
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl1 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts23
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n3 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n3 = Options.Applicative.Types.OptShort 'm'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts28 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts28 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n2
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts27 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts27 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n3
+    Main.rbTreeOpts28
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts26
+  :: String
+     -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+          ParseError Double
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+Main.rbTreeOpts26 =
+  Options.Applicative.Builder.auto1 @ Double GHC.Read.$fReadDouble
+
+-- RHS size: {terms: 3, types: 1, coercions: 19}
+Main.rbTreeOpts25 :: Options.Applicative.Types.CReader Double
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts25 =
+  Options.Applicative.Types.CReader
+    @ Double
+    (Options.Applicative.Types.$fMonoidCompleter4
+     `cast` ((<String>_R -> Sym (NTCo:IO[0] <[String]>_R))
+             ; Sym Options.Applicative.Types.NTCo:Completer[0]
+             :: (String -> State# RealWorld -> (# State# RealWorld, [String] #))
+                ~R# Completer))
+    (Main.rbTreeOpts26
+     `cast` (Sym
+               (transformers-0.4.3.0:Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                  <String>_R
+                  <transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                     ParseError>_R
+                  <Double>_N)
+             ; Sym Options.Applicative.Types.NTCo:ReadM[0] <Double>_N
+             :: (String
+                 -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                      ParseError Double)
+                ~R# ReadM Double))
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.rbTreeOpts24 :: Options.Applicative.Types.OptReader Double
+[GblId,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 40}]
+Main.rbTreeOpts24 =
+  Options.Applicative.Types.OptReader
+    @ Double
+    Main.rbTreeOpts27
+    Main.rbTreeOpts25
+    Options.Applicative.Builder.abortOption3
+
+-- RHS size: {terms: 5, types: 1, coercions: 0}
+Main.rbTreeOpts22 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts22 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl1
+    Options.Applicative.Builder.abortOption_var
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts21 :: Options.Applicative.Types.Option Double
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts21 =
+  Options.Applicative.Types.Option
+    @ Double Main.rbTreeOpts24 Main.rbTreeOpts22
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts18 :: Maybe Double
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts18 = Just @ Double Main.rbTreeOpts19
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts20 :: Parser Double
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts20 =
+  Options.Applicative.Types.OptP @ Double Main.rbTreeOpts21
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts17 :: Parser Double
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts17 =
+  Options.Applicative.Types.NilP @ Double Main.rbTreeOpts18
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts16 :: Parser Double
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts16 =
+  Options.Applicative.Types.AltP
+    @ Double Main.rbTreeOpts20 Main.rbTreeOpts17
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts34 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts34 = I# 1#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts42 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Main.rbTreeOpts42 = unpackCString# "atomicGroups"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n4 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n4 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts42
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts38 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 90 0}]
+Main.rbTreeOpts38 = unpackCString# "Lookups per transaction"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl3
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl3 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts38
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n5 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n5 = Options.Applicative.Types.OptShort 'g'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts41 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts41 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n4
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts40 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts40 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n5
+    Main.rbTreeOpts41
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.rbTreeOpts39 :: Options.Applicative.Types.OptReader Int
+[GblId,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 40}]
+Main.rbTreeOpts39 =
+  Options.Applicative.Types.OptReader
+    @ Int
+    Main.rbTreeOpts40
+    Main.rbTreeOpts10
+    Options.Applicative.Builder.abortOption3
+
+-- RHS size: {terms: 5, types: 1, coercions: 0}
+Main.rbTreeOpts37 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts37 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl3
+    Options.Applicative.Builder.abortOption_var
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts36 :: Options.Applicative.Types.Option Int
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts36 =
+  Options.Applicative.Types.Option
+    @ Int Main.rbTreeOpts39 Main.rbTreeOpts37
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts33 :: Maybe Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts33 = Just @ Int Main.rbTreeOpts34
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts35 :: Parser Int
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts35 =
+  Options.Applicative.Types.OptP @ Int Main.rbTreeOpts36
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts32 :: Parser Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts32 =
+  Options.Applicative.Types.NilP @ Int Main.rbTreeOpts33
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts31 :: Parser Int
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts31 =
+  Options.Applicative.Types.AltP
+    @ Int Main.rbTreeOpts35 Main.rbTreeOpts32
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts44 :: Parser Bool
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts44 =
+  Options.Applicative.Types.AltP
+    @ Bool Main.rbTreeOpts47 Main.rbTreeOpts45
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts57 :: Parser Bool
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts57 =
+  Options.Applicative.Types.AltP
+    @ Bool Main.rbTreeOpts58 Main.rbTreeOpts45
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts71 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts71 = I# 8#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts79 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+Main.rbTreeOpts79 = unpackCString# "threads"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n10 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n10 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts79
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts75 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 80 0}]
+Main.rbTreeOpts75 = unpackCString# "Number of threads"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl6
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl6 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts75
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n11 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n11 = Options.Applicative.Types.OptShort 't'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts78 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts78 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n10
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts77 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts77 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n11
+    Main.rbTreeOpts78
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.rbTreeOpts76 :: Options.Applicative.Types.OptReader Int
+[GblId,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 40}]
+Main.rbTreeOpts76 =
+  Options.Applicative.Types.OptReader
+    @ Int
+    Main.rbTreeOpts77
+    Main.rbTreeOpts10
+    Options.Applicative.Builder.abortOption3
+
+-- RHS size: {terms: 5, types: 1, coercions: 0}
+Main.rbTreeOpts74 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts74 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl6
+    Options.Applicative.Builder.abortOption_var
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts73 :: Options.Applicative.Types.Option Int
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts73 =
+  Options.Applicative.Types.Option
+    @ Int Main.rbTreeOpts76 Main.rbTreeOpts74
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts70 :: Maybe Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts70 = Just @ Int Main.rbTreeOpts71
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts72 :: Parser Int
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts72 =
+  Options.Applicative.Types.OptP @ Int Main.rbTreeOpts73
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts69 :: Parser Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts69 =
+  Options.Applicative.Types.NilP @ Int Main.rbTreeOpts70
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts68 :: Parser Int
+[GblId,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts68 =
+  Options.Applicative.Types.AltP
+    @ Int Main.rbTreeOpts72 Main.rbTreeOpts69
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts84 :: Word
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts84 = W# 800##
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts94 :: String
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+Main.rbTreeOpts94 = unpackCString# "entries"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n12 :: Options.Applicative.Types.OptName
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n12 =
+  Options.Applicative.Types.OptLong Main.rbTreeOpts94
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts88 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 100 0}]
+Main.rbTreeOpts88 = unpackCString# "Number of values in the tree"#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+Main.rbTreeOpts_lvl7
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Main.rbTreeOpts_lvl7 =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    Main.rbTreeOpts88
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Main.rbTreeOpts_n13 :: Options.Applicative.Types.OptName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts_n13 = Options.Applicative.Types.OptShort 'e'#
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+Main.rbTreeOpts93 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts93 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n12
+    ([] @ Options.Applicative.Types.OptName)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts92 :: [Options.Applicative.Types.OptName]
+[GblId,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts92 =
+  : @ Options.Applicative.Types.OptName
+    Main.rbTreeOpts_n13
+    Main.rbTreeOpts93
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts91
+  :: String
+     -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+          ParseError Word
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+Main.rbTreeOpts91 =
+  Options.Applicative.Builder.auto1 @ Word GHC.Read.$fReadWord
+
+-- RHS size: {terms: 3, types: 1, coercions: 19}
+Main.rbTreeOpts90 :: Options.Applicative.Types.CReader Word
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts90 =
+  Options.Applicative.Types.CReader
+    @ Word
+    (Options.Applicative.Types.$fMonoidCompleter4
+     `cast` ((<String>_R -> Sym (NTCo:IO[0] <[String]>_R))
+             ; Sym Options.Applicative.Types.NTCo:Completer[0]
+             :: (String -> State# RealWorld -> (# State# RealWorld, [String] #))
+                ~R# Completer))
+    (Main.rbTreeOpts91
+     `cast` (Sym
+               (transformers-0.4.3.0:Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                  <String>_R
+                  <transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                     ParseError>_R
+                  <Word>_N)
+             ; Sym Options.Applicative.Types.NTCo:ReadM[0] <Word>_N
+             :: (String
+                 -> transformers-0.4.3.0:Control.Monad.Trans.Except.Except
+                      ParseError Word)
+                ~R# ReadM Word))
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.rbTreeOpts89 :: Options.Applicative.Types.OptReader Word
+[GblId,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 40}]
+Main.rbTreeOpts89 =
+  Options.Applicative.Types.OptReader
+    @ Word
+    Main.rbTreeOpts92
+    Main.rbTreeOpts90
+    Options.Applicative.Builder.abortOption3
+
+-- RHS size: {terms: 5, types: 1, coercions: 0}
+Main.rbTreeOpts87 :: Options.Applicative.Types.OptProperties
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Main.rbTreeOpts87 =
+  Options.Applicative.Types.OptProperties
+    Options.Applicative.Types.Visible
+    Main.rbTreeOpts_lvl7
+    Options.Applicative.Builder.abortOption_var
+    (Nothing @ String)
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts86 :: Options.Applicative.Types.Option Word
+[GblId,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts86 =
+  Options.Applicative.Types.Option
+    @ Word Main.rbTreeOpts89 Main.rbTreeOpts87
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts83 :: Maybe Word
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m2,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts83 = Just @ Word Main.rbTreeOpts84
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts85 :: Parser Word
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts85 =
+  Options.Applicative.Types.OptP @ Word Main.rbTreeOpts86
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.rbTreeOpts82 :: Parser Word
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Main.rbTreeOpts82 =
+  Options.Applicative.Types.NilP @ Word Main.rbTreeOpts83
+
+-- RHS size: {terms: 3, types: 1, coercions: 0}
+Main.rbTreeOpts81 :: Parser Word
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts81 =
+  Options.Applicative.Types.AltP
+    @ Word Main.rbTreeOpts85 Main.rbTreeOpts82
+
+-- RHS size: {terms: 3, types: 8, coercions: 0}
+Main.rbTreeOpts80
+  :: Parser
+       (Int -> Bool -> Bool -> Int -> Double -> Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 30 0}]
+Main.rbTreeOpts80 =
+  Options.Applicative.Types.$fApplicativeParser_$cfmap
+    @ Word
+    @ (Int -> Bool -> Bool -> Int -> Double -> Int -> RBTreeOpts)
+    Main.RBTreeOpts
+    Main.rbTreeOpts81
+
+-- RHS size: {terms: 3, types: 7, coercions: 0}
+Main.rbTreeOpts67
+  :: Parser (Bool -> Bool -> Int -> Double -> Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts67 =
+  Options.Applicative.Types.MultP
+    @ (Bool -> Bool -> Int -> Double -> Int -> RBTreeOpts)
+    @ Int
+    Main.rbTreeOpts80
+    Main.rbTreeOpts68
+
+-- RHS size: {terms: 3, types: 6, coercions: 0}
+Main.rbTreeOpts56
+  :: Parser (Bool -> Int -> Double -> Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts56 =
+  Options.Applicative.Types.MultP
+    @ (Bool -> Int -> Double -> Int -> RBTreeOpts)
+    @ Bool
+    Main.rbTreeOpts67
+    Main.rbTreeOpts57
+
+-- RHS size: {terms: 3, types: 5, coercions: 0}
+Main.rbTreeOpts43 :: Parser (Int -> Double -> Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts43 =
+  Options.Applicative.Types.MultP
+    @ (Int -> Double -> Int -> RBTreeOpts)
+    @ Bool
+    Main.rbTreeOpts56
+    Main.rbTreeOpts44
+
+-- RHS size: {terms: 3, types: 4, coercions: 0}
+Main.rbTreeOpts30 :: Parser (Double -> Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts30 =
+  Options.Applicative.Types.MultP
+    @ (Double -> Int -> RBTreeOpts)
+    @ Int
+    Main.rbTreeOpts43
+    Main.rbTreeOpts31
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+Main.rbTreeOpts15 :: Parser (Int -> RBTreeOpts)
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Main.rbTreeOpts15 =
+  Options.Applicative.Types.MultP
+    @ (Int -> RBTreeOpts) @ Double Main.rbTreeOpts30 Main.rbTreeOpts16
+
+Rec {
+-- RHS size: {terms: 25, types: 36, coercions: 3}
+Main.initGens2 [Occ=LoopBreaker]
+  :: [Word64] -> State# RealWorld -> (# State# RealWorld, [RGen] #)
+[GblId, Arity=2, Str=DmdType <S,1*U><L,U>]
+Main.initGens2 =
+  \ (ds_ag5Y :: [Word64])
+    (eta_X5A [OS=OneShot] :: State# RealWorld) ->
+    case ds_ag5Y of _ [Occ=Dead] {
+      [] -> (# eta_X5A, [] @ RGen #);
+      : y_ag63 ys_ag64 ->
+        case ((initialize
+                 @ IO
+                 primitive-0.5.4.0:Control.Monad.Primitive.$fPrimMonadIO
+                 y_ag63)
+              `cast` (NTCo:IO[0]
+                        (Gen
+                           primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                      :: IO
+                           (Gen (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO))
+                         ~R# (State# RealWorld -> (# State# RealWorld, Gen RealWorld #))))
+               eta_X5A
+        of _ [Occ=Dead] { (# ipv_a7DZ, ipv1_a7E0 #) ->
+        case Main.initGens2 ys_ag64 ipv_a7DZ
+        of _ [Occ=Dead] { (# ipv2_agwZ, ipv3_agx0 #) ->
+        (# ipv2_agwZ, : @ RGen ipv1_a7E0 ipv3_agx0 #)
+        }
+        }
+    }
+end Rec }
+
+-- RHS size: {terms: 37, types: 20, coercions: 0}
+Main.initGens1
+  :: Int -> State# RealWorld -> (# State# RealWorld, [RGen] #)
+[GblId,
+ Arity=2,
+ Str=DmdType <L,1*U(U)>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [20 0] 155 30}]
+Main.initGens1 =
+  \ (threads_adKY :: Int)
+    (eta_B1 [OS=OneShot] :: State# RealWorld) ->
+    case threads_adKY of _ [Occ=Dead] { I# y_a6wq ->
+    case tagToEnum# @ Bool (># 1# y_a6wq) of _ [Occ=Dead] {
+      False ->
+        letrec {
+          go_a7Ce [Occ=LoopBreaker] :: Int# -> [Word64]
+          [LclId, Arity=1, Str=DmdType <L,U>]
+          go_a7Ce =
+            \ (x_a7Cf :: Int#) ->
+              : @ Word64
+                (W64# (int2Word# x_a7Cf))
+                (case tagToEnum# @ Bool (==# x_a7Cf y_a6wq) of _ [Occ=Dead] {
+                   False -> go_a7Ce (+# x_a7Cf 1#);
+                   True -> [] @ Word64
+                 }); } in
+        Main.initGens2 (go_a7Ce 1#) eta_B1;
+      True -> (# eta_B1, [] @ RGen #)
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 6}
+initGens :: Int -> IO [RGen]
+[GblId,
+ Arity=2,
+ Str=DmdType <L,1*U(U)>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)}]
+initGens =
+  Main.initGens1
+  `cast` (<Int>_R -> Sym (NTCo:IO[0] <[RGen]>_R)
+          :: (Int -> State# RealWorld -> (# State# RealWorld, [RGen] #))
+             ~R# (Int -> IO [RGen]))
+
+-- RHS size: {terms: 1, types: 1, coercions: 6}
+mkRBTree :: forall v_aeFm. STM (PTSTASLPQ Word v_aeFm)
+[GblId,
+ Arity=1,
+ Str=DmdType <L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= (SkipList.newSL2 @ Word)
+               `cast` (forall v_aeJh.
+                       Sym (Control.NoRec.STM.NTCo:STM[0] <PTSTASLPQ Word v_aeJh>_R)
+                       :: (forall v_aeJh.
+                           State# RealWorld -> (# State# RealWorld, PTSTASLPQ Word v_aeJh #))
+                          ~R# (forall v_aeJh. STM (PTSTASLPQ Word v_aeJh)))}]
+mkRBTree =
+  (SkipList.newSL2 @ Word)
+  `cast` (forall v_aeJh.
+          Sym (Control.NoRec.STM.NTCo:STM[0] <PTSTASLPQ Word v_aeJh>_R)
+          :: (forall v_aeJh.
+              State# RealWorld -> (# State# RealWorld, PTSTASLPQ Word v_aeJh #))
+             ~R# (forall v_aeJh. STM (PTSTASLPQ Word v_aeJh)))
+
+-- RHS size: {terms: 3, types: 2, coercions: 0}
+rbTreeOpts :: Parser RBTreeOpts
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+rbTreeOpts =
+  Options.Applicative.Types.MultP
+    @ RBTreeOpts @ Int Main.rbTreeOpts15 Main.rbTreeOpts1
+
+Rec {
+-- RHS size: {terms: 33, types: 6, coercions: 0}
+$wgo_rjVb :: Word# -> (# Word#, Word# #)
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <L,U>]
+$wgo_rjVb =
+  \ (ww2_aj06 :: Word#) ->
+    let {
+      a7_aj07 :: Word#
+      [LclId, Str=DmdType]
+      a7_aj07 =
+        narrow32Word#
+          (uncheckedShiftRL#
+             (xor# (uncheckedShiftRL# ww2_aj06 22#) ww2_aj06)
+             (+# (word2Int# (uncheckedShiftRL# ww2_aj06 61#)) 22#)) } in
+    case tagToEnum# @ Bool (geWord# a7_aj07 67296##) of _ [Occ=Dead] {
+      False -> $wgo_rjVb (timesWord# ww2_aj06 6364136223846793005##);
+      True ->
+        (# timesWord# ww2_aj06 6364136223846793005##,
+           remWord# a7_aj07 100000## #)
+    }
+end Rec }
+
+-- RHS size: {terms: 4, types: 5, coercions: 0}
+lvl12_rjVc :: State# RealWorld -> (# State# RealWorld, () #)
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType]
+lvl12_rjVc =
+  \ (s_X71a [OS=OneShot] :: State# RealWorld) -> (# s_X71a, () #)
+
+-- RHS size: {terms: 141, types: 143, coercions: 32}
+Main.$wa [InlPrag=[0]]
+  :: MutVar# RealWorld Word64
+     -> MutableByteArray# RealWorld
+     -> Word#
+     -> Double#
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId, Arity=5, Str=DmdType <B,U><B,U><B,U><B,U><B,U>b]
+Main.$wa =
+  \ (ww_sjm8 :: MutVar# RealWorld Word64)
+    (ww1_sjmc :: MutableByteArray# RealWorld)
+    (ww2_sjmg :: Word#)
+    (ww3_sjmk :: Double#)
+    (w_sjm5 [OS=OneShot] :: State# RealWorld) ->
+    letrec {
+      $wa3_sjlZ [InlPrag=[0], Occ=LoopBreaker]
+        :: forall b_aeRa.
+           MutableByteArray# RealWorld
+           -> State# RealWorld -> (# State# RealWorld, b_aeRa #)
+      [LclId, Arity=2, Str=DmdType <B,U><B,U>b]
+      $wa3_sjlZ =
+        \ (@ b_aeRa)
+          (ww4_sjlX :: MutableByteArray# RealWorld)
+          (w1_sjlU [OS=OneShot] :: State# RealWorld) ->
+          case readWord64Array#
+                 @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                 (ww4_sjlX
+                  `cast` ((MutableByteArray#
+                             (Sym
+                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                          :: MutableByteArray# RealWorld
+                             ~R# MutableByteArray#
+                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+                 0#
+                 (w1_sjlU
+                  `cast` ((State#
+                             (Sym
+                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                          :: State# RealWorld
+                             ~R# State#
+                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+          of _ [Occ=Dead] { (# ipv_a6Rc, ipv1_a6Rd #) ->
+          case $wgo_rjVb ipv1_a6Rd
+          of _ [Occ=Dead] { (# ww6_agmG, ww7_agmH #) ->
+          case writeWord64Array#
+                 @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                 (ww4_sjlX
+                  `cast` ((MutableByteArray#
+                             (Sym
+                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                          :: MutableByteArray# RealWorld
+                             ~R# MutableByteArray#
+                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+                 0#
+                 ww6_agmG
+                 ipv_a6Rc
+          of s'#_agkH [OS=OneShot] { __DEFAULT ->
+          case readWord64Array#
+                 @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                 (ww4_sjlX
+                  `cast` ((MutableByteArray#
+                             (Sym
+                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                          :: MutableByteArray# RealWorld
+                             ~R# MutableByteArray#
+                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+                 0#
+                 s'#_agkH
+          of _ [Occ=Dead] { (# ipv2_X6Yk, ipv3_X6Ym #) ->
+          case System.Random.PCG.Fast.Pure.$wbounded
+                 (narrow32Word# (minusWord# ww2_sjmg 2##)) ipv3_X6Ym
+          of _ [Occ=Dead] { (# ww9_XgpU, ww10_XgpW #) ->
+          case writeWord64Array#
+                 @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                 (ww4_sjlX
+                  `cast` ((MutableByteArray#
+                             (Sym
+                                primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                          :: MutableByteArray# RealWorld
+                             ~R# MutableByteArray#
+                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)))
+                 0#
+                 ww9_XgpU
+                 ipv2_X6Yk
+          of s'#1_Xgs1 [OS=OneShot] { __DEFAULT ->
+          case /##
+                 (*## (word2Double# ww7_agmH) 100.0##) (word2Double# 100000##)
+          of wild2_agyp { __DEFAULT ->
+          case tagToEnum# @ Bool (<=## wild2_agyp ww3_sjmk) of _ [Occ=Dead] {
+            False ->
+              case norec_atomically#
+                     @ ()
+                     lvl12_rjVc
+                     (s'#1_Xgs1
+                      `cast` ((State#
+                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                              :: State# (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                 ~R# State# RealWorld))
+              of _ [Occ=Dead] { (# ipv4_a6KN, ipv5_a6KO #) ->
+              case readMutVar# @ RealWorld @ Word64 ww_sjm8 ipv4_a6KN
+              of _ [Occ=Dead] { (# ipv6_agzg, ipv7_agzh #) ->
+              case ipv7_agzh of _ [Occ=Dead] { W64# a7_agz3 ->
+              case a7_agz3 of wild3_agz5 {
+                __DEFAULT ->
+                  case writeMutVar#
+                         @ RealWorld
+                         @ Word64
+                         ww_sjm8
+                         (W64# (plusWord# wild3_agz5 1##))
+                         ipv6_agzg
+                  of s2#_agzk [OS=OneShot] { __DEFAULT ->
+                  $wa3_sjlZ @ b_aeRa ww4_sjlX s2#_agzk
+                  };
+                18446744073709551615## ->
+                  case GHC.Word.$fEnumWord12 of wild4_00 { }
+              }
+              }
+              }
+              };
+            True ->
+              case norec_atomically#
+                     @ ()
+                     lvl12_rjVc
+                     (s'#1_Xgs1
+                      `cast` ((State#
+                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                              :: State# (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                                 ~R# State# RealWorld))
+              of _ [Occ=Dead] { (# ipv4_a6KN, ipv5_a6KO #) ->
+              case readMutVar# @ RealWorld @ Word64 ww_sjm8 ipv4_a6KN
+              of _ [Occ=Dead] { (# ipv6_agzg, ipv7_agzh #) ->
+              case ipv7_agzh of _ [Occ=Dead] { W64# a7_agz3 ->
+              case a7_agz3 of wild3_agz5 {
+                __DEFAULT ->
+                  case writeMutVar#
+                         @ RealWorld
+                         @ Word64
+                         ww_sjm8
+                         (W64# (plusWord# wild3_agz5 1##))
+                         ipv6_agzg
+                  of s2#_agzk [OS=OneShot] { __DEFAULT ->
+                  $wa3_sjlZ @ b_aeRa ww4_sjlX s2#_agzk
+                  };
+                18446744073709551615## ->
+                  case GHC.Word.$fEnumWord12 of wild4_00 { }
+              }
+              }
+              }
+              }
+          }
+          }
+          }
+          }
+          }
+          }
+          }
+          }; } in
+    let {
+      a7_sjEy
+        :: forall b_aeRa.
+           RGen -> State# RealWorld -> (# State# RealWorld, b_aeRa #)
+      [LclId,
+       Arity=2,
+       Str=DmdType <B,1*U(U)><B,U>b {adSX-><B,U(U)> adT0-><B,U(U)>
+                                     adT1-><B,U(U)> sgju-><B,H>}]
+      a7_sjEy =
+        \ (@ b_aeRa)
+          (eta_B2 :: RGen)
+          (eta1_B1 [OS=OneShot] :: State# RealWorld) ->
+          case eta_B2
+               `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                       :: Gen RealWorld
+                          ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                RealWorld)
+          of _ [Occ=Dead]
+          { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww5_sjlX ->
+          $wa3_sjlZ @ b_aeRa ww5_sjlX eta1_B1
+          } } in
+    let {
+      go_sgjt [InlPrag=NOINLINE] :: forall b_aeQd. RGen -> IO b_aeQd
+      [LclId,
+       Arity=2,
+       Str=DmdType <B,1*U(U)><B,U>b {adSX-><B,U(U)> adT0-><B,U(U)>
+                                     adT1-><B,U(U)> sgju-><B,H>}]
+      go_sgjt =
+        a7_sjEy
+        `cast` (forall b_aeRa. <RGen>_R -> Sym (NTCo:IO[0] <b_aeRa>_R)
+                :: (forall b_aeRa.
+                    RGen -> State# RealWorld -> (# State# RealWorld, b_aeRa #))
+                   ~R# (forall b_aeRa. RGen -> IO b_aeRa)) } in
+    ((go_sgjt
+        @ ()
+        ((primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+            @ RealWorld ww1_sjmc)
+         `cast` (Sym System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                 :: primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                      RealWorld
+                    ~R# Gen RealWorld)))
+     `cast` (NTCo:IO[0] <()>_R
+             :: IO () ~R# (State# RealWorld -> (# State# RealWorld, () #))))
+      w_sjm5
+
+-- RHS size: {terms: 24, types: 21, coercions: 6}
+Main.runRSTMEmpty1 [InlPrag=INLINE[0]]
+  :: CountIO
+     -> RGen
+     -> BenchTree
+     -> Word
+     -> Double
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=6,
+ Str=DmdType <B,U(U)><B,1*U(U)><B,A><B,U(U)><B,U(U)><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=6,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (w_sjm0 [Occ=Once] :: CountIO)
+                 (w1_sjm1 [Occ=Once] :: RGen)
+                 _ [Occ=Dead]
+                 (w3_sjm3 [Occ=Once!] :: Word)
+                 (w4_sjm4 [Occ=Once!] :: Double)
+                 (w5_sjm5 [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w_sjm0
+                      `cast` (Throughput.NTCo:Count[0] ; NTCo:IORef[0] <Word64>_N
+                              :: Count ~R# STRef RealWorld Word64)
+                 of _ [Occ=Dead] { STRef ww1_sjm8 [Occ=Once] ->
+                 case w1_sjm1
+                      `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                              :: Gen RealWorld
+                                 ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                       RealWorld)
+                 of _ [Occ=Dead]
+                 { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmc [Occ=Once] ->
+                 case w3_sjm3 of _ [Occ=Dead] { W# ww5_sjmg [Occ=Once] ->
+                 case w4_sjm4 of _ [Occ=Dead] { D# ww7_sjmk [Occ=Once] ->
+                 Main.$wa ww1_sjm8 ww3_sjmc ww5_sjmg ww7_sjmk w5_sjm5
+                 }
+                 }
+                 }
+                 }}]
+Main.runRSTMEmpty1 =
+  \ (w_sjm0 :: CountIO)
+    (w1_sjm1 :: RGen)
+    _ [Occ=Dead]
+    (w3_sjm3 :: Word)
+    (w4_sjm4 :: Double)
+    (w5_sjm5 [OS=OneShot] :: State# RealWorld) ->
+    case w_sjm0
+         `cast` (Throughput.NTCo:Count[0] ; NTCo:IORef[0] <Word64>_N
+                 :: Count ~R# STRef RealWorld Word64)
+    of _ [Occ=Dead] { STRef ww1_sjm8 ->
+    case w1_sjm1
+         `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                 :: Gen RealWorld
+                    ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                          RealWorld)
+    of _ [Occ=Dead]
+    { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmc ->
+    case w3_sjm3 of _ [Occ=Dead] { W# ww5_sjmg ->
+    case w4_sjm4 of _ [Occ=Dead] { D# ww7_sjmk ->
+    Main.$wa ww1_sjm8 ww3_sjmc ww5_sjmg ww7_sjmk w5_sjm5
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 13}
+runRSTMEmpty
+  :: CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()
+[GblId,
+ Arity=6,
+ Str=DmdType <B,U(U)><B,1*U(U)><B,A><B,U(U)><B,U(U)><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.runRSTMEmpty1
+               `cast` (<CountIO>_R
+                       -> <RGen>_R
+                       -> <BenchTree>_R
+                       -> <Word>_R
+                       -> <Double>_R
+                       -> Sym (NTCo:IO[0] <()>_R)
+                       :: (CountIO
+                           -> RGen
+                           -> BenchTree
+                           -> Word
+                           -> Double
+                           -> State# RealWorld
+                           -> (# State# RealWorld, () #))
+                          ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))}]
+runRSTMEmpty =
+  Main.runRSTMEmpty1
+  `cast` (<CountIO>_R
+          -> <RGen>_R
+          -> <BenchTree>_R
+          -> <Word>_R
+          -> <Double>_R
+          -> Sym (NTCo:IO[0] <()>_R)
+          :: (CountIO
+              -> RGen
+              -> BenchTree
+              -> Word
+              -> Double
+              -> State# RealWorld
+              -> (# State# RealWorld, () #))
+             ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))
+
+Rec {
+-- RHS size: {terms: 33, types: 6, coercions: 0}
+$wgo1_rjVd :: Word# -> (# Word#, Word# #)
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <L,U>]
+$wgo1_rjVd =
+  \ (ww2_aj06 :: Word#) ->
+    let {
+      a7_aj07 :: Word#
+      [LclId, Str=DmdType]
+      a7_aj07 =
+        narrow32Word#
+          (uncheckedShiftRL#
+             (xor# (uncheckedShiftRL# ww2_aj06 22#) ww2_aj06)
+             (+# (word2Int# (uncheckedShiftRL# ww2_aj06 61#)) 22#)) } in
+    case tagToEnum# @ Bool (geWord# a7_aj07 67296##) of _ [Occ=Dead] {
+      False -> $wgo1_rjVd (timesWord# ww2_aj06 6364136223846793005##);
+      True ->
+        (# timesWord# ww2_aj06 6364136223846793005##,
+           remWord# a7_aj07 100000## #)
+    }
+end Rec }
+
+-- RHS size: {terms: 313, types: 287, coercions: 59}
+Main.$wa1 [InlPrag=[0]]
+  :: MutVar# RealWorld Word64
+     -> MutableByteArray# RealWorld
+     -> Int#
+     -> Int#
+     -> Int#
+     -> Array# (TVar (SkipList.Node Word ()))
+     -> TVar# RealWorld Int
+     -> Int#
+     -> Int#
+     -> MutableByteArray# RealWorld
+     -> Word#
+     -> Double#
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=13,
+ Str=DmdType <B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U>b]
+Main.$wa1 =
+  \ (ww_sjmF :: MutVar# RealWorld Word64)
+    (ww1_sjmJ :: MutableByteArray# RealWorld)
+    (ww2_sjmT :: Int#)
+    (ww3_sjmY :: Int#)
+    (ww4_sjn0 :: Int#)
+    (ww5_sjn1 :: Array# (TVar (SkipList.Node Word ())))
+    (ww6_sjn6 :: TVar# RealWorld Int)
+    (ww7_sjnb :: Int#)
+    (ww8_sjnc :: Int#)
+    (ww9_sjnd :: MutableByteArray# RealWorld)
+    (ww10_sjni :: Word#)
+    (ww11_sjnm :: Double#)
+    (w_sjmC [OS=OneShot] :: State# RealWorld) ->
+    case GHC.Float.$w$cproperFraction
+           @ Word
+           GHC.Real.$fIntegralWord
+           (*## (/## ww11_sjnm 100.0##) (word2Double# 100000##))
+    of _ [Occ=Dead] { (# ww13_agnB, ww14_agnC #) ->
+    case ww14_agnC of _ [Occ=Dead] { D# x_ag7j ->
+    let {
+      $j_siQP :: Word# -> (# State# RealWorld, () #)
+      [LclId, Arity=1, Str=DmdType <B,U>b]
+      $j_siQP =
+        \ (ipv_sg7L [OS=OneShot] :: Word#) ->
+          case GHC.Float.$w$cproperFraction
+                 @ Word
+                 GHC.Real.$fIntegralWord
+                 (*##
+                    (/## (+## (/## (-## 100.0## ww11_sjnm) 2.0##) ww11_sjnm) 100.0##)
+                    (word2Double# 100000##))
+          of _ [Occ=Dead] { (# ww16_XguT, ww17_XguV #) ->
+          case ww17_XguV of _ [Occ=Dead] { D# x1_Xgaw ->
+          let {
+            $j1_siQL :: Word# -> (# State# RealWorld, () #)
+            [LclId, Arity=1, Str=DmdType <B,U>b]
+            $j1_siQL =
+              \ (ipv1_sg7Q [OS=OneShot] :: Word#) ->
+                let {
+                  a7_sjqk :: Data.Vector.Primitive.Mutable.MVector RealWorld Word64
+                  [LclId, Str=DmdType]
+                  a7_sjqk =
+                    Data.Vector.Primitive.Mutable.MVector
+                      @ RealWorld @ Word64 ww7_sjnb ww8_sjnc ww9_sjnd } in
+                let {
+                  a8_sjqh :: Int
+                  [LclId, Str=DmdType]
+                  a8_sjqh = I# ww3_sjmY } in
+                let {
+                  a9_sjqg :: Int
+                  [LclId, Str=DmdType]
+                  a9_sjqg = I# ww2_sjmT } in
+                let {
+                  a10_sjqf :: Array Int (TVar (SkipList.Node Word ()))
+                  [LclId, Str=DmdType]
+                  a10_sjqf =
+                    Array
+                      @ Int
+                      @ (TVar (SkipList.Node Word ()))
+                      a9_sjqg
+                      a8_sjqh
+                      ww4_sjn0
+                      ww5_sjn1 } in
+                letrec {
+                  $wa3_sjmu [InlPrag=[0], Occ=LoopBreaker]
+                    :: forall b_aeUl.
+                       MutableByteArray# RealWorld
+                       -> State# RealWorld -> (# State# RealWorld, b_aeUl #)
+                  [LclId, Arity=2, Str=DmdType <B,U><B,U>b]
+                  $wa3_sjmu =
+                    \ (@ b_aeUl)
+                      (ww18_sjms :: MutableByteArray# RealWorld)
+                      (w1_sjmp [OS=OneShot] :: State# RealWorld) ->
+                      case readWord64Array#
+                             @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                             (ww18_sjms
+                              `cast` ((MutableByteArray#
+                                         (Sym
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                      :: MutableByteArray# RealWorld
+                                         ~R# MutableByteArray#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)))
+                             0#
+                             (w1_sjmp
+                              `cast` ((State#
+                                         (Sym
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                      :: State# RealWorld
+                                         ~R# State#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)))
+                      of _ [Occ=Dead] { (# ipv2_a6Rc, ipv3_a6Rd #) ->
+                      case $wgo1_rjVd ipv3_a6Rd
+                      of _ [Occ=Dead] { (# ww20_agmG, ww21_agmH #) ->
+                      case writeWord64Array#
+                             @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                             (ww18_sjms
+                              `cast` ((MutableByteArray#
+                                         (Sym
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                      :: MutableByteArray# RealWorld
+                                         ~R# MutableByteArray#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)))
+                             0#
+                             ww20_agmG
+                             ipv2_a6Rc
+                      of s'#_agkH [OS=OneShot] { __DEFAULT ->
+                      case readWord64Array#
+                             @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                             (ww18_sjms
+                              `cast` ((MutableByteArray#
+                                         (Sym
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                      :: MutableByteArray# RealWorld
+                                         ~R# MutableByteArray#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)))
+                             0#
+                             s'#_agkH
+                      of _ [Occ=Dead] { (# ipv4_X6Yk, ipv5_X6Ym #) ->
+                      case System.Random.PCG.Fast.Pure.$wbounded
+                             (narrow32Word# (minusWord# ww10_sjni 2##)) ipv5_X6Ym
+                      of _ [Occ=Dead] { (# ww23_XgpU, ww24_XgpW #) ->
+                      case writeWord64Array#
+                             @ (primitive-0.5.4.0:Control.Monad.Primitive.PrimState IO)
+                             (ww18_sjms
+                              `cast` ((MutableByteArray#
+                                         (Sym
+                                            primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0]))_R
+                                      :: MutableByteArray# RealWorld
+                                         ~R# MutableByteArray#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)))
+                             0#
+                             ww23_XgpU
+                             ipv4_X6Yk
+                      of s'#1_Xgs1 [OS=OneShot] { __DEFAULT ->
+                      case tagToEnum# @ Bool (leWord# ww21_agmH ipv_sg7L)
+                      of _ [Occ=Dead] {
+                        False ->
+                          case tagToEnum# @ Bool (leWord# ww21_agmH ipv1_sg7Q)
+                          of _ [Occ=Dead] {
+                            False ->
+                              case norec_atomically#
+                                     @ ()
+                                     (\ (eta_a6uZ [OS=OneShot] :: State# RealWorld) ->
+                                        case SkipList.$wa2
+                                               @ Word
+                                               @ ()
+                                               ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                                               (a10_sjqf
+                                                `cast` (Sym
+                                                          (SkipList.NTCo:TArray[0]
+                                                             <Int>_N <SkipList.Node Word ()>_R)
+                                                        :: Array Int (TVar (SkipList.Node Word ()))
+                                                           ~R# SkipList.TArray
+                                                                 Int (SkipList.Node Word ())))
+                                               ww6_sjn6
+                                               (W# (plusWord# ww24_XgpW 1##))
+                                               eta_a6uZ
+                                        of _ [Occ=Dead] { (# ipv6_a6Tk, ipv7_a6Tl #) ->
+                                        (# ipv6_a6Tk, () #)
+                                        })
+                                     (s'#1_Xgs1
+                                      `cast` ((State#
+                                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                              :: State#
+                                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                      IO)
+                                                 ~R# State# RealWorld))
+                              of _ [Occ=Dead] { (# ipv6_a6KN, ipv7_a6KO #) ->
+                              case readMutVar# @ RealWorld @ Word64 ww_sjmF ipv6_a6KN
+                              of _ [Occ=Dead] { (# ipv8_agzg, ipv9_agzh #) ->
+                              case ipv9_agzh of _ [Occ=Dead] { W64# a11_agz3 ->
+                              case a11_agz3 of wild5_agz5 {
+                                __DEFAULT ->
+                                  case writeMutVar#
+                                         @ RealWorld
+                                         @ Word64
+                                         ww_sjmF
+                                         (W64# (plusWord# wild5_agz5 1##))
+                                         ipv8_agzg
+                                  of s2#_agzk [OS=OneShot] { __DEFAULT ->
+                                  $wa3_sjmu @ b_aeUl ww18_sjms s2#_agzk
+                                  };
+                                18446744073709551615## ->
+                                  case GHC.Word.$fEnumWord12 of wild6_00 { }
+                              }
+                              }
+                              }
+                              };
+                            True ->
+                              case norec_atomically#
+                                     @ ()
+                                     (\ (eta_a6uZ [OS=OneShot] :: State# RealWorld) ->
+                                        case SkipList.$wa4
+                                               @ Word
+                                               @ ()
+                                               ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                                               (a10_sjqf
+                                                `cast` (Sym
+                                                          (SkipList.NTCo:TArray[0]
+                                                             <Int>_N <SkipList.Node Word ()>_R)
+                                                        :: Array Int (TVar (SkipList.Node Word ()))
+                                                           ~R# SkipList.TArray
+                                                                 Int (SkipList.Node Word ())))
+                                               ww6_sjn6
+                                               (a7_sjqk
+                                                `cast` (Sym
+                                                          (Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                                                             <RealWorld>_N)
+                                                        ; Sym
+                                                            (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                                                               <RealWorld>_N)
+                                                        :: Data.Vector.Primitive.Mutable.MVector
+                                                             RealWorld Word64
+                                                           ~R# Data.Vector.Unboxed.Base.MVector
+                                                                 RealWorld Word64))
+                                               (W# (plusWord# ww24_XgpW 1##))
+                                               ()
+                                               eta_a6uZ
+                                        of _ [Occ=Dead] { (# ipv6_a6Tk, ipv7_a6Tl #) ->
+                                        (# ipv6_a6Tk, () #)
+                                        })
+                                     (s'#1_Xgs1
+                                      `cast` ((State#
+                                                 primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                              :: State#
+                                                   (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                      IO)
+                                                 ~R# State# RealWorld))
+                              of _ [Occ=Dead] { (# ipv6_a6KN, ipv7_a6KO #) ->
+                              case readMutVar# @ RealWorld @ Word64 ww_sjmF ipv6_a6KN
+                              of _ [Occ=Dead] { (# ipv8_agzg, ipv9_agzh #) ->
+                              case ipv9_agzh of _ [Occ=Dead] { W64# a11_agz3 ->
+                              case a11_agz3 of wild5_agz5 {
+                                __DEFAULT ->
+                                  case writeMutVar#
+                                         @ RealWorld
+                                         @ Word64
+                                         ww_sjmF
+                                         (W64# (plusWord# wild5_agz5 1##))
+                                         ipv8_agzg
+                                  of s2#_agzk [OS=OneShot] { __DEFAULT ->
+                                  $wa3_sjmu @ b_aeUl ww18_sjms s2#_agzk
+                                  };
+                                18446744073709551615## ->
+                                  case GHC.Word.$fEnumWord12 of wild6_00 { }
+                              }
+                              }
+                              }
+                              }
+                          };
+                        True ->
+                          case norec_atomically#
+                                 @ ()
+                                 (\ (eta_a6uZ [OS=OneShot] :: State# RealWorld) ->
+                                    case SkipList.$wa3
+                                           @ Word
+                                           @ ()
+                                           ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                                           (a10_sjqf
+                                            `cast` (Sym
+                                                      (SkipList.NTCo:TArray[0]
+                                                         <Int>_N <SkipList.Node Word ()>_R)
+                                                    :: Array Int (TVar (SkipList.Node Word ()))
+                                                       ~R# SkipList.TArray
+                                                             Int (SkipList.Node Word ())))
+                                           ww6_sjn6
+                                           (W# (plusWord# ww24_XgpW 1##))
+                                           eta_a6uZ
+                                    of _ [Occ=Dead] { (# ipv6_a6Tk, ipv7_a6Tl #) ->
+                                    (# ipv6_a6Tk, () #)
+                                    })
+                                 (s'#1_Xgs1
+                                  `cast` ((State#
+                                             primitive-0.5.4.0:Control.Monad.Primitive.TFCo:R:PrimStateIO[0])_R
+                                          :: State#
+                                               (primitive-0.5.4.0:Control.Monad.Primitive.PrimState
+                                                  IO)
+                                             ~R# State# RealWorld))
+                          of _ [Occ=Dead] { (# ipv6_a6KN, ipv7_a6KO #) ->
+                          case readMutVar# @ RealWorld @ Word64 ww_sjmF ipv6_a6KN
+                          of _ [Occ=Dead] { (# ipv8_agzg, ipv9_agzh #) ->
+                          case ipv9_agzh of _ [Occ=Dead] { W64# a11_agz3 ->
+                          case a11_agz3 of wild4_agz5 {
+                            __DEFAULT ->
+                              case writeMutVar#
+                                     @ RealWorld
+                                     @ Word64
+                                     ww_sjmF
+                                     (W64# (plusWord# wild4_agz5 1##))
+                                     ipv8_agzg
+                              of s2#_agzk [OS=OneShot] { __DEFAULT ->
+                              $wa3_sjmu @ b_aeUl ww18_sjms s2#_agzk
+                              };
+                            18446744073709551615## ->
+                              case GHC.Word.$fEnumWord12 of wild5_00 { }
+                          }
+                          }
+                          }
+                          }
+                      }
+                      }
+                      }
+                      }
+                      }
+                      }
+                      }; } in
+                let {
+                  a11_sjFf
+                    :: forall b_aeUl.
+                       RGen -> State# RealWorld -> (# State# RealWorld, b_aeUl #)
+                  [LclId,
+                   Arity=2,
+                   Str=DmdType <B,1*U(U)><B,U>b {adTe-><B,U(U)>
+                                                 adTg-><B,U(U(U(U),U(U),U,U),U(U),U(U,U,U))>
+                                                 adTh-><B,U(U)> sg7L-><B,U> sg7Q-><B,U>}]
+                  a11_sjFf =
+                    \ (@ b_aeUl)
+                      (eta_B2 :: RGen)
+                      (eta1_B1 [OS=OneShot] :: State# RealWorld) ->
+                      case eta_B2
+                           `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                                   :: Gen RealWorld
+                                      ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                            RealWorld)
+                      of _ [Occ=Dead]
+                      { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww19_sjms ->
+                      $wa3_sjmu @ b_aeUl ww19_sjms eta1_B1
+                      } } in
+                let {
+                  go_sgjG [InlPrag=NOINLINE] :: forall b_aeT4. RGen -> IO b_aeT4
+                  [LclId,
+                   Arity=2,
+                   Str=DmdType <B,1*U(U)><B,U>b {adTe-><B,U(U)>
+                                                 adTg-><B,U(U(U(U),U(U),U,U),U(U),U(U,U,U))>
+                                                 adTh-><B,U(U)> sg7L-><B,U> sg7Q-><B,U>}]
+                  go_sgjG =
+                    a11_sjFf
+                    `cast` (forall b_aeUl. <RGen>_R -> Sym (NTCo:IO[0] <b_aeUl>_R)
+                            :: (forall b_aeUl.
+                                RGen -> State# RealWorld -> (# State# RealWorld, b_aeUl #))
+                               ~R# (forall b_aeUl. RGen -> IO b_aeUl)) } in
+                ((go_sgjG
+                    @ ()
+                    ((primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                        @ RealWorld ww1_sjmJ)
+                     `cast` (Sym System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                             :: primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                  RealWorld
+                                ~R# Gen RealWorld)))
+                 `cast` (NTCo:IO[0] <()>_R
+                         :: IO () ~R# (State# RealWorld -> (# State# RealWorld, () #))))
+                  w_sjmC } in
+          case tagToEnum# @ Bool (<## x1_Xgaw 0.0##) of _ [Occ=Dead] {
+            False ->
+              case ww16_XguT of _ [Occ=Dead] { W# ipv1_Xged ->
+              $j1_siQL ipv1_Xged
+              };
+            True ->
+              case ww16_XguT of _ [Occ=Dead] { W# x#_ag6z ->
+              $j1_siQL (minusWord# x#_ag6z 1##)
+              }
+          }
+          }
+          } } in
+    case tagToEnum# @ Bool (<## x_ag7j 0.0##) of _ [Occ=Dead] {
+      False ->
+        case ww13_agnB of _ [Occ=Dead] { W# ipv_XgdZ -> $j_siQP ipv_XgdZ };
+      True ->
+        case ww13_agnB of _ [Occ=Dead] { W# x#_ag6z ->
+        $j_siQP (minusWord# x#_ag6z 1##)
+        }
+    }
+    }
+    }
+
+-- RHS size: {terms: 50, types: 59, coercions: 16}
+Main.runRSTMSingle1 [InlPrag=INLINE[0]]
+  :: CountIO
+     -> RGen
+     -> BenchTree
+     -> Word
+     -> Double
+     -> State# RealWorld
+     -> (# State# RealWorld, () #)
+[GblId,
+ Arity=6,
+ Str=DmdType <B,U(U)><B,1*U(U)><B,U(U(U(U),U(U),U,U),U(U),U(U,U,U))><B,U(U)><B,1*U(U)><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=6,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (w_sjmx [Occ=Once] :: CountIO)
+                 (w1_sjmy [Occ=Once] :: RGen)
+                 (w2_sjmz [Occ=Once!] :: BenchTree)
+                 (w3_sjmA [Occ=Once!] :: Word)
+                 (w4_sjmB [Occ=Once!] :: Double)
+                 (w5_sjmC [Occ=Once, OS=OneShot] :: State# RealWorld) ->
+                 case w_sjmx
+                      `cast` (Throughput.NTCo:Count[0] ; NTCo:IORef[0] <Word64>_N
+                              :: Count ~R# STRef RealWorld Word64)
+                 of _ [Occ=Dead] { STRef ww1_sjmF [Occ=Once] ->
+                 case w1_sjmy
+                      `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                              :: Gen RealWorld
+                                 ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                       RealWorld)
+                 of _ [Occ=Dead]
+                 { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmJ [Occ=Once] ->
+                 case w2_sjmz
+                 of _ [Occ=Dead]
+                 { SkipList.PQ ww5_sjmN [Occ=Once] ww6_sjn3 [Occ=Once!]
+                               ww7_sjn8 [Occ=Once] ->
+                 case ww5_sjmN
+                      `cast` (SkipList.NTCo:TArray[0] <Int>_N <SkipList.Node Word ()>_R
+                              :: SkipList.TArray Int (SkipList.Node Word ())
+                                 ~R# Array Int (TVar (SkipList.Node Word ())))
+                 of _ [Occ=Dead]
+                 { Array ww9_sjmQ [Occ=Once!] ww10_sjmV [Occ=Once!]
+                         ww11_sjn0 [Occ=Once] ww12_sjn1 [Occ=Once] ->
+                 case ww9_sjmQ of _ [Occ=Dead] { I# ww14_sjmT [Occ=Once] ->
+                 case ww10_sjmV of _ [Occ=Dead] { I# ww16_sjmY [Occ=Once] ->
+                 case ww6_sjn3 of _ [Occ=Dead] { TVar ww18_sjn6 [Occ=Once] ->
+                 case ww7_sjn8
+                      `cast` (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                                <RealWorld>_N
+                              ; Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0] <RealWorld>_N
+                              :: Data.Vector.Unboxed.Base.MVector RealWorld Word64
+                                 ~R# Data.Vector.Primitive.Mutable.MVector RealWorld Word64)
+                 of _ [Occ=Dead]
+                 { Data.Vector.Primitive.Mutable.MVector ww20_sjnb [Occ=Once]
+                                                         ww21_sjnc [Occ=Once]
+                                                         ww22_sjnd [Occ=Once] ->
+                 case w3_sjmA of _ [Occ=Dead] { W# ww24_sjni [Occ=Once] ->
+                 case w4_sjmB of _ [Occ=Dead] { D# ww26_sjnm [Occ=Once] ->
+                 Main.$wa1
+                   ww1_sjmF
+                   ww3_sjmJ
+                   ww14_sjmT
+                   ww16_sjmY
+                   ww11_sjn0
+                   ww12_sjn1
+                   ww18_sjn6
+                   ww20_sjnb
+                   ww21_sjnc
+                   ww22_sjnd
+                   ww24_sjni
+                   ww26_sjnm
+                   w5_sjmC
+                 }
+                 }
+                 }
+                 }
+                 }
+                 }
+                 }
+                 }
+                 }
+                 }}]
+Main.runRSTMSingle1 =
+  \ (w_sjmx :: CountIO)
+    (w1_sjmy :: RGen)
+    (w2_sjmz :: BenchTree)
+    (w3_sjmA :: Word)
+    (w4_sjmB :: Double)
+    (w5_sjmC [OS=OneShot] :: State# RealWorld) ->
+    case w_sjmx
+         `cast` (Throughput.NTCo:Count[0] ; NTCo:IORef[0] <Word64>_N
+                 :: Count ~R# STRef RealWorld Word64)
+    of _ [Occ=Dead] { STRef ww1_sjmF ->
+    case w1_sjmy
+         `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                 :: Gen RealWorld
+                    ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                          RealWorld)
+    of _ [Occ=Dead]
+    { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmJ ->
+    case w2_sjmz
+    of _ [Occ=Dead] { SkipList.PQ ww5_sjmN ww6_sjn3 ww7_sjn8 ->
+    case ww5_sjmN
+         `cast` (SkipList.NTCo:TArray[0] <Int>_N <SkipList.Node Word ()>_R
+                 :: SkipList.TArray Int (SkipList.Node Word ())
+                    ~R# Array Int (TVar (SkipList.Node Word ())))
+    of _ [Occ=Dead] { Array ww9_sjmQ ww10_sjmV ww11_sjn0 ww12_sjn1 ->
+    case ww9_sjmQ of _ [Occ=Dead] { I# ww14_sjBR ->
+    case ww10_sjmV of _ [Occ=Dead] { I# ww16_sjBU ->
+    case ww6_sjn3 of _ [Occ=Dead] { TVar ww18_sjn6 ->
+    case ww7_sjn8
+         `cast` (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                   <RealWorld>_N
+                 ; Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0] <RealWorld>_N
+                 :: Data.Vector.Unboxed.Base.MVector RealWorld Word64
+                    ~R# Data.Vector.Primitive.Mutable.MVector RealWorld Word64)
+    of _ [Occ=Dead]
+    { Data.Vector.Primitive.Mutable.MVector ww20_sjnb ww21_sjnc
+                                            ww22_sjnd ->
+    case w3_sjmA of _ [Occ=Dead] { W# ww24_sjni ->
+    case w4_sjmB of _ [Occ=Dead] { D# ww26_sjnm ->
+    Main.$wa1
+      ww1_sjmF
+      ww3_sjmJ
+      ww14_sjBR
+      ww16_sjBU
+      ww11_sjn0
+      ww12_sjn1
+      ww18_sjn6
+      ww20_sjnb
+      ww21_sjnc
+      ww22_sjnd
+      ww24_sjni
+      ww26_sjnm
+      w5_sjmC
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 13}
+runRSTMSingle
+  :: CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()
+[GblId,
+ Arity=6,
+ Str=DmdType <B,U(U)><B,1*U(U)><B,U(U(U(U),U(U),U,U),U(U),U(U,U,U))><B,U(U)><B,1*U(U)><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.runRSTMSingle1
+               `cast` (<CountIO>_R
+                       -> <RGen>_R
+                       -> <BenchTree>_R
+                       -> <Word>_R
+                       -> <Double>_R
+                       -> Sym (NTCo:IO[0] <()>_R)
+                       :: (CountIO
+                           -> RGen
+                           -> BenchTree
+                           -> Word
+                           -> Double
+                           -> State# RealWorld
+                           -> (# State# RealWorld, () #))
+                          ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))}]
+runRSTMSingle =
+  Main.runRSTMSingle1
+  `cast` (<CountIO>_R
+          -> <RGen>_R
+          -> <BenchTree>_R
+          -> <Word>_R
+          -> <Double>_R
+          -> Sym (NTCo:IO[0] <()>_R)
+          :: (CountIO
+              -> RGen
+              -> BenchTree
+              -> Word
+              -> Double
+              -> State# RealWorld
+              -> (# State# RealWorld, () #))
+             ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))
+
+-- RHS size: {terms: 1, types: 0, coercions: 13}
+runRSTMSingle'
+  :: CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()
+[GblId,
+ Arity=6,
+ Str=DmdType <B,A><B,A><B,U(U(U(U),U(U),U,U),U(U),A)><B,A><B,A><B,U>b,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.runRSTMSingle'1
+               `cast` (<CountIO>_R
+                       -> <RGen>_R
+                       -> <BenchTree>_R
+                       -> <Word>_R
+                       -> <Double>_R
+                       -> Sym (NTCo:IO[0] <()>_R)
+                       :: (CountIO
+                           -> RGen
+                           -> BenchTree
+                           -> Word
+                           -> Double
+                           -> State# RealWorld
+                           -> (# State# RealWorld, () #))
+                          ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))}]
+runRSTMSingle' =
+  Main.runRSTMSingle'1
+  `cast` (<CountIO>_R
+          -> <RGen>_R
+          -> <BenchTree>_R
+          -> <Word>_R
+          -> <Double>_R
+          -> Sym (NTCo:IO[0] <()>_R)
+          :: (CountIO
+              -> RGen
+              -> BenchTree
+              -> Word
+              -> Double
+              -> State# RealWorld
+              -> (# State# RealWorld, () #))
+             ~R# (CountIO -> RGen -> BenchTree -> Word -> Double -> IO ()))
+
+-- RHS size: {terms: 1, types: 0, coercions: 13}
+samples :: Word -> Word -> RGen -> IO ((Word, Word), RGen)
+[GblId,
+ Arity=4,
+ Str=DmdType <S,1*U(U)><S,1*U(U)><S,1*U(U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.samples1
+               `cast` (<Word>_R
+                       -> <Word>_R
+                       -> <RGen>_R
+                       -> Sym (NTCo:IO[0] <((Word, Word), RGen)>_R)
+                       :: (Word
+                           -> Word
+                           -> RGen
+                           -> State# RealWorld
+                           -> (# State# RealWorld, ((Word, Word), RGen) #))
+                          ~R# (Word -> Word -> RGen -> IO ((Word, Word), RGen)))}]
+samples =
+  Main.samples1
+  `cast` (<Word>_R
+          -> <Word>_R
+          -> <RGen>_R
+          -> Sym (NTCo:IO[0] <((Word, Word), RGen)>_R)
+          :: (Word
+              -> Word
+              -> RGen
+              -> State# RealWorld
+              -> (# State# RealWorld, ((Word, Word), RGen) #))
+             ~R# (Word -> Word -> RGen -> IO ((Word, Word), RGen)))
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_atomicGroups :: RBTreeOpts -> Int
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLLLSLL),1*U(A,A,A,A,1*U(U),A,A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfEu [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfEu
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                              ds5_dfEz [Occ=Once] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds5_dfEz
+                 }}]
+_atomicGroups =
+  \ (ds_dfEu :: RBTreeOpts) ->
+    case ds_dfEu
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfEv ds2_dfEw ds3_dfEx ds4_dfEy ds5_dfEz ds6_dfEA
+                 ds7_dfEB ->
+    ds5_dfEz
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_entries :: RBTreeOpts -> Word
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(SLLLLLL),1*U(1*U(U),A,A,A,A,A,A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfDY [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfDY
+                 of _ [Occ=Dead]
+                 { RBTreeOpts ds1_dfDZ [Occ=Once] _ [Occ=Dead] _ [Occ=Dead]
+                              _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds1_dfDZ
+                 }}]
+_entries =
+  \ (ds_dfDY :: RBTreeOpts) ->
+    case ds_dfDY
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfDZ ds2_dfE0 ds3_dfE1 ds4_dfE2 ds5_dfE3 ds6_dfE4
+                 ds7_dfE5 ->
+    ds1_dfDZ
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_initOnly :: RBTreeOpts -> Bool
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfEe [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfEe
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] _ [Occ=Dead] ds3_dfEh [Occ=Once]
+                              _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds3_dfEh
+                 }}]
+_initOnly =
+  \ (ds_dfEe :: RBTreeOpts) ->
+    case ds_dfEe
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfEf ds2_dfEg ds3_dfEh ds4_dfEi ds5_dfEj ds6_dfEk
+                 ds7_dfEl ->
+    ds3_dfEh
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_mix :: RBTreeOpts -> Double
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLLLLSL),1*U(A,A,A,A,A,1*U(U),A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfEC [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfEC
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                              _ [Occ=Dead] ds6_dfEI [Occ=Once] _ [Occ=Dead] ->
+                 ds6_dfEI
+                 }}]
+_mix =
+  \ (ds_dfEC :: RBTreeOpts) ->
+    case ds_dfEC
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfED ds2_dfEE ds3_dfEF ds4_dfEG ds5_dfEH ds6_dfEI
+                 ds7_dfEJ ->
+    ds6_dfEI
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_threads :: RBTreeOpts -> Int
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LSLLLLL),1*U(A,1*U(U),A,A,A,A,A)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfE6 [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfE6
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] ds2_dfE8 [Occ=Once] _ [Occ=Dead]
+                              _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds2_dfE8
+                 }}]
+_threads =
+  \ (ds_dfE6 :: RBTreeOpts) ->
+    case ds_dfE6
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfE7 ds2_dfE8 ds3_dfE9 ds4_dfEa ds5_dfEb ds6_dfEc
+                 ds7_dfEd ->
+    ds2_dfE8
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_throughput :: RBTreeOpts -> Int
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLLLLLS),1*U(A,A,A,A,A,A,1*U(U))>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfEK [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfEK
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                              _ [Occ=Dead] _ [Occ=Dead] ds7_dfER [Occ=Once] ->
+                 ds7_dfER
+                 }}]
+_throughput =
+  \ (ds_dfEK :: RBTreeOpts) ->
+    case ds_dfEK
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfEL ds2_dfEM ds3_dfEN ds4_dfEO ds5_dfEP ds6_dfEQ
+                 ds7_dfER ->
+    ds7_dfER
+    }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+_withoutTM :: RBTreeOpts -> Bool
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLLSLLL),1*U(A,A,A,1*U,A,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_dfEm [Occ=Once!] :: RBTreeOpts) ->
+                 case ds_dfEm
+                 of _ [Occ=Dead]
+                 { RBTreeOpts _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead]
+                              ds4_dfEq [Occ=Once] _ [Occ=Dead] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds4_dfEq
+                 }}]
+_withoutTM =
+  \ (ds_dfEm :: RBTreeOpts) ->
+    case ds_dfEm
+    of _ [Occ=Dead]
+    { RBTreeOpts ds1_dfEn ds2_dfEo ds3_dfEp ds4_dfEq ds5_dfEr ds6_dfEs
+                 ds7_dfEt ->
+    ds4_dfEq
+    }
+
+Rec {
+-- RHS size: {terms: 27, types: 43, coercions: 4}
+a5_rjVe
+  :: [Count] -> State# RealWorld -> (# State# RealWorld, [Word64] #)
+[GblId, Arity=2, Caf=NoCafRefs, Str=DmdType <S,1*U><L,U>]
+a5_rjVe =
+  \ (ds_ag5Y :: [Count])
+    (eta_X8w [OS=OneShot] :: State# RealWorld) ->
+    case ds_ag5Y of _ [Occ=Dead] {
+      [] -> (# eta_X8w, [] @ Word64 #);
+      : y_ag63 ys_ag64 ->
+        case y_ag63
+             `cast` (Throughput.NTCo:Count[0] ; NTCo:IORef[0] <Word64>_N
+                     :: Count ~R# STRef RealWorld Word64)
+        of _ [Occ=Dead] { STRef var#_aipV ->
+        case readMutVar# @ RealWorld @ Word64 var#_aipV eta_X8w
+        of _ [Occ=Dead] { (# ipv_a7DZ, ipv1_a7E0 #) ->
+        case a5_rjVe ys_ag64 ipv_a7DZ
+        of _ [Occ=Dead] { (# ipv2_agwZ, ipv3_agx0 #) ->
+        (# ipv2_agwZ, : @ Word64 ipv1_a7E0 ipv3_agx0 #)
+        }
+        }
+        }
+    }
+end Rec }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl13_rjVf :: [Char]
+[GblId, Str=DmdType]
+lvl13_rjVf = unpackCString# "benchdata:"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl14_rjVg :: Char
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl14_rjVg = C# ' '#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl15_rjVh :: [Char]
+[GblId, Str=DmdType]
+lvl15_rjVh = unpackCString# "run-time"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl16_rjVi :: [Char]
+[GblId, Str=DmdType]
+lvl16_rjVi = unpackCString# "no-kill-time"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl17_rjVj :: [Char]
+[GblId, Str=DmdType]
+lvl17_rjVj = unpackCString# "transactions"#
+
+Rec {
+-- RHS size: {terms: 15, types: 10, coercions: 0}
+$wgo2_rjVk :: [Word64] -> Word# -> Word#
+[GblId, Arity=2, Caf=NoCafRefs, Str=DmdType <S,1*U><L,U>]
+$wgo2_rjVk =
+  \ (w_sjnt :: [Word64]) (ww_sjnx :: Word#) ->
+    case w_sjnt of _ [Occ=Dead] {
+      [] -> ww_sjnx;
+      : y_a6L7 ys_a6L8 ->
+        case y_a6L7 of _ [Occ=Dead] { W64# y#_agt0 ->
+        $wgo2_rjVk ys_a6L8 (plusWord# ww_sjnx y#_agt0)
+        }
+    }
+end Rec }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl18_rjVl :: [Char]
+[GblId, Str=DmdType]
+lvl18_rjVl = unpackCString# "prog"#
+
+-- RHS size: {terms: 10, types: 20, coercions: 6}
+a6_rjVm :: State# RealWorld -> (# State# RealWorld, Count #)
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <L,U>]
+a6_rjVm =
+  \ (eta_ag3d [OS=OneShot] :: State# RealWorld) ->
+    case newMutVar# @ Word64 @ RealWorld lvl_rjUX eta_ag3d
+    of _ [Occ=Dead] { (# ipv_agE2, ipv1_agE3 #) ->
+    (# ipv_agE2,
+       (STRef @ RealWorld @ Word64 ipv1_agE3)
+       `cast` (Sym NTCo:IORef[0] <Word64>_N ; Sym Throughput.NTCo:Count[0]
+               :: STRef RealWorld Word64 ~R# Count) #)
+    }
+
+-- RHS size: {terms: 3, types: 4, coercions: 3}
+lvl19_rjVn :: [IO Count]
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl19_rjVn =
+  : @ (IO Count)
+    (a6_rjVm
+     `cast` (Sym (NTCo:IO[0] <Count>_R)
+             :: (State# RealWorld -> (# State# RealWorld, Count #))
+                ~R# IO Count))
+    ([] @ (IO Count))
+
+Rec {
+-- RHS size: {terms: 12, types: 4, coercions: 3}
+$wxs_rjVo :: Int# -> [IO Count]
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <S,1*U>]
+$wxs_rjVo =
+  \ (ww_sjnQ :: Int#) ->
+    case ww_sjnQ of ds1_aip0 {
+      __DEFAULT ->
+        : @ (IO Count)
+          (a6_rjVm
+           `cast` (Sym (NTCo:IO[0] <Count>_R)
+                   :: (State# RealWorld -> (# State# RealWorld, Count #))
+                      ~R# IO Count))
+          ($wxs_rjVo (-# ds1_aip0 1#));
+      1# -> lvl19_rjVn
+    }
+end Rec }
+
+-- RHS size: {terms: 3, types: 3, coercions: 0}
+lvl20_rjVp :: Parser RBTreeOpts
+[GblId, Str=DmdType]
+lvl20_rjVp =
+  Options.Applicative.Types.MultP
+    @ RBTreeOpts @ RBTreeOpts (helper @ RBTreeOpts) rbTreeOpts
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl21_rjVq :: [Char]
+[GblId, Str=DmdType]
+lvl21_rjVq = unpackCString# "RBTree benchmark."#
+
+-- RHS size: {terms: 4, types: 3, coercions: 3}
+lvl22_rjVr
+  :: Options.Applicative.Help.Chunk.Chunk
+       ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+[GblId, Str=DmdType]
+lvl22_rjVr =
+  wordsFB
+    @ (Options.Applicative.Help.Chunk.Chunk
+         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+    Options.Applicative.Help.Chunk.paragraph1
+    ((Nothing
+        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+     `cast` (Sym
+               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                ~R# Options.Applicative.Help.Chunk.Chunk
+                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+    lvl21_rjVq
+
+-- RHS size: {terms: 397, types: 401, coercions: 42}
+Main.main1 :: State# RealWorld -> (# State# RealWorld, () #)
+[GblId, Arity=1, Str=DmdType <L,U>]
+Main.main1 =
+  \ (s_a6Qg [OS=OneShot] :: State# RealWorld) ->
+    case getProgName1 s_a6Qg
+    of _ [Occ=Dead] { (# ipv_a6Qj, ipv1_a6Qk #) ->
+    case getArgs1 ipv_a6Qj
+    of _ [Occ=Dead] { (# ipv2_agER, ipv3_agES #) ->
+    case Options.Applicative.Extra.customExecParser2
+           @ RBTreeOpts
+           (execParserPure
+              @ RBTreeOpts
+              Options.Applicative.Builder.prefs1
+              (Options.Applicative.Types.ParserInfo
+                 @ RBTreeOpts
+                 lvl20_rjVp
+                 True
+                 lvl22_rjVr
+                 (wordsFB
+                    @ (Options.Applicative.Help.Chunk.Chunk
+                         ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+                    Options.Applicative.Help.Chunk.paragraph1
+                    ((Nothing
+                        @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+                     `cast` (Sym
+                               Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+                             :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                                ~R# Options.Applicative.Help.Chunk.Chunk
+                                      ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+                    ipv1_a6Qk)
+                 ((Nothing
+                     @ ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc)
+                  `cast` (Sym
+                            Options.Applicative.Help.Chunk.NTCo:Chunk[0] <ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc>_N
+                          :: Maybe ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc
+                             ~R# Options.Applicative.Help.Chunk.Chunk
+                                   ansi-wl-pprint-0.6.7.2:Text.PrettyPrint.ANSI.Leijen.Doc))
+                 Options.Applicative.Builder.info1
+                 True)
+              ipv3_agES)
+           ipv2_agER
+    of _ [Occ=Dead] { (# ipv4_X6TY, ipv5_X6U0 #) ->
+    case ipv5_X6U0
+    of _ [Occ=Dead]
+    { RBTreeOpts ds3_dfE7 ds4_dfE8 ds5_dfE9 ds6_dfEa ds7_dfEb ds8_dfEc
+                 ds9_dfEd ->
+    case ds4_dfE8 of _ [Occ=Dead] { I# x#_aio6 ->
+    case {__pkg_ccall_GC base-4.8.2.0 setNumCapabilities Word#
+                                                -> State# RealWorld -> (# State# RealWorld #)}_aio5
+           (narrow32Word# (int2Word# x#_aio6)) ipv4_X6TY
+    of _ [Occ=Dead] { (# ds10_aioa #) ->
+    case ds9_dfEd of _ [Occ=Dead] { I# ipv6_sgfK ->
+    case ds8_dfEc of _ [Occ=Dead] { D# ipv7_sgfN ->
+    case ds3_dfE7 of _ [Occ=Dead] { W# ipv8_sgfQ ->
+    let {
+      $j_sjPW :: State# RealWorld -> [RGen] -> (# State# RealWorld, () #)
+      [LclId, Arity=2, Str=DmdType]
+      $j_sjPW =
+        \ (ipv9_X6YP [OS=OneShot] :: State# RealWorld)
+          (ipv10_X6YR [OS=OneShot] :: [RGen]) ->
+          case norec_atomically#
+                 @ (PTSTASLPQ Word ()) (SkipList.newSL2 @ Word @ ()) ipv9_X6YP
+          of _ [Occ=Dead] { (# ipv11_X6YH, ipv12_X6YJ #) ->
+          letrec {
+            a7_sjat [Occ=LoopBreaker]
+              :: [Word] -> State# RealWorld -> (# State# RealWorld, () #)
+            [LclId, Arity=2, Str=DmdType <S,1*U><L,U>]
+            a7_sjat =
+              \ (ds12_a6L2 :: [Word])
+                (eta_X7j [OS=OneShot] :: State# RealWorld) ->
+                case ds12_a6L2 of _ [Occ=Dead] {
+                  [] -> (# eta_X7j, () #);
+                  : y_a6L7 ys_a6L8 ->
+                    case norec_atomically#
+                           @ ()
+                           (\ (w4_s9mj [OS=OneShot] :: State# RealWorld) ->
+                              case ipv12_X6YJ
+                              of _ [Occ=Dead] { SkipList.PQ ww1_s9mm ww2_s9mn ww3_s9ms ->
+                              case ww2_s9mn of _ [Occ=Dead] { TVar ww5_s9mq ->
+                              SkipList.$wa4
+                                @ Word
+                                @ ()
+                                ghc-prim-0.4.0.0:GHC.Classes.$fOrdWord
+                                ww1_s9mm
+                                ww5_s9mq
+                                ww3_s9ms
+                                y_a6L7
+                                ()
+                                w4_s9mj
+                              }
+                              })
+                           eta_X7j
+                    of _ [Occ=Dead] { (# ipv13_X6Ty, ipv14_a6KO #) ->
+                    a7_sjat ys_a6L8 ipv13_X6Ty
+                    }
+                }; } in
+          case a7_sjat
+                 (GHC.Enum.$w$cenumFromThenTo 0## 2## ipv8_sgfQ) ipv11_X6YH
+          of _ [Occ=Dead] { (# ipv13_X6Tt, ipv14_a6KO #) ->
+          let {
+            $j1_siRv
+              :: State# RealWorld -> [Count] -> (# State# RealWorld, () #)
+            [LclId, Arity=2, Str=DmdType <L,U><L,U>]
+            $j1_siRv =
+              \ (ipv15_X77E [OS=OneShot] :: State# RealWorld)
+                (ipv16_X6YT [OS=OneShot] :: [Count]) ->
+                case ds5_dfE9 of _ [Occ=Dead] {
+                  False ->
+                    let {
+                      $w$j_sjnK [InlPrag=[0]]
+                        :: State# RealWorld
+                           -> Double -> Double -> (# State# RealWorld, () #)
+                      [LclId, Arity=3, Str=DmdType <L,U><L,1*U(U)><L,1*U(U)>]
+                      $w$j_sjnK =
+                        \ (w_sjnD [OS=OneShot] :: State# RealWorld)
+                          (ww_sjnH [OS=OneShot] :: Double)
+                          (ww1_sjnI [OS=OneShot] :: Double) ->
+                          case a5_rjVe ipv16_X6YT w_sjnD
+                          of _ [Occ=Dead] { (# ipv17_a7DZ, ipv18_a7E0 #) ->
+                          hPutStr2
+                            stdout
+                            (++
+                               @ Char
+                               lvl13_rjVf
+                               (: @ Char
+                                  lvl14_rjVg
+                                  (++
+                                     @ Char
+                                     lvl15_rjVh
+                                     (: @ Char
+                                        lvl14_rjVg
+                                        (case ww_sjnH of _ [Occ=Dead] { D# ww3_agvG ->
+                                         ++
+                                           @ Char
+                                           (GHC.Float.$w$sshowSignedFloat
+                                              GHC.Float.$fShowDouble_$sshowFloat
+                                              shows18
+                                              ww3_agvG
+                                              ([] @ Char))
+                                           (: @ Char
+                                              lvl14_rjVg
+                                              (++
+                                                 @ Char
+                                                 lvl16_rjVi
+                                                 (: @ Char
+                                                    lvl14_rjVg
+                                                    (case ww1_sjnI of _ [Occ=Dead] { D# ww5_XgMG ->
+                                                     ++
+                                                       @ Char
+                                                       (GHC.Float.$w$sshowSignedFloat
+                                                          GHC.Float.$fShowDouble_$sshowFloat
+                                                          shows18
+                                                          ww5_XgMG
+                                                          ([] @ Char))
+                                                       (: @ Char
+                                                          lvl14_rjVg
+                                                          (++
+                                                             @ Char
+                                                             lvl17_rjVj
+                                                             (: @ Char
+                                                                lvl14_rjVg
+                                                                (case $wgo2_rjVk ipv18_a7E0 0##
+                                                                 of ww6_sjnB { __DEFAULT ->
+                                                                 let {
+                                                                   i#_aiqw :: Int#
+                                                                   [LclId, Str=DmdType]
+                                                                   i#_aiqw = word2Int# ww6_sjnB } in
+                                                                 let {
+                                                                   a8_sj6m :: [Char]
+                                                                   [LclId, Str=DmdType]
+                                                                   a8_sj6m =
+                                                                     ++
+                                                                       @ Char
+                                                                       lvl18_rjVl
+                                                                       (: @ Char
+                                                                          lvl14_rjVg
+                                                                          (++
+                                                                             @ Char
+                                                                             ipv1_a6Qk
+                                                                             (: @ Char
+                                                                                lvl14_rjVg
+                                                                                (++
+                                                                                   @ Char
+                                                                                   Main.rbTreeOpts79
+                                                                                   (: @ Char
+                                                                                      lvl14_rjVg
+                                                                                      (case GHC.Show.$wshowSignedInt
+                                                                                              0#
+                                                                                              x#_aio6
+                                                                                              ([]
+                                                                                                 @ Char)
+                                                                                       of _ [Occ=Dead]
+                                                                                       { (# ww8_a6ZH,
+                                                                                            ww9_a6ZI #) ->
+                                                                                       ++
+                                                                                         @ Char
+                                                                                         (: @ Char
+                                                                                            ww8_a6ZH
+                                                                                            ww9_a6ZI)
+                                                                                         (: @ Char
+                                                                                            lvl14_rjVg
+                                                                                            (++
+                                                                                               @ Char
+                                                                                               Main.rbTreeOpts94
+                                                                                               (: @ Char
+                                                                                                  lvl14_rjVg
+                                                                                                  (case GHC.Show.$wshowWord
+                                                                                                          ipv8_sgfQ
+                                                                                                          ([]
+                                                                                                             @ Char)
+                                                                                                   of _ [Occ=Dead]
+                                                                                                   { (# ww11_agvg,
+                                                                                                        ww12_agvh #) ->
+                                                                                                   ++
+                                                                                                     @ Char
+                                                                                                     (: @ Char
+                                                                                                        ww11_agvg
+                                                                                                        ww12_agvh)
+                                                                                                     ([]
+                                                                                                        @ Char)
+                                                                                                   }))))
+                                                                                       })))))) } in
+                                                                 case tagToEnum#
+                                                                        @ Bool (>=# i#_aiqw 0#)
+                                                                 of _ [Occ=Dead] {
+                                                                   False ->
+                                                                     case GHC.Show.$w$cshowsPrec1
+                                                                            0#
+                                                                            (integer-gmp-1.0.0.0:GHC.Integer.Type.wordToInteger
+                                                                               ww6_sjnB)
+                                                                            ([] @ Char)
+                                                                     of _ [Occ=Dead]
+                                                                     { (# ww8_aghU, ww9_aghV #) ->
+                                                                     ++
+                                                                       @ Char
+                                                                       (: @ Char ww8_aghU ww9_aghV)
+                                                                       (: @ Char lvl14_rjVg a8_sj6m)
+                                                                     };
+                                                                   True ->
+                                                                     case GHC.Show.$w$cshowsPrec1
+                                                                            0#
+                                                                            (integer-gmp-1.0.0.0:GHC.Integer.Type.smallInteger
+                                                                               i#_aiqw)
+                                                                            ([] @ Char)
+                                                                     of _ [Occ=Dead]
+                                                                     { (# ww8_aghU, ww9_aghV #) ->
+                                                                     ++
+                                                                       @ Char
+                                                                       (: @ Char ww8_aghU ww9_aghV)
+                                                                       (: @ Char lvl14_rjVg a8_sj6m)
+                                                                     }
+                                                                 }
+                                                                 }))))
+                                                     }))))
+                                         })))))
+                            True
+                            ipv17_a7DZ
+                          } } in
+                    case ds6_dfEa of _ [Occ=Dead] {
+                      False ->
+                        case Throughput.throughputMain1
+                               (I# (*# ipv6_sgfK 1000#))
+                               (zipWith
+                                  @ Count
+                                  @ (Gen RealWorld)
+                                  @ (IO ())
+                                  ((\ (c_adUL [OS=ProbOneShot] :: CountIO)
+                                      (g_adUM [OS=OneShot] :: RGen)
+                                      (eta_X8v [OS=OneShot] :: State# RealWorld) ->
+                                      case c_adUL
+                                           `cast` (Throughput.NTCo:Count[0]
+                                                   ; NTCo:IORef[0] <Word64>_N
+                                                   :: Count ~R# STRef RealWorld Word64)
+                                      of _ [Occ=Dead] { STRef ww1_sjmF ->
+                                      case g_adUM
+                                           `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                                                   :: Gen RealWorld
+                                                      ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                                            RealWorld)
+                                      of _ [Occ=Dead]
+                                      { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmJ ->
+                                      case ipv12_X6YJ
+                                      of _ [Occ=Dead] { SkipList.PQ ww5_sjmN ww6_sjn3 ww7_sjn8 ->
+                                      case ww5_sjmN
+                                           `cast` (SkipList.NTCo:TArray[0]
+                                                     <Int>_N <SkipList.Node Word ()>_R
+                                                   :: SkipList.TArray Int (SkipList.Node Word ())
+                                                      ~R# Array Int (TVar (SkipList.Node Word ())))
+                                      of _ [Occ=Dead]
+                                      { Array ww9_sjmQ ww10_sjmV ww11_sjn0 ww12_sjn1 ->
+                                      case ww9_sjmQ of _ [Occ=Dead] { I# ww14_sjCo ->
+                                      case ww10_sjmV of _ [Occ=Dead] { I# ww16_sjCr ->
+                                      case ww6_sjn3 of _ [Occ=Dead] { TVar ww18_sjn6 ->
+                                      case ww7_sjn8
+                                           `cast` (Data.Vector.Unboxed.Base.TFCo:R:MVectorsWord64[0]
+                                                     <RealWorld>_N
+                                                   ; Data.Vector.Unboxed.Base.NTCo:R:MVectorsWord64[0]
+                                                       <RealWorld>_N
+                                                   :: Data.Vector.Unboxed.Base.MVector
+                                                        RealWorld Word64
+                                                      ~R# Data.Vector.Primitive.Mutable.MVector
+                                                            RealWorld Word64)
+                                      of _ [Occ=Dead]
+                                      { Data.Vector.Primitive.Mutable.MVector ww20_sjnb ww21_sjnc
+                                                                              ww22_sjnd ->
+                                      Main.$wa1
+                                        ww1_sjmF
+                                        ww3_sjmJ
+                                        ww14_sjCo
+                                        ww16_sjCr
+                                        ww11_sjn0
+                                        ww12_sjn1
+                                        ww18_sjn6
+                                        ww20_sjnb
+                                        ww21_sjnc
+                                        ww22_sjnd
+                                        ipv8_sgfQ
+                                        ipv7_sgfN
+                                        eta_X8v
+                                      }
+                                      }
+                                      }
+                                      }
+                                      }
+                                      }
+                                      }
+                                      })
+                                   `cast` (<CountIO>_R -> <RGen>_R -> Sym (NTCo:IO[0] <()>_R)
+                                           :: (CountIO
+                                               -> RGen
+                                               -> State# RealWorld
+                                               -> (# State# RealWorld, () #))
+                                              ~R# (CountIO -> RGen -> IO ())))
+                                  ipv16_X6YT
+                                  ipv10_X6YR)
+                               ipv15_X77E
+                        of _ [Occ=Dead] { (# ipv17_X6YW, ipv18_X6YY #) ->
+                        case ipv18_X6YY of _ [Occ=Dead] { (ww1_sjnH, ww2_sjnI) ->
+                        $w$j_sjnK ipv17_X6YW ww1_sjnH ww2_sjnI
+                        }
+                        };
+                      True ->
+                        case Throughput.throughputMain1
+                               (I# (*# ipv6_sgfK 1000#))
+                               (zipWith
+                                  @ Count
+                                  @ (Gen RealWorld)
+                                  @ (IO ())
+                                  ((\ (c_adUJ [OS=ProbOneShot] :: CountIO)
+                                      (g_adUK [OS=OneShot] :: RGen)
+                                      (eta_X8v [OS=OneShot] :: State# RealWorld) ->
+                                      case c_adUJ
+                                           `cast` (Throughput.NTCo:Count[0]
+                                                   ; NTCo:IORef[0] <Word64>_N
+                                                   :: Count ~R# STRef RealWorld Word64)
+                                      of _ [Occ=Dead] { STRef ww1_sjm8 ->
+                                      case g_adUK
+                                           `cast` (System.Random.PCG.Fast.Pure.NTCo:Gen[0] <RealWorld>_N
+                                                   :: Gen RealWorld
+                                                      ~R# primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray
+                                                            RealWorld)
+                                      of _ [Occ=Dead]
+                                      { primitive-0.5.4.0:Data.Primitive.ByteArray.MutableByteArray ww3_sjmc ->
+                                      Main.$wa ww1_sjm8 ww3_sjmc ipv8_sgfQ ipv7_sgfN eta_X8v
+                                      }
+                                      })
+                                   `cast` (<CountIO>_R -> <RGen>_R -> Sym (NTCo:IO[0] <()>_R)
+                                           :: (CountIO
+                                               -> RGen
+                                               -> State# RealWorld
+                                               -> (# State# RealWorld, () #))
+                                              ~R# (CountIO -> RGen -> IO ())))
+                                  ipv16_X6YT
+                                  ipv10_X6YR)
+                               ipv15_X77E
+                        of _ [Occ=Dead] { (# ipv17_X6YW, ipv18_X6YY #) ->
+                        case ipv18_X6YY of _ [Occ=Dead] { (ww1_sjnH, ww2_sjnI) ->
+                        $w$j_sjnK ipv17_X6YW ww1_sjnH ww2_sjnI
+                        }
+                        }
+                    };
+                  True -> (# ipv15_X77E, () #)
+                } } in
+          case tagToEnum# @ Bool (<# 0# x#_aio6) of _ [Occ=Dead] {
+            False ->
+              case replicateM4 @ Count ([] @ (IO Count)) ipv13_X6Tt
+              of _ [Occ=Dead] { (# ipv15_X77E, ipv16_X6YT #) ->
+              $j1_siRv ipv15_X77E ipv16_X6YT
+              };
+            True ->
+              case replicateM4 @ Count ($wxs_rjVo x#_aio6) ipv13_X6Tt
+              of _ [Occ=Dead] { (# ipv15_X77E, ipv16_X6YT #) ->
+              $j1_siRv ipv15_X77E ipv16_X6YT
+              }
+          }
+          }
+          } } in
+    case tagToEnum# @ Bool (># 1# x#_aio6) of _ [Occ=Dead] {
+      False ->
+        letrec {
+          go_a7Ce [Occ=LoopBreaker] :: Int# -> [Word64]
+          [LclId, Arity=1, Str=DmdType <L,U>]
+          go_a7Ce =
+            \ (x_a7Cf :: Int#) ->
+              : @ Word64
+                (W64# (int2Word# x_a7Cf))
+                (case tagToEnum# @ Bool (==# x_a7Cf x#_aio6) of _ [Occ=Dead] {
+                   False -> go_a7Ce (+# x_a7Cf 1#);
+                   True -> [] @ Word64
+                 }); } in
+        case Main.initGens2 (go_a7Ce 1#) ds10_aioa
+        of _ [Occ=Dead] { (# ipv9_X6YP, ipv10_X6YR #) ->
+        $j_sjPW ipv9_X6YP ipv10_X6YR
+        };
+      True -> $j_sjPW ds10_aioa ([] @ RGen)
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 3}
+main :: IO ()
+[GblId,
+ Arity=1,
+ Str=DmdType <L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.main1
+               `cast` (Sym (NTCo:IO[0] <()>_R)
+                       :: (State# RealWorld -> (# State# RealWorld, () #)) ~R# IO ())}]
+main =
+  Main.main1
+  `cast` (Sym (NTCo:IO[0] <()>_R)
+          :: (State# RealWorld -> (# State# RealWorld, () #)) ~R# IO ())
+
+-- RHS size: {terms: 2, types: 1, coercions: 3}
+Main.main2 :: State# RealWorld -> (# State# RealWorld, () #)
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+Main.main2 =
+  runMainIO1
+    @ ()
+    (Main.main1
+     `cast` (Sym (NTCo:IO[0] <()>_R)
+             :: (State# RealWorld -> (# State# RealWorld, () #)) ~R# IO ()))
+
+-- RHS size: {terms: 113, types: 75, coercions: 0}
+Main.$w$cshowsPrec [InlPrag=[0]]
+  :: Word -> Int -> Bool -> Bool -> Int -> Double -> Int -> ShowS
+[GblId,
+ Arity=7,
+ Str=DmdType <L,U(U)><L,U(U)><L,U><L,U><L,U(U)><L,1*U(U)><L,U(U)>]
+Main.$w$cshowsPrec =
+  \ (ww_sjnY :: Word)
+    (ww1_sjnZ :: Int)
+    (ww2_sjo0 :: Bool)
+    (ww3_sjo1 :: Bool)
+    (ww4_sjo2 :: Int)
+    (ww5_sjo3 :: Double)
+    (ww6_sjo4 :: Int) ->
+    let {
+      f_Xg5R [Dmd=<L,C(U)>] :: String -> String
+      [LclId, Str=DmdType]
+      f_Xg5R =
+        case ww5_sjo3 of _ [Occ=Dead] { D# ww8_agvG ->
+        GHC.Float.$w$sshowSignedFloat
+          GHC.Float.$fShowDouble_$sshowFloat lvl4_rjV1 ww8_agvG
+        } } in
+    \ (x_XfZN :: String) ->
+      ++
+        @ Char
+        lvl11_rjV8
+        (++
+           @ Char
+           lvl10_rjV7
+           (case ww_sjnY of _ [Occ=Dead] { W# w_ag4d ->
+            case GHC.Show.$wshowWord
+                   w_ag4d
+                   (++
+                      @ Char
+                      lvl3_rjV0
+                      (++
+                         @ Char
+                         lvl9_rjV6
+                         (case ww1_sjnZ of _ [Occ=Dead] { I# ww8_a6ZD ->
+                          case GHC.Show.$wshowSignedInt
+                                 0#
+                                 ww8_a6ZD
+                                 (++
+                                    @ Char
+                                    lvl3_rjV0
+                                    (++
+                                       @ Char
+                                       lvl8_rjV5
+                                       (let {
+                                          eta_ag4k :: String
+                                          [LclId, Str=DmdType]
+                                          eta_ag4k =
+                                            ++
+                                              @ Char
+                                              lvl3_rjV0
+                                              (++
+                                                 @ Char
+                                                 lvl7_rjV4
+                                                 (let {
+                                                    eta1_Xg8z :: String
+                                                    [LclId, Str=DmdType]
+                                                    eta1_Xg8z =
+                                                      ++
+                                                        @ Char
+                                                        lvl3_rjV0
+                                                        (++
+                                                           @ Char
+                                                           lvl6_rjV3
+                                                           (case ww4_sjo2
+                                                            of _ [Occ=Dead] { I# ww10_X77c ->
+                                                            case GHC.Show.$wshowSignedInt
+                                                                   0#
+                                                                   ww10_X77c
+                                                                   (++
+                                                                      @ Char
+                                                                      lvl3_rjV0
+                                                                      (++
+                                                                         @ Char
+                                                                         lvl5_rjV2
+                                                                         (f_Xg5R
+                                                                            (++
+                                                                               @ Char
+                                                                               lvl3_rjV0
+                                                                               (++
+                                                                                  @ Char
+                                                                                  lvl2_rjUZ
+                                                                                  (case ww6_sjo4
+                                                                                   of _ [Occ=Dead]
+                                                                                   { I# ww12_X77h ->
+                                                                                   case GHC.Show.$wshowSignedInt
+                                                                                          0#
+                                                                                          ww12_X77h
+                                                                                          (++
+                                                                                             @ Char
+                                                                                             lvl1_rjUY
+                                                                                             x_XfZN)
+                                                                                   of _ [Occ=Dead]
+                                                                                   { (# ww14_a6ZH,
+                                                                                        ww15_a6ZI #) ->
+                                                                                   : @ Char
+                                                                                     ww14_a6ZH
+                                                                                     ww15_a6ZI
+                                                                                   }
+                                                                                   }))))))
+                                                            of _ [Occ=Dead]
+                                                            { (# ww12_a6ZH, ww13_a6ZI #) ->
+                                                            : @ Char ww12_a6ZH ww13_a6ZI
+                                                            }
+                                                            })) } in
+                                                  case ww3_sjo1 of _ [Occ=Dead] {
+                                                    False -> ++ @ Char shows17 eta1_Xg8z;
+                                                    True -> ++ @ Char shows16 eta1_Xg8z
+                                                  })) } in
+                                        case ww2_sjo0 of _ [Occ=Dead] {
+                                          False -> ++ @ Char shows17 eta_ag4k;
+                                          True -> ++ @ Char shows16 eta_ag4k
+                                        })))
+                          of _ [Occ=Dead] { (# ww10_a6ZH, ww11_a6ZI #) ->
+                          : @ Char ww10_a6ZH ww11_a6ZI
+                          }
+                          })))
+            of _ [Occ=Dead] { (# ww8_agvg, ww9_agvh #) ->
+            : @ Char ww8_agvg ww9_agvh
+            }
+            }))
+
+-- RHS size: {terms: 13, types: 10, coercions: 0}
+Main.$fShowRBTreeOpts_$cshowsPrec [InlPrag=INLINE[0]]
+  :: Int -> RBTreeOpts -> ShowS
+[GblId,
+ Arity=2,
+ Str=DmdType <L,A><S,1*U(U(U),U(U),U,U,U(U),1*U(U),U(U))>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ _ [Occ=Dead] (w1_sjnV [Occ=Once!] :: RBTreeOpts) ->
+                 case w1_sjnV
+                 of _ [Occ=Dead]
+                 { RBTreeOpts ww1_sjnY [Occ=Once] ww2_sjnZ [Occ=Once]
+                              ww3_sjo0 [Occ=Once] ww4_sjo1 [Occ=Once] ww5_sjo2 [Occ=Once]
+                              ww6_sjo3 [Occ=Once] ww7_sjo4 [Occ=Once] ->
+                 Main.$w$cshowsPrec
+                   ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3 ww7_sjo4
+                 }}]
+Main.$fShowRBTreeOpts_$cshowsPrec =
+  \ _ [Occ=Dead] (w1_sjnV :: RBTreeOpts) ->
+    case w1_sjnV
+    of _ [Occ=Dead]
+    { RBTreeOpts ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3
+                 ww7_sjo4 ->
+    Main.$w$cshowsPrec
+      ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3 ww7_sjo4
+    }
+
+-- RHS size: {terms: 13, types: 10, coercions: 0}
+Main.$fShowRBTreeOpts_$cshow :: RBTreeOpts -> String
+[GblId,
+ Arity=1,
+ Str=DmdType <S,1*U(U(U),U(U),U,U,U(U),1*U(U),U(U))>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (x_afFm [Occ=Once] :: RBTreeOpts) ->
+                 Main.$fShowRBTreeOpts_$cshowsPrec shows18 x_afFm ([] @ Char)}]
+Main.$fShowRBTreeOpts_$cshow =
+  \ (x_afFm :: RBTreeOpts) ->
+    case x_afFm
+    of _ [Occ=Dead]
+    { RBTreeOpts ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3
+                 ww7_sjo4 ->
+    Main.$w$cshowsPrec
+      ww1_sjnY
+      ww2_sjnZ
+      ww3_sjo0
+      ww4_sjo1
+      ww5_sjo2
+      ww6_sjo3
+      ww7_sjo4
+      ([] @ Char)
+    }
+
+-- RHS size: {terms: 12, types: 9, coercions: 0}
+Main.$fShowRBTreeOpts1 :: RBTreeOpts -> ShowS
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [20] 90 0}]
+Main.$fShowRBTreeOpts1 =
+  \ (w_sjnV :: RBTreeOpts) ->
+    case w_sjnV
+    of _ [Occ=Dead]
+    { RBTreeOpts ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3
+                 ww7_sjo4 ->
+    Main.$w$cshowsPrec
+      ww1_sjnY ww2_sjnZ ww3_sjo0 ww4_sjo1 ww5_sjo2 ww6_sjo3 ww7_sjo4
+    }
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+Main.$fShowRBTreeOpts_$cshowList :: [RBTreeOpts] -> ShowS
+[GblId,
+ Arity=2,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+Main.$fShowRBTreeOpts_$cshowList =
+  showList__ @ RBTreeOpts Main.$fShowRBTreeOpts1
+
+-- RHS size: {terms: 4, types: 1, coercions: 0}
+Main.$fShowRBTreeOpts [InlPrag=[ALWAYS] CONLIKE] :: Show RBTreeOpts
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ ->
+       D:Show TYPE RBTreeOpts
+              Main.$fShowRBTreeOpts_$cshowsPrec
+              Main.$fShowRBTreeOpts_$cshow
+              Main.$fShowRBTreeOpts_$cshowList]
+Main.$fShowRBTreeOpts =
+  D:Show
+    @ RBTreeOpts
+    Main.$fShowRBTreeOpts_$cshowsPrec
+    Main.$fShowRBTreeOpts_$cshow
+    Main.$fShowRBTreeOpts_$cshowList
+
+-- RHS size: {terms: 1, types: 0, coercions: 3}
+:Main.main :: IO ()
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Main.main2
+               `cast` (Sym (NTCo:IO[0] <()>_R)
+                       :: (State# RealWorld -> (# State# RealWorld, () #)) ~R# IO ())}]
+:Main.main =
+  Main.main2
+  `cast` (Sym (NTCo:IO[0] <()>_R)
+          :: (State# RealWorld -> (# State# RealWorld, () #)) ~R# IO ())
+
+
