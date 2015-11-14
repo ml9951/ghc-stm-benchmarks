@@ -20,6 +20,7 @@ import System.Directory
 import System.Environment
 import System.Process
 import System.IO
+import Debug.Trace
 
 import qualified Text.PrettyPrint.Boxes as B
 
@@ -59,7 +60,7 @@ opts = Opts <$> strArgument (help "File to parse")
             <*> (optional . option auto)
                 (long "speedup" <> short 's' <> help "Plot speedup instead of throughput")
             <*> (option auto)
-                (value MMax <> long "monoid" <> short 'm' <> help "Combining operation")
+                (value MMean <> long "monoid" <> short 'm' <> help "Combining operation")
             <*> (many $ strArgument (help "files for average"))
 
 grep :: String -> FilePath -> IO [String]
@@ -133,8 +134,6 @@ main = do
         xs' = mapMaybe (lookup (opts^.fieldName.non "threads")) cs
         xs = take (length xs' `div` n) xs'
         es = map (const xn) xs ++ es'
-
-
 
     if opts^.outputR
       then do

@@ -40,7 +40,11 @@ import Control.Applicative
 import Control.Monad
 import Control.Exception
 
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
+#endif
 import Control.Concurrent
 
 import Data.Word

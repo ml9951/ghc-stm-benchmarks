@@ -1,6 +1,7 @@
 {-# LANGUAGE TupleSections   #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE BangPatterns    #-}
+{-# LANGUAGE CPP                       #-}
 module Client 
     ( Client
     , mkClient
@@ -19,8 +20,11 @@ import Control.Monad
 import Control.Applicative
 
 import Control.Concurrent
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
-
+#endif
 import Data.Semigroup
 import Data.IORef
 import Data.Word

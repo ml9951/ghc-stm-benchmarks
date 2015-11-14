@@ -12,7 +12,11 @@ module RBTreeSTMTrie
     ) where
 
 import qualified STMContainers.Map as M
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
+#endif
 import Control.Applicative
 import Data.Maybe
 import Data.Word

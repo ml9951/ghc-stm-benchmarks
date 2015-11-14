@@ -1,4 +1,6 @@
 {-# LANGUAGE BangPatterns #-}
+{-# LANGUAGE CPP                       #-}
+
 module TList
     ( TList
     , mkTList
@@ -18,7 +20,11 @@ import Control.Monad
 import Control.Applicative
 
 import Control.Concurrent
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
+#endif
 
 import Data.Monoid
 

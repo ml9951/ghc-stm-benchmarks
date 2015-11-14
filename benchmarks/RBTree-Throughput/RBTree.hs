@@ -20,6 +20,8 @@ import Prelude hiding (lookup)
 
 #ifdef PASTMTL2
 import Control.TL2.STM
+#elif NOREC
+import Control.NoRec.STM
 #else
 import Control.Concurrent.STM
 #endif

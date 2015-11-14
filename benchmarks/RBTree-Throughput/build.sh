@@ -5,7 +5,7 @@ bc=-f-byteCounter
 other=
 
 # for n in pastm-tl2 pastm-fine head; do
-for n in htm-mut; do
+for n in pastm-norec; do
 # for n in head 7.10.1 pastm-tl2 pastm-fine; do
 # for n in cuckoo stmtrie-fine stmtrie-htm no-invariants coarse htm-bloom fine-hle htm-mut htm-mut-fine ctrie pastm-tl2; do
 # for n in hashmap hashmapcas hashmaptvar hashmaptmvar hashmapmvar; do
@@ -20,29 +20,42 @@ for n in htm-mut; do
        echo "------------- $n -------------------"
        d=-fcuckoo
     elif [ $n == "stmtrie-fine" ] ; then
-       ghc=/localdisk/ryates/ghc-7.10/ghc-no-invariants-build/bin/ghc
+       ghc=/home/ml9951/repos/ghc-wip/bin/ghc
        sb=.cabal-sandbox-$n
        echo "------------- $n -------------------"
        d=-fstmtrie
+    elif [ $n == "stmtrie-tl2" ] ; then
+       ghc=/home/ml9951/repos/ghc-wip/bin/ghc
+       sb=.cabal-sandbox-$n
+       echo "------------- $n -------------------"
+       d="-fpastmtl2 -fstmtrie"
+       other="cabal install --with-ghc $ghc /home/ml9951/repos/ghc-wip/ghc/libraries/pastm/ \
+                            /home/ml9951/repos/stm-containers \
+                            --extra-include-dirs /home/ml9951/repos/ghc-wip/ghc/rts/"
     elif [ $n == "stmtrie-htm" ] ; then
        ghc=/localdisk/ryates/ghc-7.10/ghc-htm-mut-build/bin/ghc
        sb=.cabal-sandbox-$n
        echo "------------- $n -------------------"
        d=-fstmtrie
     elif [ $n == "pastm-tl2" ] ; then
-       ghc=/localdisk/ryates/ghc-7.10/ghc-pastm-build/bin/ghc
+       ghc=/home/ml9951/repos/ghc-wip/bin/ghc
        sb=.cabal-sandbox-$n
        echo "------------- $n -------------------"
        d=-fpastmtl2
-       other="cabal install --with-ghc $ghc /localdisk/ryates/ghc-7.10/ghc-pastm/libraries/pastm/ \
-                            --extra-include-dirs /localdisk/ryates/ghc-7.10/ghc-pastm/rts/"
+       other="cabal install --with-ghc $ghc /home/ml9951/repos/ghc-wip/ghc/libraries/pastm/ \
+                            --extra-include-dirs /home/ml9951/repos/ghc-wip/ghc/rts/"
+    elif [ $n == "pastm-norec" ] ; then
+       ghc=/home/ml9951/repos/ghc-wip/bin/ghc
+       sb=.cabal-sandbox-$n
+       echo "------------- $n -------------------"
+       d=-fnorec
+       other="cabal install --with-ghc $ghc /home/ml9951/repos/ghc-wip/ghc/libraries/pastm/ \
+                            --extra-include-dirs /home/ml9951/repos/ghc-wip/ghc/rts/"
     elif [ $n == "pastm-fine" ] ; then
-       ghc=/localdisk/ryates/ghc-7.10/ghc-pastm-build/bin/ghc
+       ghc=/home/ml9951/repos/ghc-old/bin/ghc
        sb=.cabal-sandbox-$n
        echo "------------- $n -------------------"
        d=-fpastmfine
-       other="cabal install --with-ghc $ghc /localdisk/ryates/ghc-7.10/ghc-pastm/libraries/pastm/ \
-                            --extra-include-dirs /localdisk/ryates/ghc-7.10/ghc-pastm/rts/"
     elif [ $n == "ctrie" ] ; then
        ghc=/localdisk/ryates/ghc-7.10/ghc-no-invariants-build/bin/ghc
        sb=.cabal-sandbox-$n
@@ -54,7 +67,7 @@ for n in htm-mut; do
         echo "------------- $n -------------------"
         d=-f$n
     else
-       ghc=/localdisk/ryates/ghc-7.10/ghc-$n-build/bin/ghc
+       ghc=ghc
        sb=.cabal-sandbox-$n
        echo "------------- $n -------------------"
        if [ $n == "htm-mut" ] || [ $n == "htm-mut-fine" ] ; then
@@ -72,22 +85,23 @@ for n in htm-mut; do
 
     if [ $n == "pastm-tl2" ] ; then
         $other
-        cabal install optparse-applicative /localdisk/ryates/ghc-7.10/ghc-pastm/libraries/stm \
+        cabal install optparse-applicative /home/ml9951/repos/ghc-wip/ghc/libraries/stm \
               $bc ../throughput/ ../random/pcg-random/ ./ $d \
-              --disable-executable-stripping --with-ghc $ghc
+              --disable-executable-stripping --with-ghc $ghc -j48
     elif [ $n == "pastm-fine" ] ; then
         $other
-        cabal install optparse-applicative /localdisk/ryates/ghc-7.10/ghc-pastm/libraries/stm \
+        cabal install optparse-applicative /home/ml9951/repos/ghc-wip/ghc/libraries/stm \
               $bc ../throughput/ ../random/pcg-random/ ./ $d \
-              --disable-executable-stripping --with-ghc $ghc
+              --disable-executable-stripping --with-ghc $ghc -j48
     elif [ $n == "head" ] ; then
-        # head builds need their local stm
-        cabal install optparse-applicative /localdisk/ryates/ghc-7.10/ghc-head/libraries/stm \
+        cabal install optparse-applicative \
               $bc ../throughput/ ../random/pcg-random/ ./ $d \
-              --disable-executable-stripping --with-ghc $ghc
+              --disable-executable-stripping --with-ghc $ghc -j48
     else
-        cabal install optparse-applicative stm-2.4.3 $bc ../throughput/ ../random/pcg-random/ ./ $d \
-            --disable-executable-stripping --with-ghc $ghc
+        $other
+        cabal install optparse-applicative /home/ml9951/repos/ghc-wip/ghc/libraries/stm \
+              $bc ../throughput/ ../random/pcg-random/ ./ $d \
+              --disable-executable-stripping --with-ghc $ghc -j48
     fi
 
     cp $sb/bin/rbtree-throughput Main-$n

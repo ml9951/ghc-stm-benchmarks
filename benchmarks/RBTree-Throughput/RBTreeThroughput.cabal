@@ -54,6 +54,10 @@ flag hashmaptmvar
     description: Build with HashMap from unordered-containers and use a MVar as an atomic box.
     default:     False
 
+flag norec
+  description:  Build with norec
+  default:  False
+
 executable rbtree-throughput
   main-is:      Main.hs
 --  GHC-Options:  -rtsopts -threaded -O0 -fno-omit-yields -dumpdir mut-dump -ddump-simpl -ddump-cmm -ddump-to-file
@@ -89,12 +93,15 @@ executable rbtree-throughput
 
   if flag(pastmfine)
     cpp-options:   -DPASTMFINE
-    build-depends: pastm
 --    GHC-Options:   -dumpdir dump-pastm-fine -ddump-simpl -ddump-cmm -ddump-to-file
 
   if flag(hashmap)
     cpp-options:   -DHASHMAP
     build-depends: unordered-containers==0.2.5.0
+
+  if flag(norec)
+    cpp-options:  -DNOREC
+    build-depends:  pastm
 
   if flag(hashmapcas)
     cpp-options:   -DHASHMAP -DCAS

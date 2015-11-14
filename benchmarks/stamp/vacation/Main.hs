@@ -1,4 +1,5 @@
 {-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE CPP                       #-}
 module Main where
 
 -- import Random
@@ -14,12 +15,15 @@ import Throughput
 import Control.Monad
 import Control.Applicative
 import Control.Concurrent
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
-
+import GHC.Conc
+#endif
 import System.IO
 import System.Exit
 
-import GHC.Conc
 
 import Data.Array.IO
 

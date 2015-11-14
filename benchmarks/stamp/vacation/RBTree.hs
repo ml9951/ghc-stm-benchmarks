@@ -18,7 +18,11 @@ module RBTree
 
 import Prelude hiding (lookup)
 
+#ifdef PASTMTL2
+import Control.TL2.STM
+#else
 import Control.Concurrent.STM
+#endif
 import Control.Applicative
 import Control.Monad
 import Control.Exception
