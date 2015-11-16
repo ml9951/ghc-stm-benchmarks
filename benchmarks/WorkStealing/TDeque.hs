@@ -44,6 +44,7 @@ import Control.Concurrent.STM
 import Control.Concurrent.STM.TArray
 #endif
 
+
 data Deque a = Deque{
      top :: TVar Int,
      bottom :: TVar Int,
@@ -60,53 +61,54 @@ newDeque size = do
 --Currently, this just retries if the deque is full.
 --We could resize the array, but that would require
 --another level of indirection for the array
-pushWork :: Deque a -> a -> STM ()
-pushWork Deque{top,bottom,arr} obj = do
+pushWork :: Deque a -> a -> Int -> STM ()
+pushWork Deque{top,bottom,arr} obj  id= do
       b <- readTVar bottom
       t <- readTVar top
       bounds <- getBounds arr
       let size = b - t
           len = rangeSize bounds
       if size >= len-1
-      then retry
+      then trace (show id ++ ": deque is full\n") retry
       else do
            writeArray arr (b `mod` len) obj
            writeTVar bottom (b+1)
 
-popWork :: Deque a -> STM a
-popWork Deque{top,bottom,arr} = do
+popWork :: Deque a -> Int -> STM a
+popWork Deque{top,bottom,arr} id = do
      b <- readTVar bottom
      t <- readTVar top
      bounds <- getBounds arr
      let size = b - t
          len = rangeSize bounds
      if size == 0
-     then retry
+     then trace (show id ++ ": local deque is empty\n") retry
      else do
           writeTVar bottom (b-1)
           obj <- readArray arr ((b-1) `mod` len)
           return obj
 
-stealWork :: Deque a -> STM a
-stealWork Deque{top,bottom,arr} = do
+stealWork :: Deque a -> Int -> STM a
+stealWork Deque{top,bottom,arr} id = do
      b <- readTVar bottom
      t <- readTVar top
      bounds <- getBounds arr
      let size = b - t
          len = rangeSize bounds
      if size == 0
-     then retry
+     then trace (show id ++ ": trying to steal, but deque is empty\n") retry
      else do
           writeTVar top (t+1)
           obj <- readArray arr (t `mod` len)
           return obj
 
 
+
 {-
 data Deque a = Deque{
      top :: TVar Int,
      bottom :: TVar Int,
-     arrPtr :: TVar (TArray Int a)
+     arrPtr :: TVar (TArray Int a) --extra indirection so that we can resize
 }    
 
 newDeque :: Int -> STM (Deque a)
@@ -117,6 +119,17 @@ newDeque size = do
          arrPtr <- newTVar arr
          return(Deque top bottom arrPtr)
 
+resizeArray top bottom topPtr botPtr obj arrPtr len obj = do
+            rawArr <- readTVar arrPtr
+            let newLen = len + len - 1
+            newarr <- newArray_ (0, newLen)
+            for_ top bottom $ \ind -> do
+                 x <- readArray rawArr (ind `mod` len)
+                 writeArray newarr (ind `mod` newLen) x
+            writeArray newarr 
+            writeTVar arrPtr newarr
+            return newLen
+            
 
 --Currently, this just retries if the deque is full.
 --We could resize the array, but that would require
@@ -129,7 +142,7 @@ pushWork Deque{top,bottom,arrPtr} obj = do
       let size = b - t
           len = rangeSize bounds
       if size >= len-1
-      then resizeArray top bottom obj arrPtr
+      then newLen <- resizeArray top bottom obj arrPtr len obj
       else do
            arr <- readTVar arrPtr
            writeArray arr (b `mod` len) obj
@@ -157,10 +170,9 @@ stealWork Deque{top,bottom,arr} = do
      let size = b - t
          len = rangeSize bounds
      if size == 0
-     then resizeArray top bottom obj arrPtr
+     then retry
      else do
           writeTVar top (t+1)
           obj <- readArray arr (t `mod` len)
           return obj
-
 -}

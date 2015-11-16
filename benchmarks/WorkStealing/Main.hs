@@ -1,7 +1,7 @@
 {-# LANGUAGE BangPatterns        #-}
 {-# LANGUAGE ViewPatterns        #-}
 {-# LANGUAGE FlexibleContexts    #-}
-{-# LANGUAGE CPP, NamedFieldPuns #-}
+{-# LANGUAGE CPP, NamedFieldPuns, MagicHash, UnboxedTuples #-}
 module Main where
 
 import Control.Applicative
@@ -21,13 +21,18 @@ import Options.Applicative
 import System.Environment
 import qualified Data.Vector as V
 import System.Random.PCG.Fast.Pure
-import TDeque
+--import TDeque
+import ResizableDeque
+
 import Data.List(zip5)
 import GHC.Conc(numCapabilities)
 import Control.Monad
 import Debug.Trace
 import System.Random.Shuffle
 import System.Random
+
+import GHC.Base(IO(..))
+import GHC.Prim(printSTMStats#)
 
 type RGen = GenIO
 
@@ -46,9 +51,9 @@ data WSOpts = WSOpts
     , _initOnly     :: Bool
     , _withoutTM    :: Bool
     , _atomicGroups :: Int
-    , _mix          :: Double
-    , _qSize        :: Int
-    , _maxSpin      :: Int
+    , _depth        :: Double
+    , _dequeSize    :: Int
+    , _branchFactor :: Double
     , _throughput   :: Int
     } deriving (Show)
 
@@ -65,13 +70,13 @@ rbTreeOpts = WSOpts
     <*> (option auto)
         (value 1   <> long "atomicGroups" <> short 'g' <> help "Lookups per transaction")
     <*> (option auto)
-        (value 90  <> long "mix"          <> short 'm' <> help "Read mix percent")
+        (value 10  <> long "dagDepth"     <> short 'D' <> help "Maximum depth of the DAG")
     <*> (option auto)
-        (value 40 <> long "dequeSize" <> short 'd' <> help "Size of the Scheduler deques")
+        (value 72 <> long "dequeSize"     <> short 'd' <> help "Size of the Scheduler deques")
     <*> (option auto)
-        (value 1 <> long "taskLength" <> short 'l' <> help "Max spin iterations for a task to complete")
+        (value 13 <> long "branchFactor"  <> short 'b' <> help "Branching factor of the DAG")
     <*> (option auto)
-        (value 1000 <> long "throughput"   <> short 's' <> help "Throughput runtime in milliseconds")
+        (value 1000 <> long "throughput"  <> short 's' <> help "Throughput runtime in milliseconds")
 
 data Sched a = Sched{
      no :: !Int,
@@ -79,44 +84,56 @@ data Sched a = Sched{
      gen :: RGen,
      stealCounter :: CountIO,
      localCounter :: CountIO,
-     mix :: Double,
-     maxWork :: Int --maximum task size
+     depth :: Double,
+     branchFactor :: Double
 }
+
+printStats :: IO()
+printStats = IO $ \s -> (# printSTMStats# s, () #)
 
 type Task = ()
 
-workerThread :: (Sched Int, [Sched Int]) -> IO ()
-workerThread (q@Sched{no=myID, workpool, gen, stealCounter, localCounter, mix, maxWork}, allScheds) = go gen 0
+{-
+E(1) = B * (1 - 1/D)
+E(2) = B * (1 - 2/D)
+E(3) = B * (1 - 3/D)
+-}
+
+worker :: (Sched Double, [Sched Double]) -> IO ()
+worker (Sched{no=myID, workpool, gen, stealCounter, localCounter, branchFactor, depth}, allScheds) = go gen
   where
     steal [] = retry  --go to sleep until someone posts work to do
     steal (Sched{no,workpool}:scheds)
           | myID == no = steal scheds -- already tried to pop my deque
           | otherwise = stealWork workpool `orElse` steal scheds
-    go g 0 = do
-       r <- uniformB 100 g
-       if r > mix
-       then do --spawn task
-            r <- uniformB maxWork g
-            atomically $ pushWork workpool r
-            incCount localCounter
-            go g r
-       else do --finish sequential task
-            (task, c) <- atomically $ (popWork workpool >>= \t -> return(t, localCounter)) `orElse`
-                                      (steal allScheds >>= \t -> return(t, stealCounter))
-            incCount c
-            go g task
-    go g i = go g (i-1) --continue working on task
-            
-mainThread :: (Sched Int, [Sched Int]) -> IO()
-mainThread (q@Sched{no, workpool, gen, stealCounter, localCounter, mix, maxWork}, scheds) = go gen 0
+    go g = do
+       (task, c) <- atomically $ (popWork workpool >>= \t -> return(t, localCounter)) `orElse`
+                                 (steal allScheds >>= \t -> return(t, stealCounter))
+       incCount c
+       r <- uniformB branchFactor g
+       let numChildren = round (r * (1.0 - (task / depth)))
+           children = replicate numChildren (task + 1.0)
+       forM_ children (\c -> pushWork workpool c)
+       go g
+
+mainThread :: (Sched Double, [Sched Double]) -> IO ()
+mainThread (Sched{no=myID, workpool, gen, stealCounter, localCounter, branchFactor, depth}, allScheds) = go gen
   where
-    go g 0 = do
-       r <- uniformB maxWork g
-       atomically $ pushWork workpool r
-       incCount localCounter
-       go g r
-    go g i = go g (i-1) --continue working on task
-       
+    steal :: [Sched Double] -> STM Double
+    steal [] = return 0.0
+    steal (Sched{no,workpool}:scheds)
+          | myID == no = steal scheds -- already tried to pop my deque
+          | otherwise = stealWork workpool `orElse` steal scheds
+    go g = do
+       (task, c) <- atomically $ (popWork workpool >>= \t -> return(t, localCounter)) `orElse`
+                                 (steal allScheds >>= \t -> return(t, stealCounter))
+       incCount c
+       r <- uniformB branchFactor g
+       let numChildren = round (r * (1.0 - (task / depth)))
+           children = replicate numChildren (task + 1.0)
+       forM_ children (\c -> pushWork workpool c)
+       go g
+
 main :: IO ()
 main = do
     prog <- getProgName
@@ -124,36 +141,42 @@ main = do
                 (fullDesc <> progDesc "Work stealing benchmark." <> header prog)
     opts <- execParser p
 
+    putStrLn ("Initial deque size is " ++ show (_dequeSize opts))
+
     setNumCapabilities (_threads opts)
 
     let !e = _entries    opts
-        !m = _mix        opts
         !s = _throughput opts
-        ! threads = _threads opts
-        !maxSpin = _maxSpin opts
+        !threads = _threads opts
+        !branchFactor = _branchFactor opts
+        !depth = _depth opts
+        
     gs <- initGens threads    
     lcs <- replicateM threads $ newCount 0
     scs <- replicateM threads $ newCount 0
 
-    workpools <- replicateM threads (atomically $ newDeque (_qSize opts))
+    workpools <- replicateM threads (atomically $ newDeque (_dequeSize opts))
     
-    let states = [ Sched{no = x, workpool= wp, gen = g, localCounter=lc, stealCounter=sc, mix=m, maxWork = maxSpin}
+    let states = [ Sched{no = x, workpool= wp, gen = g, localCounter=lc, stealCounter=sc, branchFactor, depth}
                    | (x, wp, g, lc, sc) <- zip5 [0..] workpools gs lcs scs]
         --randomize the order of schedulers for each thread.  see:
         --https://github.com/simonmar/monad-par/blob/master/monad-par/Control/Monad/Par/Scheds/TraceInternal.hs#L113-L115
         !shuffledStates = map (\s@Sched{no} -> (s, shuffle' states numCapabilities (mkStdGen no))) states
-        (mainState : workerStates) = shuffledStates
-        
-    (t,ta) <- throughputMain (s*1000) (mainThread mainState : map workerThread workerStates)
+        (m@(Sched{workpool}, _) : workers) = shuffledStates
+
+    pushWork workpool 0.0 --initialize the first scheduler
+
+    (t,ta) <- throughputMain (s*1000) (mainThread m : map worker workers)
     localCount <- sum <$> forM lcs readCount
     stealCount <- sum <$> forM scs readCount
     putStrLn $ unwords [ "benchdata:"
                          , "run-time"    , show t
                          , "no-kill-time", show ta
                          , "transactions", show (localCount + stealCount)
-                         , "local deque ops", show localCount
-                         , "steal ops", show stealCount
+                         , "local-deque-ops", show localCount
+                         , "steal-ops", show stealCount
                          , "prog"        , prog
                          , "threads"     , show (_threads opts)
                          , "entries"     , show e
                          ]
+    printStats
