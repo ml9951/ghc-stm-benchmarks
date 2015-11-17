@@ -91,7 +91,7 @@ pushWork d@Deque{top,bottom,resizing,arrPtr} obj = do
                     !newLen = newUpper + 1
                     !n = u + 1
                 newarr <- newArray_ (l, newUpper)
-                for_ t (b-1) $ \ind -> do
+                for_ t b $ \ind -> do
                       x <- readArray arr (ind `mod` n)
                       writeArray newarr (ind `mod` newLen) x
                 writeArray newarr (b `mod` newLen) obj

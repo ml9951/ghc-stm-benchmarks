@@ -91,15 +91,9 @@ data Sched a = Sched{
 printStats :: IO()
 printStats = IO $ \s -> (# printSTMStats# s, () #)
 
-type Task = ()
-
-{-
-E(1) = B * (1 - 1/D)
-E(2) = B * (1 - 2/D)
-E(3) = B * (1 - 3/D)
--}
-
-worker :: (Sched Double, [Sched Double]) -> IO ()
+type Task = Double
+  
+worker :: (Sched Task, [Sched Task]) -> IO ()
 worker (Sched{no=myID, workpool, gen, stealCounter, localCounter, branchFactor, depth}, allScheds) = go gen
   where
     steal [] = retry  --go to sleep until someone posts work to do
@@ -116,11 +110,11 @@ worker (Sched{no=myID, workpool, gen, stealCounter, localCounter, branchFactor, 
        forM_ children (\c -> pushWork workpool c)
        go g
 
-mainThread :: (Sched Double, [Sched Double]) -> IO ()
+mainThread :: (Sched Task, [Sched Task]) -> IO ()
 mainThread (Sched{no=myID, workpool, gen, stealCounter, localCounter, branchFactor, depth}, allScheds) = go gen
   where
-    steal :: [Sched Double] -> STM Double
-    steal [] = return 0.0
+    steal :: [Sched Task] -> STM Task
+    steal [] = return 0.0 --if no one has any work to steal, start over at level 0
     steal (Sched{no,workpool}:scheds)
           | myID == no = steal scheds -- already tried to pop my deque
           | otherwise = stealWork workpool `orElse` steal scheds
