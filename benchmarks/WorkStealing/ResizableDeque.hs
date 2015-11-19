@@ -48,7 +48,6 @@ import Control.Concurrent.STM.TArray
 data Deque a = Deque{
      top :: TVar Int,
      bottom :: TVar Int,
-     resizing :: TVar Bool, --don't let anyone touch this if we are resizing
      arrPtr :: TVar (TArray Int a) --extra indirection so that we can resize
 }    
 
@@ -58,8 +57,7 @@ newDeque size = do
          bottom <- newTVar 0
          arr <- newArray_ (0, size-1)
          arrPtr <- newTVar arr
-         resizing <- newTVar False
-         return(Deque top bottom resizing arrPtr)
+         return(Deque top bottom arrPtr)
 
 --from: https://hackage.haskell.org/package/chaselev-deque-0.5.0.5/docs/src/Data-Concurrent-Deque-ChaseLev.html
 -- My own forM for numeric ranges (not requiring deforestation optimizations).
@@ -73,17 +71,15 @@ for_ !start !end fn = loop start
                 | otherwise = do fn i; loop (i+1)
 
 pushWork :: Deque a -> a -> IO ()
-pushWork d@Deque{top,bottom,resizing,arrPtr} obj = do
+pushWork d@Deque{top,bottom,arrPtr} obj = do
       x <- atomically $ tryPush
       if x
       then return()
       else do
-           atomically $ writeTVar resizing True
-           newSize <- atomically resize
-           return()
+           t <- readTVarIO top
+           atomically $ resize t
       where
-        resize = do
-                t <- readTVar top
+        resize t = do
                 b <- readTVar bottom
                 arr <- readTVar arrPtr
                 (l, u) <- getBounds arr
@@ -97,8 +93,6 @@ pushWork d@Deque{top,bottom,resizing,arrPtr} obj = do
                 writeArray newarr (b `mod` newLen) obj
                 writeTVar bottom (b+1)
                 writeTVar arrPtr newarr
-                writeTVar resizing False
-                return newLen
         tryPush = do
                 b <- readTVar bottom
                 t <- readTVar top
@@ -112,10 +106,7 @@ pushWork d@Deque{top,bottom,resizing,arrPtr} obj = do
                      writeArray arr (b `mod` len) obj
                      writeTVar bottom (b+1)
                      return True
-           
-
---no need to check the resizing field as we are the only ones
---that could resize our deque.
+          
 popWork :: Deque a -> STM a
 popWork Deque{top,bottom,arrPtr} = do
      b <- readTVar bottom
@@ -133,15 +124,14 @@ popWork Deque{top,bottom,arrPtr} = do
           return obj
 
 stealWork :: Deque a -> STM a
-stealWork Deque{top,bottom,resizing,arrPtr} = do
+stealWork Deque{top,bottom,arrPtr} = do
      b <- readTVar bottom
      t <- readTVar top
      arr <- readTVar arrPtr
      bounds <- getBounds arr
-     r <- readTVar resizing
      let size = b - t
          len = rangeSize bounds
-     if size == 0 || r --either empty or resizing in process
+     if size == 0 
      then retry
      else do
           writeTVar top (t+1)

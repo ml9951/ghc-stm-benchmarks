@@ -14,6 +14,12 @@ import Control.TL2.STM
 import Control.Concurrent.STM
 #endif
 
+#ifdef LINKED
+import LinkedDeque
+#else
+import ResizableDeque
+#endif
+
 import Data.Maybe
 import Data.Word
 import Throughput
@@ -21,8 +27,6 @@ import Options.Applicative
 import System.Environment
 import qualified Data.Vector as V
 import System.Random.PCG.Fast.Pure
---import TDeque
-import ResizableDeque
 
 import Data.List(zip5)
 import GHC.Conc(numCapabilities)
@@ -149,8 +153,12 @@ main = do
     lcs <- replicateM threads $ newCount 0
     scs <- replicateM threads $ newCount 0
 
+#ifdef LINKED
+    workpools <- replicateM threads (atomically $ newDeque)
+#else
     workpools <- replicateM threads (atomically $ newDeque (_dequeSize opts))
-    
+#endif
+
     let states = [ Sched{no = x, workpool= wp, gen = g, localCounter=lc, stealCounter=sc, branchFactor, depth}
                    | (x, wp, g, lc, sc) <- zip5 [0..] workpools gs lcs scs]
         --randomize the order of schedulers for each thread.  see:
